@@ -1,0 +1,117 @@
+{
+	"Description" : {
+		"Id" : "AbilityDef_GimpThem",
+		"Name" : "GIMP THEM",
+		"Details" : "PASSIVE: Attacks target and wrench opponent's Actuators, slowing their movement speed.",
+		"Icon" : "uixSvgIcon_ability_gimpthem"
+	},
+	"ShortDesc" : "Hits Slow Movement",
+    "DisplayParams" : "ShowInMWTRay",
+    "ReqSkill" : "Tactics",
+	"ReqSkillLevel" : 8,
+	"ActivationTime" : "Passive",
+	"EffectData" :
+	[
+		{
+            "Description" : {
+                "Id" : "StatusEffect-BWCL-WidowsKissFloatie",
+                "Name" : "GIMP THEM",
+                "Details" : "GIMP THEM",
+                "Icon" : "uixSvgIcon_ability_gimpthem"
+            },
+            "effectType" : "FloatieEffect",
+            "nature" : "Buff",
+            "durationData" : {
+                "duration" : 1,
+                "stackLimit" : 0,
+                "triggerLimit" : 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnWeaponFire",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : true
+            },
+            "floatieData" : {
+                "targetCollection" : "NotSet"
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "StatusEffect-BWCL-WidowsKissWalkSpeed",
+                "Name" : "ACTUATOR WRENCHED",
+                "Details" : "Attacks target and wrench opponent's Actuators, slowing their movement speed.",
+                "Icon" : "uixSvgIcon_ability_gimpthem"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Debuff",
+            "durationData" : {
+                "duration" : 1,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnHit",
+                "effectTargetType" : "SingleTarget",
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true,
+                "hideApplicationFloatie" : false
+            },
+            "statisticData" : {
+                "statName" : "WalkSpeed",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.75",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "StatusEffect-BWCL-WidowsKissRunSpeed",
+                "Name" : "MOVEMENT SLOWED",
+                "Details" : "Attacks target and wrench opponent's Actuators, slowing their movement speed.",
+                "Icon" : "uixSvgIcon_ability_gimpthem"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Debuff",
+            "durationData" : {
+                "duration" : 1,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnHit",
+                "effectTargetType" : "SingleTarget",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : false
+            },
+            "statisticData" : {
+                "statName" : "RunSpeed",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.75",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        }
+	]
+}

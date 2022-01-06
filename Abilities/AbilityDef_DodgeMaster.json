@@ -1,0 +1,60 @@
+{
+	"Description" : {
+		"Id" : "AbilityDef_DodgeMaster",
+		"Name" : "DODGE MASTER",
+		"Details" : "PASSIVE: Veteran MechWarriors receive a +10 defense bonus against melee attacks.",
+		"Icon" : "uixSvgIcon_action_jump"
+	},
+	"ShortDesc" : "+10 dodge when enemies melee attack.",
+    "DisplayParams" : "ShowInMWTRay",
+    "ReqSkill" : "Piloting",
+	"ReqSkillLevel" : 6,
+	"ActivationTime" : "Passive",
+    "EffectData": [
+	            {
+            "Description" : {
+                "Id" : "StatusEffect-CQCSuite-Defense_ToHitMelee",
+                "Name" : "DODGE MASTER",
+                "Details" : "Provides a [AMT] penalty to all melee attacks against this unit.",
+                "Icon" : "UixSvgIcon_specialEquip_System"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Buff",
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "ToHitThisActorMelee",
+                "operation" : "Float_Add",
+                "modValue" : "10.0",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            },
+            "durationData" : {
+                "duration" : -1,
+                "ticksOnActivations" : false,
+                "useActivationsOfTarget" : false,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 0,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            }
+        }
+	]
+}

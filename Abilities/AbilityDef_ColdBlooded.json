@@ -1,0 +1,67 @@
+{
+	"Description" : {
+		"Id" : "AbilityDef_ColdBlooded",
+		"Name" : "Cold Blooded",
+		"Details" : "PASSIVE: 'Harden your MechWarrior's mental fortitude to earn more Resolve per action.",
+		"Icon" : "uixSvgIcon_ability_coldblooded"
+	},
+    "DisplayParams" : "ShowInMWTRay",
+	"ReqSkill" : "Guts",
+	"ReqSkillLevel" : 4,
+	"ActivationTime" : "Passive",
+	"EffectData" :
+	[
+		{
+            "durationData" : {
+                "duration" : -1,
+                "ticksOnActivations" : false,
+                "useActivationsOfTarget" : false,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : -1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-Morale_Gain-T1",
+                "Name" : "RESOLVE GENERATION INCREASED",
+                "Details" : "Provides a [AMT] bonus to actions that generate Resolve.",
+                "Icon" : "uixSvgIcon_ability_coldblooded"
+            },
+            "nature" : "Buff",
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "MoraleBonusGain",
+                "operation" : "Int_Add",
+                "modValue" : "2",
+                "modType" : "System.Int32",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            },
+            "tagData" : null,
+            "floatieData" : null,
+            "actorBurningData" : null,
+            "vfxData" : null,
+            "instantModData" : null,
+            "poorlyMaintainedEffectData" : null
+        }
+	],
+	"IsPrimaryAbility" : true
+}

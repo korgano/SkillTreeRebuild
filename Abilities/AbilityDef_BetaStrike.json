@@ -1,0 +1,48 @@
+{
+    "Description": {
+      "Id": "AbilityDef_BetaStrike",
+      "Name": "BETA STRIKE",
+      "Details": "PASSIVE: 50% support weapon damage boost.",
+      "Icon": "uixSvgIcon_ability_betastrike"
+    },
+    "DisplayParams": "ShowInMWTRay",
+    "ReqSkill": "Gunnery",
+    "ReqSkillLevel": 4,
+    "ActivationTime": "Passive",
+    "IsPrimaryAbility": false,
+    "EffectData": [
+      {
+        "Description": {
+          "Id": "StatusEffect-BetaStrike-DamageBoost",
+          "Name": "BETA STRIKE",
+          "Details": "[AMT] more damage with all support weapons attacks.",
+          "Icon": "uixSvgIcon_ability_betastrike"
+        },
+        "effectType": "StatisticEffect",
+        "nature": "Buff",
+        "durationData": {
+          "duration": -1,
+          "stackLimit": -1
+        },
+        "targetingData": {
+          "effectTriggerType": "Passive",
+          "effectTargetType": "Creator",
+          "showInTargetPreview": true,
+          "showInStatusPanel": true,
+          "hideApplicationFloatie": true
+        },
+        "statisticData": {
+          "statName": "DamagePerShot",
+          "operation": "Float_Multiply",
+          "modValue": "1.5",
+          "modType": "System.Single",
+          "additionalRules": "NotSet",
+          "targetCollection": "Weapon",
+          "targetWeaponCategory": "AntiPersonnel",
+          "targetWeaponType": "NotSet",
+          "targetAmmoCategory": "NotSet",
+          "targetWeaponSubType": "NotSet"
+        }
+      }
+    ]
+  }
