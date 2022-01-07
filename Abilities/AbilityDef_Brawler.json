@@ -5,7 +5,7 @@
 		"Details": "PASSIVE: Grants a 20% damage bonus to kicks, punches, and DFAs. Reduces self-damage from DFAs by 50%. Grants ability to kick twice.",
 		"Icon": "uixSvgIcon_ability_brawler"
 	},
-	"DisplayParams": "ShowInMWTRay",
+	"DisplayParams": "ShowInPilotToolTip",
 	"ReqSkill": "Guts",
 	"ReqSkillLevel": 6,
 	"ActivationTime": "Passive",

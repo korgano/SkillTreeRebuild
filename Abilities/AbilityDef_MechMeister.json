@@ -6,7 +6,7 @@
 		"Icon" : "UixSvgIcon_specialAbility_BWCL"
 	},
 	"ShortDesc" : "+ 25% Movement and + 25% Damage Reduction",
-    "DisplayParams" : "ShowInMWTRay",
+    "DisplayParams" : "ShowInPilotToolTip",
     "ReqSkill" : "Piloting",
 	"ReqSkillLevel" : 8,
 	"ActivationTime" : "Passive",

@@ -6,7 +6,7 @@
 		"Icon" : "uixSvgIcon_action_jump"
 	},
 	"ShortDesc" : "+10 dodge when enemies melee attack.",
-    "DisplayParams" : "ShowInMWTRay",
+    "DisplayParams" : "ShowInPilotToolTip",
     "ReqSkill" : "Piloting",
 	"ReqSkillLevel" : 6,
 	"ActivationTime" : "Passive",
@@ -56,5 +56,6 @@
                 "showInStatusPanel" : false
             }
         }
-	]
+	],
+    "IsPrimaryAbility" : true
 }

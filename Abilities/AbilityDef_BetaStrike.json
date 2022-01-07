@@ -9,7 +9,7 @@
     "ReqSkill": "Gunnery",
     "ReqSkillLevel": 4,
     "ActivationTime": "Passive",
-    "IsPrimaryAbility": false,
+    "IsPrimaryAbility": true,
     "EffectData": [
       {
         "Description": {

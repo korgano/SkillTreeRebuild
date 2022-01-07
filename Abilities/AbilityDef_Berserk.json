@@ -96,5 +96,5 @@
             }
         }
 	],
-	"IsPrimaryAbility" : "true"
+	"IsPrimaryAbility" : true
 }

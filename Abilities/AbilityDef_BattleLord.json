@@ -20,7 +20,7 @@
             "targetingData": {
                 "effectTriggerType": "OnActivation",
                 "effectTargetType": "Creator",
-                "showInStatusPanel": true
+                "showInStatusPanel": false
             },
             "effectType": "StatisticEffect",
             "Description": {
@@ -51,7 +51,7 @@
             "targetingData": {
                 "effectTriggerType": "OnActivation",
                 "effectTargetType": "Creator",
-                "showInStatusPanel": true
+                "showInStatusPanel": false
             },
             "effectType": "StatisticEffect",
             "Description": {
@@ -101,6 +101,5 @@
             }
         }
     ],
-    "IsPrimaryAbility": true,
-    "Priority": 8
+    "IsPrimaryAbility": true
 }

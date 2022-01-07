@@ -1,11 +1,11 @@
 {
 	"Description" : {
 		"Id" : "AbilityDef_ColdBlooded",
-		"Name" : "Cold Blooded",
+		"Name" : "COLD BLOODED",
 		"Details" : "PASSIVE: 'Harden your MechWarrior's mental fortitude to earn more Resolve per action.",
 		"Icon" : "uixSvgIcon_ability_coldblooded"
 	},
-    "DisplayParams" : "ShowInMWTRay",
+    "DisplayParams" : "ShowInPilotToolTip",
 	"ReqSkill" : "Guts",
 	"ReqSkillLevel" : 4,
 	"ActivationTime" : "Passive",
@@ -56,7 +56,6 @@
                 "targetWeaponSubType" : "NotSet"
             },
             "tagData" : null,
-            "floatieData" : null,
             "actorBurningData" : null,
             "vfxData" : null,
             "instantModData" : null,
