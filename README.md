@@ -1,7 +1,7 @@
 # SkillTreeRebuild
 A revamped skill tree for HBS BattleTech.
 
-Based on Abifilier and abilities by gnivler & ajkroeg/tbone, and with special thanks to yimjeric (Multi-Target on all Mechs) for demonstrating a better way to do skill tree changes.
+Based on Abifilier by gnivler & ajkroeg/tbone, abilities inspired by bloodydoves' BTA3062, and with special thanks to yimjeric (Multi-Target on all Mechs) for demonstrating a better way to do skill tree changes.
 
 Does **NOT** include any Resolverator code. Uses only Abilifier (master), which currently lacks that feature.
 

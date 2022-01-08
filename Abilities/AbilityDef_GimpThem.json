@@ -6,7 +6,7 @@
 		"Icon" : "uixSvgIcon_ability_gimpthem"
 	},
 	"ShortDesc" : "Hits Slow Movement",
-    "DisplayParams" : "ShowInMWTRay",
+    "DisplayParams" : "ShowInPilotToolTip",
     "ReqSkill" : "Tactics",
 	"ReqSkillLevel" : 8,
 	"ActivationTime" : "Passive",
@@ -31,7 +31,7 @@
                 "effectTargetType" : "Creator",
                 "showInTargetPreview" : false,
                 "showInStatusPanel" : false,
-                "hideApplicationFloatie" : true
+                "hideApplicationFloatie" : false
             },
             "floatieData" : {
                 "targetCollection" : "NotSet"
@@ -60,7 +60,7 @@
                 "effectTargetType" : "SingleTarget",
                 "showInTargetPreview" : true,
                 "showInStatusPanel" : true,
-                "hideApplicationFloatie" : false
+                "hideApplicationFloatie" : true
             },
             "statisticData" : {
                 "statName" : "WalkSpeed",
@@ -98,7 +98,7 @@
                 "effectTargetType" : "SingleTarget",
                 "showInTargetPreview" : false,
                 "showInStatusPanel" : false,
-                "hideApplicationFloatie" : false
+                "hideApplicationFloatie" : true
             },
             "statisticData" : {
                 "statName" : "RunSpeed",
@@ -113,5 +113,6 @@
                 "targetWeaponSubType" : "NotSet"
             }
         }
-	]
+	],
+    "IsPrimaryAbility" : true
 }

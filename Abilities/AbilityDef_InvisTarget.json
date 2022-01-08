@@ -5,7 +5,7 @@
 		"Details": "PASSIVE: This pilot's evasive charges are immune to being removed by sensor lock effects. Additionally, pilot gets +2 defense at all times.",
 		"Icon": "uixSvgIcon_ability_invistarget"
 	},
-	"DisplayParams": "ShowInMWTRay",
+	"DisplayParams": "ShowInPilotToolTip",
 	"ReqSkill": "Piloting",
 	"ReqSkillLevel": 8,
 	"ActivationTime": "Passive",
