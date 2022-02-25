@@ -1,0 +1,43 @@
+{
+	"StatusEffect-PotatoAccuracy": {
+		"TargetComponentTagMatch": [
+			"Potato_Gun"
+		]
+	},
+	"StatusEffect-ExtremeRange": {
+		"TargetComponentTagMatch": [
+			"range_extreme"
+		]
+	},
+	"StatusEffect-CloseRange": {
+		"TargetComponentTagMatch": [
+			"range_close"
+		]
+	},
+	"StatusEffect-StandardRange": {
+		"TargetComponentTagMatch": [
+			"range_standard"
+		]
+	},
+	"StatusEffect-LongRange": {
+		"TargetComponentTagMatch": [
+			"range_long"
+		]
+	},
+	"StatusEffect-VeryLongRange": {
+		"TargetComponentTagMatch": [
+			"range_very-long"
+		]
+	},
+	"StatusEffect-LongestRanges": {
+		"TargetComponentTagMatch": [
+			"range_very-long",
+			"range_extreme"
+		]
+	},
+	"StatusEffect-SquishScouts": {
+		"TargetComponentTagMatch": [
+			"unit_role_scout"
+		]
+	}
+}

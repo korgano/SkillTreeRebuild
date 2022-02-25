@@ -1,0 +1,83 @@
+{
+	"Description" : {
+		"Id" : "AbilityDef_MissileCounter",
+		"Name" : "ANTI-MISSILE COUNTERMEASURES",
+		"Details" : "PASSIVE: All units in this MechWarrior's lance take 50% less damage from missiles.",
+		"Icon" : "UixSvgIcon_specialAbility_BWCL"
+	},
+	"ShortDesc" : "50% Missile Damage Reduction.",
+    "DisplayParams" : "ShowInPilotToolTip",
+    "ReqSkill" : "Tactics",
+	"ReqSkillLevel" : 6,
+	"ActivationTime" : "Passive",
+	"EffectData" :
+	[
+		{
+            "Description" : {
+                "Id" : "StatusEffect-MissileDefence",
+                "Name" : "ANTI-MISSILE COUNTERMEASURES",
+                "Details" : "All lance units take [AMT] less damage from missiles.",
+                "Icon" : "uixSvgIcon_statusCrit"
+            },
+            "durationData" : {
+                "duration" : -1,
+                "stackLimit" : 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "AllLanceMates",
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : false
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Buff",
+            "statisticData" : {
+                "statName" : "DamageReductionMultiplierAll",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.5",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection": "Weapon",
+				"targetWeaponCategory": "Missile",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "StatusEffect-MissileDefence",
+                "Name" : "ANTI-MISSILE COUNTERMEASURES",
+                "Details" : "All lance units take [AMT] less damage from missiles.",
+                "Icon" : "uixSvgIcon_statusCrit"
+            },
+            "durationData" : {
+                "duration" : -1,
+                "stackLimit" : 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true,
+                "hideApplicationFloatie" : false
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Buff",
+            "statisticData" : {
+                "statName" : "DamageReductionMultiplierAll",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.5",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection": "Weapon",
+				"targetWeaponCategory": "Missile",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        }
+	],
+    "IsPrimaryAbility" : true
+}

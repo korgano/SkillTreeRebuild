@@ -1,0 +1,79 @@
+{
+	"Description": {
+		"Id": "AbilityDef_Boxer",
+		"Name": "BOXER",
+		"Details": "ACTION: Use superior piloting skills to deal 50% more stability damage with melee, while taking 25% less damage this turn. 3 turn cooldown.",
+		"Icon": "uixSvgIcon_ability_mechchecked"
+	},
+	"DisplayParams": "ShowInMWTRay",
+	"ReqSkill": "Piloting",
+	"ReqSkillLevel": 10,
+	"ActivationTime": "ConsumedByFiring",
+	"ActivationCooldown": 3,
+	"Targeting": "ActorSelf",
+	"EffectData": [
+		{
+            "durationData" : {
+                "duration" : -1,
+                "stackLimit" : 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnActivation",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-BOXER-IncreasedStabDmg",
+                "Name" : "INCREASED STABILITY DAMAGE",
+                "Details" : "This unit deals [AMT] additional melee stability damage.",
+                "Icon" : "UixSvgIcon_specialEquip_System"
+            },
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "Instability",
+                "operation" : "Float_Multiply",
+                "modValue" : "1.50",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "Weapon",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "Melee"
+            },
+            "nature" : "Buff"
+        },
+		{
+			"durationData": {
+				"duration": 2,
+				"ticksOnActivations": true,
+				"useActivationsOfTarget": true,
+				"stackLimit": 1
+			},
+			"targetingData": {
+				"effectTriggerType": "OnActivation",
+				"effectTargetType": "Creator",
+				"showInStatusPanel": true
+			},
+			"effectType": "StatisticEffect",
+			"Description": {
+				"Id": "AbilityDefGu10a_DR",
+				"Name": "Damage Reduction",
+				"Details": "All incoming damage reduced by 25% for 1 turn.",
+				"Icon": "guards"
+			},
+			"nature": "Buff",
+			"statisticData": {
+				"statName": "DamageReductionMultiplierAll",
+				"operation": "Float_Multiply",
+				"modValue": "0.75",
+				"modType": "System.Single"
+			}
+		}
+	],
+	"IsPrimaryAbility": true,
+	"Priority": 2
+}
