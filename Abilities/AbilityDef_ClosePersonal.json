@@ -6,7 +6,7 @@
 		"Icon" : "UixSvgIcon_specialAbility_BWCL"
 	},
 	"ShortDesc" : "+25% Support Weapon damage and +10% crit",
-    "DisplayParams" : "ShowInPilotToolTip",
+    "DisplayParams" : "ShowInMWTRay",
     "ReqSkill" : "Gunnery",
 	"ReqSkillLevel" : 4,
 	"ActivationTime" : "Passive",
@@ -60,7 +60,7 @@
                 "effectTargetType" : "Creator",
                 "showInTargetPreview" : false,
                 "showInStatusPanel" : false,
-                "hideApplicationFloatie" : false
+                "hideApplicationFloatie" : true
             },
             "effectType" : "StatisticEffect",
             "nature" : "Buff",

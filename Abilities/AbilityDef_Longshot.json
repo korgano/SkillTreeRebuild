@@ -6,7 +6,7 @@
 		"Icon" : "UixSvgIcon_specialAbility_BWCL"
 	},
 	"ShortDesc" : "+25% large range weapon damage and +10% crit",
-    "DisplayParams" : "ShowInPilotToolTip",
+    "DisplayParams" : "ShowInMWTRay",
     "ReqSkill" : "Gunnery",
 	"ReqSkillLevel" : 6,
 	"ActivationTime" : "Passive",
@@ -16,7 +16,7 @@
             "Description": {
                 "Id": "StatusEffect-LongRange",
                 "Name": "Damage Boost",
-                "Details": "+25% ",
+                "Details": "+25% damage on all long range weapons.",
                 "Icon": "uixSvgIcon_skullAtlas"
             },
 		"durationData": {
@@ -48,7 +48,7 @@
             "Description" : {
                 "Id" : "StatusEffect-LongRange",
                 "Name" : "Crit Boost",
-                "Details" : "This unit fights with an unstoppable drive, taking less damage and having a much higher Critical Hit chance.",
+                "Details" : "+10% boost to critical hit chance.",
                 "Icon" : "uixSvgIcon_statusCrit"
             },
             "durationData" : {
@@ -60,7 +60,7 @@
                 "effectTargetType" : "Creator",
                 "showInTargetPreview" : false,
                 "showInStatusPanel" : false,
-                "hideApplicationFloatie" : false
+                "hideApplicationFloatie" : true
             },
             "effectType" : "StatisticEffect",
             "nature" : "Buff",

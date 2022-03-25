@@ -1,83 +1,17 @@
 {
 	"Description" : {
 		"Id" : "AbilityDef_ScoutStomp",
-		"Name" : "SCOUT STOMP",
-		"Details" : "ACTION: Jam sensors on all scout 'Mechs within your detection radius. +2 Sensor Impaired for 2 turns, +30 heat in enemy units for 1 turn. 4 turn cooldown.",
+		"Name" : "One Ping Only",
+		"Details" : "ACTION: Locate all enemies within your detection radius. Generates 20 heat, 4 turn cooldown.",
 		"Icon" : "uixSvgIcon_ability_tarpre"
 	},
     "DisplayParams" : "ShowInMWTRay",
 	"ReqSkill" : "Tactics",
 	"ReqSkillLevel" : 6,
 	"ActivationTime" : "ConsumedByFiring",
-	"Targeting" : "ActorSelf",
+	"Targeting" : "ActiveProbe",
     "ActivationCooldown" : 4,
-	"EffectData": [
-		{
-			"durationData": {
-				"duration": 2,
-				"ticksOnActivations": true,
-				"useActivationsOfTarget": true,
-				"stackLimit": 1
-			},
-			"targetingData": {
-				"effectTriggerType": "OnActivation",
-				"effectTargetType": "EnemiesWithinRange",
-                "targetCollection": "NotSet"
-			},
-			"effectType": "StatisticEffect",
-			"Description": {
-				"Id": "StatusEffect-SquishScouts",
-				"Name" : "SENSORS IMPAIRED",
-                "Details" : "[AMT] Difficulty to all of this unit's attacks until its next activation.",
-                "Icon" : "uixSvgIcon_status_sensorsImpaired"
-			},
-			"nature" : "Debuff",
-            "statisticData" : {
-                "appliesEachTick" : false,
-                "effectsPersistAfterDestruction" : false,
-                "statName" : "AccuracyModifier",
-                "operation" : "Float_Add",
-                "modValue" : "2.0",
-                "modType" : "System.Single",
-                "additionalRules" : "NotSet",
-                "targetCollection" : "NotSet",
-                "targetWeaponCategory" : "NotSet",
-                "targetWeaponType" : "NotSet",
-                "targetAmmoCategory" : "NotSet",
-                "targetWeaponSubType" : "NotSet"
-            },
-            "tagData" : null,
-            "actorBurningData" : null,
-            "vfxData" : null,
-            "instantModData" : null,
-            "poorlyMaintainedEffectData" : null
-        },
-        {
-            "durationData": {
-                "duration": 1,
-                "stackLimit": 1
-            },
-            "targetingData": {
-                "effectTriggerType": "OnActivation",
-				"effectTargetType": "EnemiesWithinRange",
-                "targetCollection": "NotSet",
-				"showInStatusPanel": true
-            },
-            "effectType": "StatisticEffect",
-            "Description": {
-                "Id": "StatusEffect-SquishScouts",
-                "Name": "Fry Electronics",
-                "Details": "+30 Heat generated.",
-                "Icon": "snowflake"
-            },
-            "nature": "Buff",
-            "statisticData": {
-                "statName": "HeatSinkCapacity",
-                "operation": "Int_Add",
-                "modValue": "-30",
-                "modType": "System.Int32"
-            }
-        }
-	],
+    "FloatParam1": 2000.0,
+    "FloatParam2": 20.0,
 	"IsPrimaryAbility" : true
 }

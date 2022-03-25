@@ -71,8 +71,8 @@
             "targetingData" : {
                 "effectTriggerType": "OnActivation",
 				"effectTargetType": "Creator",
-                "showInTargetPreview" : true,
-                "showInStatusPanel" : true,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
                 "hideApplicationFloatie" : false
             },
             "statisticData" : {
@@ -108,7 +108,7 @@
                 "forcePathRebuild" : false,
                 "forceVisRebuild" : false,
                 "showInTargetPreview" : false,
-                "showInStatusPanel" : true
+                "showInStatusPanel" : false
             },
             "effectType" : "StatisticEffect",
             "Description" : {
@@ -147,7 +147,7 @@
                 "effectTargetsCreator": true,
                 "effectTriggerType": "OnActivation",
                 "effectTargetType": "Creator",
-                "showInStatusPanel": true
+                "showInStatusPanel": false
             },
             "effectType": "StatisticEffect",
             "Description": {

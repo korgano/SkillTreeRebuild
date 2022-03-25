@@ -1,0 +1,50 @@
+{
+	"Description" : {
+		"Id" : "AbilityDef_JumpMaven",
+		"Name" : "JUMP MAVEN",
+		"Details" : "PASSIVE: Veteran MechWarriors receive a 20% boost to jump distance.",
+		"Icon" : "uixSvgIcon_action_jump"
+	},
+	"ShortDesc" : "+20% jump distance boost.",
+    "DisplayParams" : "ShowInMWTRay",
+	"ActivationTime" : "Passive",
+    "EffectData": [
+        {
+            "durationData" : {
+                "duration" : -1,
+                "ticksOnActivations" : false,
+                "useActivationsOfTarget" : false,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : -1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-Jump-DistanceBoost",
+                "Name" : "JUMP BOOSTER",
+                "Details" : "Increases the distance this unit can travel when jumping by [AMT].",
+                "Icon" : "uixSvgIcon_action_jump"
+            },
+            "nature" : "Buff",
+            "statisticData" : {
+                "statName" : "JumpDistanceMultiplier",
+                "operation" : "Float_Add",
+                "modValue" : "0.2",
+                "modType" : "System.Single"
+            }
+        }
+	]
+}

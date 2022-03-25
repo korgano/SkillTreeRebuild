@@ -3,12 +3,12 @@
 		"Id" : "AbilityDef_MissileCounter",
 		"Name" : "ANTI-MISSILE COUNTERMEASURES",
 		"Details" : "PASSIVE: All units in this MechWarrior's lance take 50% less damage from missiles.",
-		"Icon" : "UixSvgIcon_specialAbility_BWCL"
+		"Icon" : "uixSvgIcon_ability_AMS"
 	},
 	"ShortDesc" : "50% Missile Damage Reduction.",
-    "DisplayParams" : "ShowInPilotToolTip",
+    "DisplayParams" : "ShowInMWTRay",
     "ReqSkill" : "Tactics",
-	"ReqSkillLevel" : 6,
+	"ReqSkillLevel" : 4,
 	"ActivationTime" : "Passive",
 	"EffectData" :
 	[
@@ -16,15 +16,14 @@
             "Description" : {
                 "Id" : "StatusEffect-MissileDefence",
                 "Name" : "ANTI-MISSILE COUNTERMEASURES",
-                "Details" : "All lance units take [AMT] less damage from missiles.",
-                "Icon" : "uixSvgIcon_statusCrit"
+                "Details" : "All lance units take [AMT] less damage from missiles."
             },
             "durationData" : {
                 "duration" : -1,
                 "stackLimit" : 1
             },
             "targetingData" : {
-                "effectTriggerType" : "Passive",
+                "effectTriggerType" : "OnActivation",
                 "effectTargetType" : "AllLanceMates",
                 "showInTargetPreview" : true,
                 "showInStatusPanel" : false,
@@ -49,15 +48,14 @@
             "Description" : {
                 "Id" : "StatusEffect-MissileDefence",
                 "Name" : "ANTI-MISSILE COUNTERMEASURES",
-                "Details" : "All lance units take [AMT] less damage from missiles.",
-                "Icon" : "uixSvgIcon_statusCrit"
+                "Details" : "All lance units take [AMT] less damage from missiles."
             },
             "durationData" : {
                 "duration" : -1,
                 "stackLimit" : 1
             },
             "targetingData" : {
-                "effectTriggerType" : "Passive",
+                "effectTriggerType" : "OnActivation",
                 "effectTargetType" : "Creator",
                 "showInTargetPreview" : true,
                 "showInStatusPanel" : true,

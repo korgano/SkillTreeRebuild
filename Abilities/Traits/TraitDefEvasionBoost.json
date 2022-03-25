@@ -1,0 +1,100 @@
+{
+	"Description" : {
+		"Id" : "TraitDefEvasionBoost",
+		"Name" : "",
+		"Details" : "",
+		"Icon" : ""
+	},
+	"Type" : "EvasionCap",
+	"ShortDesc" : "+2 Hit Defense, +2 Evasion",
+    "DisplayParams" : "ShowInPilotToolTip",
+	"ActivationTime" : "Passive",
+	"EffectData" : [
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": true
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect_DefenseBonus",
+                "Name": "Ghost Defense",
+                "Details": "This pilot has a +2 defense against being hit by any attack.",
+                "Icon": "uixSvgIcon_ability_invistarget"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "ToHitThisActor",
+                "operation": "Float_Add",
+                "modValue": "2.0",
+                "modType": "System.Single",
+				"targetCollection": "Weapon"
+            }
+        },
+        {
+			"durationData": {
+				"duration": 2,
+				"ticksOnActivations": true,
+				"useActivationsOfTarget": true,
+				"ticksOnEndOfRound": false,
+				"ticksOnMovements": false,
+				"stackLimit": 1,
+				"clearedWhenAttacked": false
+			},
+			"targetingData": {
+				"effectTriggerType": "OnActivation",
+				"effectTargetType": "Creator"
+			},
+			"effectType": "StatisticEffect",
+			"Description": {
+				"Id": "StatusEffect-EvasionBoost",
+				"Name": "EVASIVE MOVE",
+				"Details": "This unit can have up to 2 extra evasive charges from movement.",
+				"Icon": "uixSvgIcon_ability_phantom"
+			},
+			"statisticData": {
+				"statName": "MaxEvasivePips",
+				"operation": "Int_Add",
+				"modValue": "2",
+				"modType": "System.Int32"
+			},
+			"nature": "Buff"
+		},
+		{
+			"durationData": {
+				"duration": 2,
+				"ticksOnActivations": true,
+				"useActivationsOfTarget": true,
+				"ticksOnEndOfRound": false,
+				"ticksOnMovements": false,
+				"stackLimit": 1,
+				"clearedWhenAttacked": false
+			},
+			"targetingData": {
+				"effectTriggerType": "OnActivation",
+				"effectTargetType": "Creator",
+				"showInStatusPanel": true
+			},
+			"effectType": "StatisticEffect",
+			"Description": {
+				"Id": "StatusEffect-EvasionBoostTick",
+				"Name": "EVASIVE MOVE",
+				"Details": "This unit generates 2 extra EVASIVE charges from movement actions.",
+				"Icon": "lv_static"
+			},
+			"statisticData": {
+				"statName": "EvasivePipsGainedAdditional",
+				"operation": "Int_Add",
+				"modValue": "2",
+				"modType": "System.Int32"
+			},
+			"nature": "Buff"
+		}
+    ]
+}

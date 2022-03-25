@@ -30,15 +30,14 @@
         ],
         [
             "TraitDefWeaponHit8",
-            "AbilityDef_BreachShot",
+            "AbilityDef_Overclock",
             "AbilityDef_TargetFiring"		
         ],
         [
             "TraitDefWeaponHit9"
         ],
         [
-            "TraitDefWeaponHit10",
-            "AbilityDef_Overclock"
+            "TraitDefWeaponHit10"            
         ]
     ],
     "PilotingSkills" :[
@@ -57,33 +56,37 @@
             "AbilityDef_SureFooting"
         ],
         [
-            "TraitDefMeleeHit5"
+            "TraitDefMeleeHit5",
+            "TraitDefEvasiveChargeAddOne"
         ],
         [
             "AbilityDef_DodgeMaster",
             "AbilityDef_JumpMaven",
             "TraitDefMeleeHit6",
-            "TraitDefEvasiveChargeAddOne"
+            
         ],
         [
             "TraitDefSprintIncrease20",
-            "TraitDefMeleeHit7"
+            "TraitDefMeleeHit7",
+            "TraitDefEvasiveChargeAddTwo"
         ],
         [
             "TraitDefMeleeHit8",
             "TraitDefUnsteadySet80",
             "AbilityDef_MechMeister",
-            "AbilityDef_Ghost"
+            "AbilityDef_Boxer"
         ],
         [
-            "TraitDefEvasiveChargeAddTwo",
-            "TraitDefMeleeHit9"
+            
+            
+            "TraitDefMeleeHit9",
+            "TraitDefEvasionBoost"
+
         ],
         [
             "TraitDefMeleeHit10",
-            "TraitDefDFASelfDmgReduction",
-            "AbilityDef_Boxer"
-
+            "TraitDefMeleeHit10b",
+            "TraitDefDFASelfDmgReduction"
         ]
     ],
     "GutsSkills" :[
@@ -130,6 +133,7 @@
         [        ],
         [
             "AbilityDef_BlindShot",
+            "AbilityDef_MissileCounter",
             "TraitDefMinRangeReduce45"
         ],
         [
@@ -137,7 +141,7 @@
         ],
         [
             "AbilityDef_ScoutStomp",
-            "AbilityDef_MissileCounter",
+            "AbilityDef_GimpThem",
             "TraitDefIndirectReduceTwo"
         ],
         [
@@ -145,14 +149,13 @@
         ],
         [
             "AbilityDef_MasterTac",
-            "AbilityDef_GimpThem"		
+            "AbilityDef_NetAttack"
         ],
         [
             "TraitDefCalledShotMaster"
         ],
         [
-            "TraitDefIndirectReduceThree",
-            "AbilityDef_NetAttack"
+            "TraitDefIndirectReduceThree"
         ]
     ],
 }

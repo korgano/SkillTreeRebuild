@@ -5,7 +5,7 @@
 		"Details" : "PASSIVE: Gain a +50% boost to all support weapon range brackets, as well as -20% heat from support weapons",
 		"Icon" : "uixSvgIcon_ability_knifefight"
 	},
-    "DisplayParams" : "ShowInPilotToolTip",
+    "DisplayParams" : "ShowInMWTRay",
 	"ReqSkill" : "Gunnery",
 	"ReqSkillLevel" : 4,
 	"ActivationTime": "Passive",
@@ -20,13 +20,13 @@
                 "effectTriggerType": "Passive",
                 "effectTargetType": "Creator",
                 "showInTargetPreview": false,
-                "showInStatusPanel": true
+                "showInStatusPanel": false
             },
             "effectType": "StatisticEffect",
             "Description": {
                 "Id": "StatusEffect-CloseRange",
                 "Name": "Knife Fighter",
-                "Details": "The short and medium range brackets on this mech's support weapons are increased by 33% and its support weapon damage is increased by 10%.",
+                "Details": "The short and medium range brackets on this mech's support weapons are increased by 50% and its support weapon damage is increased by 10%.",
                 "Icon": "uixSvgIcon_ability_knifefight"
             },
             "nature": "Buff",
@@ -57,7 +57,7 @@
             "Description": {
                 "Id": "StatusEffect-CloseRange",
                 "Name": "Medium Range Increase",
-                "Details": "The Medium range brackets on this mech's support weapons are increased by 33%.",
+                "Details": "The Medium range brackets on this mech's support weapons are increased by 50%.",
                 "Icon": "uixSvgIcon_ability_knifefight"
             },
             "nature": "Buff",
@@ -88,14 +88,14 @@
             "Description": {
                 "Id": "StatusEffect-CloseRange",
                 "Name": "Medium Range Increase",
-                "Details": "The Medium range brackets on this mech's support weapons are increased by 33%.",
+                "Details": "The Medium range brackets on this mech's support weapons are increased by 50%.",
                 "Icon": "uixSvgIcon_ability_knifefight"
             },
             "nature": "Buff",
             "statisticData": {
                 "statName": "LongRange",
                 "operation": "Float_Multiply",
-                "modValue": "0.8",
+                "modValue": "1.5",
                 "modType": "System.Single",
 				"targetAmmoCategory": "NotSet",
 				"targetCollection": "Weapon",
@@ -125,6 +125,36 @@
             "statisticData": {
 				"modType": "System.Single",
 				"modValue": "1.1",
+				"operation": "Float_Multiply",
+				"statName": "DamagePerShot",
+				"targetAmmoCategory": "NotSet",
+				"targetCollection": "Weapon",
+				"targetWeaponCategory": "NotSet",
+				"targetWeaponSubType": "NotSet",
+				"targetWeaponType": "NotSet"
+			}
+        },
+        {
+            "durationData" : {
+                "duration" : -1,
+                "stackLimit" : -1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "Creator",
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-CloseRange",
+                "Name" : "Support Weapon Heat Reduction",
+                "Details" : "20% reduction in heat generation.",
+                "Icon" : "uixSvgIcon_ability_knifefight"
+            },
+            "nature" : "Buff",
+            "statisticData": {
+				"modType": "System.Single",
+				"modValue": ".8",
 				"operation": "Float_Multiply",
 				"statName": "HeatGenerated",
 				"targetAmmoCategory": "NotSet",

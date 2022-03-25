@@ -64,8 +64,8 @@
             "targetingData" : {
                 "effectTriggerType": "OnActivation",
 				"effectTargetType": "Creator",
-                "showInTargetPreview" : true,
-                "showInStatusPanel" : true,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
                 "hideApplicationFloatie" : true
             },
             "effectType" : "StatisticEffect",

@@ -2,7 +2,7 @@
 	"Description" : {
 		"Id" : "AbilityDef_HunkerDown",
 		"Name" : "HUNKER DOWN",
-		"Details" : "ACTION: Activate in order to gain a flat 25% damage reduction regardless of cover or positioning for all friendly units. The DR lasts for 2 turns. 4 turn cooldown.",
+		"Details" : "ACTION: Activate in order to gain a flat 25% damage reduction regardless of cover or positioning for all Lance units. The DR lasts for 2 turns. 4 turn cooldown.",
 		"Icon" : "uixSvgIcon_ability_defformation"
 	},
     "DisplayParams" : "ShowInMWTRay",

@@ -33,7 +33,7 @@
             },
             "statisticData" : {
                 "statName" : "StructureDamagePerShot",
-                "operation" : "Float_Multiply",
+                "operation" : "Float_Add",
                 "modValue" : "5",
                 "modType" : "System.Single",
                 "targetCollection" : "Weapon"
@@ -60,7 +60,7 @@
             },
             "statisticData" : {
                 "statName" : "StructureDamagePerShot",
-                "operation" : "Float_Multiply",
+                "operation" : "Float_Add",
                 "modValue" : "5",
                 "modType" : "System.Single",
                 "targetCollection" : "Weapon"

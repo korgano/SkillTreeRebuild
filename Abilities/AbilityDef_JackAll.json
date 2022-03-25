@@ -6,7 +6,7 @@
 		"Icon" : "UixSvgIcon_specialAbility_BWCL"
 	},
 	"ShortDesc" : "+25% standard range weapon damage and +10% crit",
-    "DisplayParams" : "ShowInPilotToolTip",
+    "DisplayParams" : "ShowInMWTRay",
     "ReqSkill" : "Gunnery",
 	"ReqSkillLevel" : 6,
 	"ActivationTime" : "Passive",
@@ -16,8 +16,8 @@
             "Description": {
                 "Id": "StatusEffect-StandardRange",
                 "Name": "Damage Boost",
-                "Details": "+25% ",
-                "Icon": "uixSvgIcon_skullAtlas"
+                "Details": "+25% damage on all standard range weapons.",
+                "Icon": "uixSvgIcon_ability_jack"
             },
 		"durationData": {
                 "duration": 1,
@@ -48,7 +48,7 @@
             "Description" : {
                 "Id" : "StatusEffect-StandardRange",
                 "Name" : "Crit Boost",
-                "Details" : "This unit fights with an unstoppable drive, taking less damage and having a much higher Critical Hit chance.",
+                "Details" : "+10% Critical Hit chance.",
                 "Icon" : "uixSvgIcon_statusCrit"
             },
             "durationData" : {
@@ -60,7 +60,7 @@
                 "effectTargetType" : "Creator",
                 "showInTargetPreview" : false,
                 "showInStatusPanel" : false,
-                "hideApplicationFloatie" : false
+                "hideApplicationFloatie" : true
             },
             "effectType" : "StatisticEffect",
             "nature" : "Buff",

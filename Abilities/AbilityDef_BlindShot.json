@@ -6,7 +6,7 @@
 		"Icon" : "UixSvgIcon_specialAbility_BWCL"
 	},
 	"ShortDesc" : "+1 Support Weapon Aim and +[AMT] Sensor Impaired",
-    "DisplayParams" : "ShowInPilotToolTip",
+    "DisplayParams" : "ShowInMWTRay",
     "ReqSkill" : "Tactics",
 	"ReqSkillLevel" : 4,
 	"ActivationTime" : "Passive",
@@ -64,7 +64,7 @@
                 "forcePathRebuild" : false,
                 "forceVisRebuild" : false,
                 "showInTargetPreview" : true,
-                "showInStatusPanel" : true
+                "showInStatusPanel" : false
             },
             "effectType" : "StatisticEffect",
             "Description" : {

@@ -18,14 +18,13 @@
 			"targetingData": {
 				"effectTriggerType": "Passive",
 				"effectTargetType": "Creator",
-				"showInStatusPanel": true
+				"showInStatusPanel": false
 			},
 			"effectType": "StatisticEffect",
 			"Description": {
 				"Id": "AbilityDefMissile_Evasion",
 				"Name": "Missile Evasion ignore",
-				"Details": "Missile attacks ignore 2 evasion.",
-				"Icon": "winchester"
+				"Details": "Missile attacks ignore 2 evasion."
 			},
 			"nature": "Buff",
 			"statisticData": {
@@ -47,8 +46,7 @@
             "Description": {
                 "Id": "StatusEffect-Missile Accuracy",
                 "Name": "Missileer",
-                "Details": "+1 Accuracy",
-                "Icon": "uixSvgIcon_skullAtlas"
+                "Details": "+1 Accuracy"
             },
 		"durationData": {
                 "duration": 1,

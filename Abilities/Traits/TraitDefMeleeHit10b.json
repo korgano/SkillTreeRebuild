@@ -1,0 +1,38 @@
+{
+	"Description" : {
+		"Id" : "TraitDefMeleeHit10b",
+		"Name" : "",
+		"Details" : "",
+		"Icon" : ""
+	},
+	"Type" : "EvasionCap",
+	"ShortDesc" : "Sensor Lock No Longer Strips Evasion",
+    "DisplayParams" : "ShowInPilotToolTip",
+	"ActivationTime" : "Passive",
+	"EffectData" : [
+        		{
+			"durationData": {
+				"duration": -1
+			},
+			"targetingData": {
+				"effectTriggerType": "Passive",
+				"effectTargetType": "Creator",
+                "showInStatusPanel": true
+			},
+			"effectType": "StatisticEffect",
+			"Description": {
+				"Id": "StatusEffect_SafeEvasive",
+				"Name": "Evasion Immunity",
+				"Details": "This unit is immune to sensor lock.",
+				"Icon": "uixSvgIcon_ability_invistarget"
+			},
+			"statisticData": {
+				"statName": "EvasiveSafeFromSensorLock",
+				"operation": "Set",
+				"modValue": "true",
+				"modType": "System.Boolean"
+			},
+			"nature": "Buff"
+		}
+    ]
+}

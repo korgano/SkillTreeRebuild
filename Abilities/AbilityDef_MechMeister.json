@@ -6,7 +6,7 @@
 		"Icon" : "UixSvgIcon_specialAbility_BWCL"
 	},
 	"ShortDesc" : "+ 25% Movement and + 25% Damage Reduction",
-    "DisplayParams" : "ShowInPilotToolTip",
+    "DisplayParams" : "ShowInMWTRay",
     "ReqSkill" : "Piloting",
 	"ReqSkillLevel" : 8,
 	"ActivationTime" : "Passive",
@@ -15,7 +15,7 @@
 		{
             "Description" : {
                 "Id" : "StatusEffect-BWCL-WalkSpeed",
-                "Name" : "BLACK WIDOW COMMAND LANCE",
+                "Name" : "MECH MEISTER",
                 "Details" : "Experienced MechWarriors recieve bonus movement speed and take [AMT] less damage.",
                 "Icon" : "UixSvgIcon_specialAbility_BWCL"
             },
@@ -81,8 +81,8 @@
         {
             "Description" : {
                 "Id" : "StatusEffect-BWCL-DamageReduction",
-                "Name" : "BLACK WIDOW COMMAND LANCE",
-                "Details" : "Black Widow Company units have bonus movement speed and a vastly increased Critical Hit chance, and they take [AMT] less damage.",
+                "Name" : "MECH MEISTER",
+                "Details" : "Experienced MechWarriors recieve bonus movement speed and take [AMT] less damage.",
                 "Icon" : "UixSvgIcon_specialAbility_BWCL"
             },
             "effectType" : "StatisticEffect",

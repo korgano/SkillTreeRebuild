@@ -7,7 +7,7 @@
     },
     "DisplayParams": "ShowInMWTRay",
     "ReqSkill": "Gunnery",
-    "ReqSkillLevel": 10,
+    "ReqSkillLevel": 8,
     "ActivationTime": "ConsumedByFiring",
     "ActivationCooldown": 3,
     "Targeting": "ActorSelf",
@@ -116,7 +116,7 @@
                 "effectTargetsCreator": true,
                 "effectTriggerType": "OnActivation",
                 "effectTargetType": "Creator",
-                "showInStatusPanel": true
+                "showInStatusPanel": false
             },
             "effectType": "StatisticEffect",
             "Description": {
