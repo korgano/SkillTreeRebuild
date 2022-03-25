@@ -1,0 +1,17 @@
+{
+	"Description" : {
+		"Id" : "AbilityDef_ScoutStomp",
+		"Name" : "One Ping Only",
+		"Details" : "ACTION: Locate all enemies within your detection radius. Generates 20 heat, 4 turn cooldown.",
+		"Icon" : "uixSvgIcon_ability_tarpre"
+	},
+    "DisplayParams" : "ShowInMWTRay",
+	"ReqSkill" : "Tactics",
+	"ReqSkillLevel" : 6,
+	"ActivationTime" : "ConsumedByFiring",
+	"Targeting" : "ActiveProbe",
+    "ActivationCooldown" : 4,
+    "FloatParam1": 2000.0,
+    "FloatParam2": 20.0,
+	"IsPrimaryAbility" : true
+}

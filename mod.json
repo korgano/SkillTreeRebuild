@@ -1,8 +1,9 @@
 {
     "Name": "Skill Tree Rebuild",
-    "Version": "0.0.1",
+    "Version": "0.1.0",
     "Enabled": true,
     "Author": "Kregano",
+    "Website": "https://github.com/korgano/SkillTreeRebuild",
     "Description": "A mod to add new skills to MechWarrior skill trees, using Abilifier-Master.",
     "CustomResourceTypes": ["CustomSVGIcon"],		
 
@@ -10,16 +11,24 @@
 
     "Settings": {
         "enableTrace": true,
-        "enableLog": true,
-        "usePopUpsForAbilityDesc": false,
-        "debugXP": true,
-        "extraFirstTierAbilities": 2,
-        "extraAbilities": 5,
-        "extraAbilitiesAllowedPerSkill": 1,
-        "cleanUpCombatUI": true,
-        "nonTreeAbilities": 1,
-        "skillLockThreshold":8,
-        "usingCACabilitySelector":false
+		"enableLog": true,
+		"usePopUpsForAbilityDesc": false,
+		"debugXP": true,
+		"enableResolverator": false,
+		"resolveGenTacticsMult": 0.02,
+		"resolveCostTacticsMult": 0,
+		"resolveGenBaseMult": 1.0,
+		"resolveCostBaseMult": 1.0,
+		"extraFirstTierAbilities": 2,
+		"extraAbilities": 3,
+		"extraAbilitiesAllowedPerSkill": 1,
+		"nonTreeAbilities": 3,
+		"cleanUpCombatUI": true,
+		"skillLockThreshold": 8,
+		"usingCACabilitySelector": false,
+		"usingHumanResources": false,
+		"disableCalledShotExploit": false,
+		"proceduralTagCleanup": {}
         },
     
         "Manifest": [

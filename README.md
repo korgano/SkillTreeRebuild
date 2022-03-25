@@ -24,10 +24,6 @@ Inside the folder, make a SimGameConstants.json file with the Progression block 
 
 Sure, just give credit to all involved.
 
--Why did you include all those ability files?
-
-To help people by providing reference material, and backups for the Abilifier provided assets, which aren't available on Github. Note: I do **NOT** have access to the original icons for those abilities.
-
 -Why did you rename the AbilityDefs from the Abilifier team?
 
 To make it easier for me to figure out what was where in the skill tree, plus with abilities earned every 2 levels, including the skill level in the name wasn't accurate anymore.

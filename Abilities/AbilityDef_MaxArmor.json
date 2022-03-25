@@ -1,0 +1,88 @@
+{
+	"Description": {
+		"Id": "AbilityDef_MaxArmor",
+		"Name": "MAXIMUM ARMOR",
+		"Details": "ACTION: Sacrifice 50% speed to gain 75% damage reduction from all sources.",
+		"Icon": "punch-blast"
+	},
+	"DisplayParams": "ShowInMWTRay",
+	"ReqSkill": "Guts",
+	"ReqSkillLevel": 10,
+	"ActivationTime": "ConsumedByFiring",
+	"ActivationCooldown": 4,
+	"Targeting": "ActorSelf",
+	"EffectData": [
+		{
+            "Description" : {
+                "Id" : "StatusEffect-BWCL-WidowsKissRunSpeed",
+                "Name" : "MOVEMENT SLOWED",
+                "Details" : "Maximum Armor reduces speed by 50%.",
+                "Icon" : "uixSvgIcon_ability_gimpthem"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Debuff",
+            "durationData" : {
+                "duration" : 2,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType": "OnActivation",
+				"effectTargetType": "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : true
+            },
+            "statisticData" : {
+                "statName" : "RunSpeed",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.5",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        },
+		{
+            "Description" : {
+                "Id" : "StatusEffect-Victoria-Aura2",
+                "Name" : "MAXIMUM ARMOR",
+                "Details" : "This unit takes [AMT] less damage.",
+                "Icon" : "uixSvgIcon_statusCrit"
+            },
+            "durationData" : {
+                "duration" : 2,
+                "stackLimit" : 1
+            },
+            "targetingData" : {
+                "effectTriggerType": "OnActivation",
+				"effectTargetType": "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : true
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Buff",
+            "statisticData" : {
+                "statName" : "DamageReductionMultiplierAll",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.75",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        }
+	],
+	"IsPrimaryAbility": true
+}

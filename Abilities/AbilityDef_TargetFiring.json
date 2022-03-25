@@ -2,7 +2,7 @@
 	"Description" : {
 		"Id" : "AbilityDef_TargetFiring",
 		"Name" : "TARGETED AND FIRING",
-		"Details" : "PASSIVE: Extreme range weapons bypass armor and deal structure damage to the target.",
+		"Details" : "PASSIVE: Very long and extreme range weapons bypass armor and deal structure damage to the target.",
 		"Icon" : "UixSvgIcon_specialAbility_HiredGuns"
 	},
 	"ShortDesc" : "Hits Bypass Armor",
@@ -14,79 +14,56 @@
 	[
 		{
             "Description" : {
-                "Id" : "StatusEffect-BH-PerfectAimStructureDamage",
-                "Name" : "TARGETED AND FIRING",
-                "Details" : "Extreme range weapons bypass armor and deal structure damage to the target.",
-                "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
+                "Id" : "StatusEffect-VeryLongRange",
+                "Name" : "ARMOR BYPASS",
+                "Details" : "Very long and extreme range weapons bypass armor and deal structure damage to the target."
             },
             "effectType" : "StatisticEffect",
             "nature" : "Buff",
             "durationData" : {
-                "duration" : -1
+                "duration" : -1,
+                "stackLimit": 1
             },
             "targetingData" : {
                 "effectTriggerType" : "Passive",
                 "effectTargetType" : "Creator",
                 "showInTargetPreview" : false,
                 "showInStatusPanel" : false,
-                "hideApplicationFloatie" : true
+                "hideApplicationFloatie" : false
             },
             "statisticData" : {
                 "statName" : "StructureDamagePerShot",
                 "operation" : "Float_Add",
-                "modValue" : "5.0",
+                "modValue" : "5",
                 "modType" : "System.Single",
                 "targetCollection" : "Weapon"
             }
         },
-		{
+        {
             "Description" : {
-                "Id" : "StatusEffect-BH-PerfectAimAttackFloatie",
-                "Name" : "PERFECT AIM",
-                "Details" : "PERFECT AIM",
-                "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
+                "Id" : "StatusEffect-ExtremeRange",
+                "Name" : "ARMOR BYPASS",
+                "Details" : "Very long and extreme range weapons bypass armor and deal structure damage to the target."
             },
-            "effectType" : "FloatieEffect",
+            "effectType" : "StatisticEffect",
             "nature" : "Buff",
             "durationData" : {
-                "duration" : 1,
-                "stackLimit" : 0,
-                "triggerLimit" : 1
+                "duration" : -1,
+                "stackLimit": 1
             },
             "targetingData" : {
-                "effectTriggerType" : "OnWeaponFire",
+                "effectTriggerType" : "Passive",
                 "effectTargetType" : "Creator",
                 "showInTargetPreview" : false,
                 "showInStatusPanel" : false,
-                "hideApplicationFloatie" : true
+                "hideApplicationFloatie" : false
             },
-            "floatieData" : {
-                "targetWeaponSubType" : "range_extreme"
-            }
-        },
-		{
-            "Description" : {
-                "Id" : "StatusEffect-BH-PerfectAimHitFloatie",
-                "Name" : "ARMOR BYPASSED",
-                "Details" : "ARMOR BYPASSED",
-                "Icon" : "UixSvgIcon_specialAbility_BWCL"
-            },
-            "effectType" : "FloatieEffect",
-            "nature" : "Debuff",
-            "durationData" : {
-                "duration" : 1,
-                "stackLimit" : 0,
-                "triggerLimit" : 1
-            },
-            "targetingData" : {
-                "effectTriggerType" : "OnHit",
-                "effectTargetType" : "SingleTarget",
-                "showInTargetPreview" : false,
-                "showInStatusPanel" : false,
-                "hideApplicationFloatie" : true
-            },
-            "floatieData" : {
-                "targetCollection" : "range_extreme"
+            "statisticData" : {
+                "statName" : "StructureDamagePerShot",
+                "operation" : "Float_Add",
+                "modValue" : "5",
+                "modType" : "System.Single",
+                "targetCollection" : "Weapon"
             }
         }
 	]

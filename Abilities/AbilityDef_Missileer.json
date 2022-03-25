@@ -1,0 +1,77 @@
+{
+	"Description": {
+		"Id": "AbilityDef_Missileer",
+		"Name": "MISSILEER",
+		"Details": "PASSIVE: Missiles gain +1 accuracy and ignore 2 evasion.",
+		"Icon": "uixSvgIcon_weapon_Missile"
+	},
+	"DisplayParams": "ShowInMWTRay",
+	"ReqSkill" : "Gunnery",
+	"ReqSkillLevel" : 4,
+	"ActivationTime": "Passive",
+	"EffectData": [
+		{
+			"durationData": {
+				"duration": -1,
+				"stackLimit": -1
+			},
+			"targetingData": {
+				"effectTriggerType": "Passive",
+				"effectTargetType": "Creator",
+				"showInStatusPanel": false
+			},
+			"effectType": "StatisticEffect",
+			"Description": {
+				"Id": "AbilityDefMissile_Evasion",
+				"Name": "Missile Evasion ignore",
+				"Details": "Missile attacks ignore 2 evasion."
+			},
+			"nature": "Buff",
+			"statisticData": {
+				"appliesEachTick": false,
+				"effectsPersistAfterDestruction": false,
+				"statName": "EvasivePipsIgnored",
+				"operation": "Float_Add",
+				"modValue": "2.0",
+				"modType": "System.Single",
+				"additionalRules": "NotSet",
+				"targetCollection": "Weapon",
+				"targetWeaponCategory": "Missile",
+				"targetWeaponType": "NotSet",
+				"targetAmmoCategory": "NotSet",
+				"targetWeaponSubType": "NotSet"
+			}
+		},
+        {
+            "Description": {
+                "Id": "StatusEffect-Missile Accuracy",
+                "Name": "Missileer",
+                "Details": "+1 Accuracy"
+            },
+		"durationData": {
+                "duration": 1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "AccuracyModifier",
+                "operation": "Float_Add",
+                "modValue": "-1",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "Weapon",
+                "targetWeaponCategory": "Missile",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            }
+        }
+	]
+}

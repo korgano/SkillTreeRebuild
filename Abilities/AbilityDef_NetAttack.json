@@ -7,7 +7,7 @@
 	},
     "DisplayParams" : "ShowInMWTRay",
 	"ReqSkill" : "Tactics",
-	"ReqSkillLevel" : 10,
+	"ReqSkillLevel" : 8,
 	"ActivationTime" : "ConsumedByFiring",
 	"Targeting" : "ActorSelf",
     "ActivationCooldown" : 5,
@@ -47,7 +47,7 @@
                 "effectTriggerType": "OnActivation",
                 "effectTargetType": "AllLanceMates",
                 "showInTargetPreview": false,
-                "showInStatusPanel": true
+                "showInStatusPanel": false
             },
             "effectType": "StatisticEffect",
             "Description": {
@@ -124,7 +124,7 @@
             "targetingData": {
                 "effectTriggerType": "OnActivation",
 				"effectTargetType": "Creator",
-				"showInStatusPanel": true
+				"showInStatusPanel": false
             },
             "effectType": "StatisticEffect",
             "Description": {
@@ -142,6 +142,5 @@
             }
         }
 	],
-	"IsPrimaryAbility" : true,
-    "Priority": 5
+	"IsPrimaryAbility" : true
 }

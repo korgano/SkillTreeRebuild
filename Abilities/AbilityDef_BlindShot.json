@@ -1,0 +1,99 @@
+{
+	"Description" : {
+		"Id" : "AbilityDef_BlindShot",
+		"Name" : "BLINDING SHOT",
+		"Details" : "PASSIVE: Support weapons receive +1 aim and inflict Sensor Impaired status on enemies.",
+		"Icon" : "UixSvgIcon_specialAbility_BWCL"
+	},
+	"ShortDesc" : "+1 Support Weapon Aim and +[AMT] Sensor Impaired",
+    "DisplayParams" : "ShowInMWTRay",
+    "ReqSkill" : "Tactics",
+	"ReqSkillLevel" : 4,
+	"ActivationTime" : "Passive",
+	"EffectData" :
+	[
+		{
+            "Description": {
+                "Id": "StatusEffect-CloseRange",
+                "Name": "Blinding Shot",
+                "Details": "+1 Accuracy",
+                "Icon": "uixSvgIcon_skullAtlas"
+            },
+		"durationData": {
+                "duration": 1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "AccuracyModifier",
+                "operation": "Float_Add",
+                "modValue": "-1",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "Weapon",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            }
+        },
+        {
+            "durationData" : {
+                "duration" : 1,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 0,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnHit",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "NotSet",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-CloseRange",
+                "Name" : "SENSORS IMPAIRED",
+                "Details" : "[AMT] Difficulty to all of this unit's attacks until its next activation.",
+                "Icon" : "uixSvgIcon_status_sensorsImpaired"
+            },
+            "nature" : "Debuff",
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "AccuracyModifier",
+                "operation" : "Float_Add",
+                "modValue" : "1.0",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "Weapon",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            },
+            "tagData" : null,
+            "actorBurningData" : null,
+            "vfxData" : null,
+            "instantModData" : null,
+            "poorlyMaintainedEffectData" : null
+        }
+	],
+    "IsPrimaryAbility" : true
+}

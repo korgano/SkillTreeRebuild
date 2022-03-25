@@ -1,0 +1,72 @@
+{
+	"Description" : {
+		"Id" : "AbilityDef_HunkerDown",
+		"Name" : "HUNKER DOWN",
+		"Details" : "ACTION: Activate in order to gain a flat 25% damage reduction regardless of cover or positioning for all Lance units. The DR lasts for 2 turns. 4 turn cooldown.",
+		"Icon" : "uixSvgIcon_ability_defformation"
+	},
+    "DisplayParams" : "ShowInMWTRay",
+	"ReqSkill" : "Guts",
+	"ReqSkillLevel" : 6,
+	"ActivationTime" : "ConsumedByFiring",
+	"ActivationCooldown": 4,
+	"Targeting": "ActorSelf",
+	"EffectData" :
+	[
+		{
+			"durationData": {
+				"duration": 2,
+				"ticksOnActivations": true,
+				"useActivationsOfTarget": true,
+				"stackLimit": 1
+			},
+			"targetingData": {
+				"effectTriggerType": "OnActivation",
+				"effectTargetType": "Creator",
+				"showInStatusPanel": true
+			},
+			"effectType": "StatisticEffect",
+			"Description": {
+				"Id": "AbilityDefGu5a_DR",
+				"Name": "Damage Reduction",
+				"Details": "All incoming damage reduced by 25% for 2 turns.",
+				"Icon": "layeredarmor"
+			},
+			"nature": "Buff",
+			"statisticData": {
+				"statName": "DamageReductionMultiplierAll",
+				"operation": "Float_Multiply",
+				"modValue": "0.25",
+				"modType": "System.Single"
+			}
+		},
+		{
+			"durationData": {
+				"duration": 2,
+				"ticksOnActivations": true,
+				"useActivationsOfTarget": true,
+				"stackLimit": 1
+			},
+			"targetingData": {
+				"effectTriggerType": "OnActivation",
+				"effectTargetType": "AllLanceMates",
+				"showInStatusPanel": true
+			},
+			"effectType": "StatisticEffect",
+			"Description": {
+				"Id": "AbilityDefGu10a_DR",
+				"Name": "Damage Reduction",
+				"Details": "All incoming damage reduced by 25% for 2 turns.",
+				"Icon": "guards"
+			},
+			"nature": "Buff",
+			"statisticData": {
+				"statName": "DamageReductionMultiplierAll",
+				"operation": "Float_Multiply",
+				"modValue": "0.75",
+				"modType": "System.Single"
+			}
+		}
+	],
+	"IsPrimaryAbility" : true
+}

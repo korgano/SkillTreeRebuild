@@ -12,17 +12,17 @@
             "TraitDefWeaponHit3"
         ],
         [
-            "AbilityDef_BetaStrike",
-            "AbilityDef_BattleLord",
+            "AbilityDef_CIFS",
+            "AbilityDef_Missileer",
             "TraitDefWeaponHit4"
         ],
         [
             "TraitDefWeaponHit5"				
         ],
         [
-            "AbilityDef_MasterBallistic",
-            "AbilityDef_MasterEnergy",
-            "AbilityDef_MasterMissile",
+            "AbilityDef_ClosePersonal",
+            "AbilityDef_JackAll",
+            "AbilityDef_Longshot",
             "TraitDefWeaponHit6"
         ],
         [
@@ -30,15 +30,14 @@
         ],
         [
             "TraitDefWeaponHit8",
-            "AbilityDef_BreachShot",
+            "AbilityDef_Overclock",
             "AbilityDef_TargetFiring"		
         ],
         [
             "TraitDefWeaponHit9"
         ],
         [
-            "TraitDefWeaponHit10",
-            "AbilityDef_StoneCold"
+            "TraitDefWeaponHit10"            
         ]
     ],
     "PilotingSkills" :[
@@ -57,33 +56,37 @@
             "AbilityDef_SureFooting"
         ],
         [
-            "TraitDefMeleeHit5"
-        ],
-        [
-            "AbilityDef_DodgeMaster",
-            "AbilityDef_Phantom",
-            "TraitDefMeleeHit6",
+            "TraitDefMeleeHit5",
             "TraitDefEvasiveChargeAddOne"
         ],
         [
+            "AbilityDef_DodgeMaster",
+            "AbilityDef_JumpMaven",
+            "TraitDefMeleeHit6",
+            
+        ],
+        [
             "TraitDefSprintIncrease20",
-            "TraitDefMeleeHit7"
+            "TraitDefMeleeHit7",
+            "TraitDefEvasiveChargeAddTwo"
         ],
         [
             "TraitDefMeleeHit8",
             "TraitDefUnsteadySet80",
             "AbilityDef_MechMeister",
-            "AbilityDef_InvisTarget"
+            "AbilityDef_Boxer"
         ],
         [
-            "TraitDefEvasiveChargeAddTwo",
-            "TraitDefMeleeHit9"
+            
+            
+            "TraitDefMeleeHit9",
+            "TraitDefEvasionBoost"
+
         ],
         [
             "TraitDefMeleeHit10",
-            "TraitDefDFASelfDmgReduction",
-            "AbilityDef_MechChecked"
-
+            "TraitDefMeleeHit10b",
+            "TraitDefDFASelfDmgReduction"
         ]
     ],
     "GutsSkills" :[
@@ -93,14 +96,13 @@
             "TraitDefHealthAddOne"
         ],
         [
-            "AbilityDef_ShieldedStance",
             "AbilityDef_ColdBlooded",
             "TraitDefRefireReduceOne"
         ],
         [		],
         [
+            "AbilityDef_HunkerDown",
             "AbilityDef_Berserk",
-            "AbilityDef_Brawler",
             "TraitDefHealthAddTwo"
         ],
         [
@@ -117,7 +119,8 @@
         ],
         [
             "TraitDefHeadshotImmunity",
-            "AbilityDef_DefFormation"
+            "AbilityDef_MaxArmor",
+            "AbilityDef_MaxStrength"
         ]
     ],
     "TacticsSkills" :[
@@ -129,14 +132,16 @@
         ],
         [        ],
         [
+            "AbilityDef_BlindShot",
+            "AbilityDef_MissileCounter",
             "TraitDefMinRangeReduce45"
         ],
         [
             "TraitDefCalledShotImprove"	
         ],
         [
-            "AbilityDef_TarPre",
-            "AbilityDef_KnifeFight",
+            "AbilityDef_ScoutStomp",
+            "AbilityDef_GimpThem",
             "TraitDefIndirectReduceTwo"
         ],
         [
@@ -144,14 +149,13 @@
         ],
         [
             "AbilityDef_MasterTac",
-            "AbilityDef_GimpThem"		
+            "AbilityDef_NetAttack"
         ],
         [
             "TraitDefCalledShotMaster"
         ],
         [
-            "TraitDefIndirectReduceThree",
-            "AbilityDef_EageleEye"
+            "TraitDefIndirectReduceThree"
         ]
     ],
 }

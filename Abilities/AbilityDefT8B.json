@@ -1,14 +1,13 @@
 {
 	"Description" : {
-		"Id" : "AbilityDef_GimpThem",
+		"Id" : "AbilityDefT8B",
 		"Name" : "GIMP THEM",
 		"Details" : "PASSIVE: Attacks target and wrench opponent's Actuators, slowing their movement speed.",
-		"Icon" : "uixSvgIcon_ability_gimpthem"
+		"Icon" : "UixSvgIcon_specialAbility_BWCL"
 	},
+	"Type" : "Command",
 	"ShortDesc" : "Hits Slow Movement",
-    "DisplayParams" : "ShowInMWTRay",
-    "ReqSkill" : "Tactics",
-	"ReqSkillLevel" : 6,
+    "DisplayParams" : "NeverShow",
 	"ActivationTime" : "Passive",
 	"EffectData" :
 	[
@@ -17,7 +16,7 @@
                 "Id" : "StatusEffect-BWCL-WidowsKissFloatie",
                 "Name" : "GIMP THEM",
                 "Details" : "GIMP THEM",
-                "Icon" : "uixSvgIcon_ability_gimpthem"
+                "Icon" : "UixSvgIcon_specialAbility_BWCL"
             },
             "effectType" : "FloatieEffect",
             "nature" : "Buff",
@@ -42,7 +41,7 @@
                 "Id" : "StatusEffect-BWCL-WidowsKissWalkSpeed",
                 "Name" : "ACTUATOR WRENCHED",
                 "Details" : "Attacks target and wrench opponent's Actuators, slowing their movement speed.",
-                "Icon" : "uixSvgIcon_ability_gimpthem"
+                "Icon" : "UixSvgIcon_specialAbility_BWCL"
             },
             "effectType" : "StatisticEffect",
             "nature" : "Debuff",
@@ -80,7 +79,7 @@
                 "Id" : "StatusEffect-BWCL-WidowsKissRunSpeed",
                 "Name" : "MOVEMENT SLOWED",
                 "Details" : "Attacks target and wrench opponent's Actuators, slowing their movement speed.",
-                "Icon" : "uixSvgIcon_ability_gimpthem"
+                "Icon" : "UixSvgIcon_specialAbility_BWCL"
             },
             "effectType" : "StatisticEffect",
             "nature" : "Debuff",
@@ -113,6 +112,5 @@
                 "targetWeaponSubType" : "NotSet"
             }
         }
-	],
-    "IsPrimaryAbility" : true
+	]
 }

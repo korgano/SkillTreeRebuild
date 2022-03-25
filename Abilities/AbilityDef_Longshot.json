@@ -1,0 +1,82 @@
+{
+	"Description" : {
+		"Id" : "AbilityDef_Longshot",
+		"Name" : "Longshot",
+		"Details" : "PASSIVE: +25% Damage and 10% Crit to all long range weapons.",
+		"Icon" : "UixSvgIcon_specialAbility_BWCL"
+	},
+	"ShortDesc" : "+25% large range weapon damage and +10% crit",
+    "DisplayParams" : "ShowInMWTRay",
+    "ReqSkill" : "Gunnery",
+	"ReqSkillLevel" : 6,
+	"ActivationTime" : "Passive",
+	"EffectData" :
+	[
+		{
+            "Description": {
+                "Id": "StatusEffect-LongRange",
+                "Name": "Damage Boost",
+                "Details": "+25% damage on all long range weapons.",
+                "Icon": "uixSvgIcon_skullAtlas"
+            },
+		"durationData": {
+                "duration": 1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "DamagePerShot",
+                "operation": "Float_Multiply",
+                "modValue": "1.25",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "Weapon",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+              }
+        },
+        {
+            "Description" : {
+                "Id" : "StatusEffect-LongRange",
+                "Name" : "Crit Boost",
+                "Details" : "+10% boost to critical hit chance.",
+                "Icon" : "uixSvgIcon_statusCrit"
+            },
+            "durationData" : {
+                "duration" : 1,
+                "stackLimit" : 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : true
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Buff",
+            "statisticData" : {
+                "statName" : "CriticalChanceMultiplier",
+                "operation" : "Float_Add",
+                "modValue" : "1.10",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "Weapon",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        }
+	],
+    "IsPrimaryAbility" : true
+}

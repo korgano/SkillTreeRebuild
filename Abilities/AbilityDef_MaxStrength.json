@@ -1,0 +1,169 @@
+{
+	"Description": {
+		"Id": "AbilityDef_MaxStrength",
+		"Name": "MAXIMUM STRENGTH",
+		"Details": "ACTION: Increase speed by 50% and melee damage by 100 for 2 turns. +40 heat for 1 turn. 4 turn cooldown.",
+		"Icon": "punch-blast"
+	},
+	"DisplayParams": "ShowInMWTRay",
+	"ReqSkill": "Guts",
+	"ReqSkillLevel": 10,
+	"ActivationTime": "ConsumedByFiring",
+	"ActivationCooldown": 4,
+	"Targeting": "ActorSelf",
+	"EffectData": [
+		{
+            "Description" : {
+                "Id" : "StatusEffect-MaxStrength-RunSpeed",
+                "Name" : "MOVEMENT INCREASED",
+                "Details" : "Maximum Strength increases speed by 50%.",
+                "Icon" : "uixSvgIcon_ability_gimpthem"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Buff",
+            "durationData" : {
+                "duration" : 2,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType": "OnActivation",
+				"effectTargetType": "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : true
+            },
+            "statisticData" : {
+                "statName" : "RunSpeed",
+                "operation" : "Float_Multiply",
+                "modValue" : "1.5",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "StatusEffect-MaxStrength-WalkSpeed",
+                "Name" : "ACTUATOR OVERCLOCKED",
+                "Details" : "Attacks target and wrench opponent's Actuators, slowing their movement speed.",
+                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Buff",
+            "durationData" : {
+                "duration" : 1,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType": "OnActivation",
+				"effectTargetType": "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : false
+            },
+            "statisticData" : {
+                "statName" : "WalkSpeed",
+                "operation" : "Float_Multiply",
+                "modValue" : "1.5",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        },
+        {
+            "durationData" : {
+                "duration" : -1,
+                "ticksOnActivations" : false,
+                "useActivationsOfTarget" : false,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : -1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType": "OnActivation",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-Attack_DamageMelee-MS",
+                "Name" : "MELEE DAMAGE INCREASED",
+                "Details" : "Melee attacks deal [AMT] more damage.",
+                "Icon" : "uixSvgIcon_equipment_ActuatorArm"
+            },
+            "nature" : "Buff",
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "DamagePerShot",
+                "operation" : "Float_Add",
+                "modValue" : "100.0",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "Weapon",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "Melee"
+            },
+            "tagData" : null,
+            "actorBurningData" : null,
+            "vfxData" : null,
+            "instantModData" : null,
+            "poorlyMaintainedEffectData" : null
+        },
+        {
+            "durationData": {
+                "duration": 1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTargetsCreator": true,
+                "effectTriggerType": "OnActivation",
+                "effectTargetType": "Creator",
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-OverclockHeatPenalty",
+                "Name": "Overworked Cooling",
+                "Details": "+40 Heat Generated",
+                "Icon": "uixSvgIcon_skullAtlas"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "HeatSinkCapacity",
+                "operation": "Int_Add",
+                "modValue": "-40",
+                "modType": "System.Int32"
+            }
+        }
+	],
+	"IsPrimaryAbility": true
+}
