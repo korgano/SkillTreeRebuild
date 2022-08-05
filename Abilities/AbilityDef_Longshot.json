@@ -3,7 +3,7 @@
 		"Id" : "AbilityDef_Longshot",
 		"Name" : "Longshot",
 		"Details" : "PASSIVE: +25% Damage and 10% Crit to all long range weapons.",
-		"Icon" : "UixSvgIcon_specialAbility_BWCL"
+		"Icon" : "uixSvgIcon_ability_longshot"
 	},
 	"ShortDesc" : "+25% large range weapon damage and +10% crit",
     "DisplayParams" : "ShowInMWTRay",
@@ -17,7 +17,7 @@
                 "Id": "StatusEffect-LongRange",
                 "Name": "Damage Boost",
                 "Details": "+25% damage on all long range weapons.",
-                "Icon": "uixSvgIcon_skullAtlas"
+                "Icon": "uixSvgIcon_ability_longshot"
             },
 		"durationData": {
                 "duration": 1,

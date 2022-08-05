@@ -3,7 +3,7 @@
 		"Id": "AbilityDef_Boxer",
 		"Name": "BOXER",
 		"Details": "ACTION: Use superior piloting skills to deal 50% more stability damage with melee, while taking 25% less damage this turn. 3 turn cooldown.",
-		"Icon": "uixSvgIcon_ability_mechchecked"
+		"Icon": "uixSvgIcon_ability_brawler"
 	},
 	"DisplayParams": "ShowInMWTRay",
 	"ReqSkill": "Piloting",

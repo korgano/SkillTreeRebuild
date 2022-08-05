@@ -19,7 +19,8 @@
 			{
 				"effectTriggerType" : "OnActivation",
 				"effectTargetType" : "Creator",
-				"showInStatusPanel" : true
+				"showInStatusPanel" : true,
+				"hideApplicationFloatie" : false
 			},
 			"effectType" : "StatisticEffect",
 			"Description" :

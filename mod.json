@@ -1,6 +1,6 @@
 {
     "Name": "Skill Tree Rebuild",
-    "Version": "0.1.0",
+    "Version": "0.2.0",
     "Enabled": true,
     "Author": "Kregano",
     "Website": "https://github.com/korgano/SkillTreeRebuild",
@@ -13,7 +13,7 @@
         "enableTrace": true,
 		"enableLog": true,
 		"usePopUpsForAbilityDesc": false,
-		"debugXP": true,
+		"debugXP": false,
 		"enableResolverator": false,
 		"resolveGenTacticsMult": 0.02,
 		"resolveCostTacticsMult": 0,

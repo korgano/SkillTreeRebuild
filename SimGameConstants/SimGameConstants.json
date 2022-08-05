@@ -97,12 +97,13 @@
         ],
         [
             "AbilityDef_ColdBlooded",
+            "AbilityDef_HunkerDown",
             "TraitDefRefireReduceOne"
         ],
         [		],
         [
-            "AbilityDef_HunkerDown",
-            "AbilityDef_Berserk",
+            "AbilityDef_MaxArmor",
+            "AbilityDef_MaxStrength"
             "TraitDefHealthAddTwo"
         ],
         [
@@ -118,9 +119,7 @@
             "TraitDefOverheatAddThirty"
         ],
         [
-            "TraitDefHeadshotImmunity",
-            "AbilityDef_MaxArmor",
-            "AbilityDef_MaxStrength"
+            "TraitDefHeadshotImmunity"
         ]
     ],
     "TacticsSkills" :[

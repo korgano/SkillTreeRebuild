@@ -2,12 +2,12 @@
 	"Description": {
 		"Id": "AbilityDef_MaxArmor",
 		"Name": "MAXIMUM ARMOR",
-		"Details": "ACTION: Sacrifice 50% speed to gain 75% damage reduction from all sources.",
-		"Icon": "punch-blast"
+		"Details": "ACTION: Sacrifice 50% speed to gain 75% damage reduction from all sources. 4 turn cooldown.",
+		"Icon": "uixSvgIcon_ability_maxarmor"
 	},
 	"DisplayParams": "ShowInMWTRay",
 	"ReqSkill": "Guts",
-	"ReqSkillLevel": 10,
+	"ReqSkillLevel": 6,
 	"ActivationTime": "ConsumedByFiring",
 	"ActivationCooldown": 4,
 	"Targeting": "ActorSelf",
@@ -17,7 +17,7 @@
                 "Id" : "StatusEffect-BWCL-WidowsKissRunSpeed",
                 "Name" : "MOVEMENT SLOWED",
                 "Details" : "Maximum Armor reduces speed by 50%.",
-                "Icon" : "uixSvgIcon_ability_gimpthem"
+                "Icon" : "uixSvgIcon_ability_maxarmor"
             },
             "effectType" : "StatisticEffect",
             "nature" : "Debuff",
@@ -55,7 +55,7 @@
                 "Id" : "StatusEffect-Victoria-Aura2",
                 "Name" : "MAXIMUM ARMOR",
                 "Details" : "This unit takes [AMT] less damage.",
-                "Icon" : "uixSvgIcon_statusCrit"
+                "Icon" : "uixSvgIcon_ability_maxarmor"
             },
             "durationData" : {
                 "duration" : 2,

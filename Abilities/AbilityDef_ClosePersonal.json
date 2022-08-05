@@ -3,7 +3,7 @@
 		"Id" : "AbilityDef_ClosePersonal",
 		"Name" : "CLOSE AND PERSONAL",
 		"Details" : "PASSIVE: +25% Damage and 10% Crit to all Support weapons.",
-		"Icon" : "UixSvgIcon_specialAbility_BWCL"
+		"Icon" : "uixSvgIcon_ability_closepersonal"
 	},
 	"ShortDesc" : "+25% Support Weapon damage and +10% crit",
     "DisplayParams" : "ShowInMWTRay",
@@ -17,7 +17,7 @@
                 "Id": "StatusEffect-CloseRange",
                 "Name": "Damage Boost",
                 "Details": "+25% Close Range Weapon Damage.",
-                "Icon": "uixSvgIcon_skullAtlas"
+                "Icon": "uixSvgIcon_ability_closepersonal"
             },
 		"durationData": {
                 "duration": 1,

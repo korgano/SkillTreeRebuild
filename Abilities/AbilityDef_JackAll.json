@@ -3,7 +3,7 @@
 		"Id" : "AbilityDef_JackAll",
 		"Name" : "Jack of All Trades",
 		"Details" : "PASSIVE: +25% Damage and 10% Crit to all standard range weapons.",
-		"Icon" : "UixSvgIcon_specialAbility_BWCL"
+		"Icon" : "uixSvgIcon_ability_jack"
 	},
 	"ShortDesc" : "+25% standard range weapon damage and +10% crit",
     "DisplayParams" : "ShowInMWTRay",

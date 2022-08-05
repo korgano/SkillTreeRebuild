@@ -15,7 +15,7 @@
                 "Id" : "StatusEffect-Elite-ShootAfterSprint",
                 "Name" : "SPRINT + SHOOT",
                 "Details" : "Elite MechWarriors can fire their weapons after sprinting.",
-                "Icon" : "uixSvgIcon_ability_angelofdeath"
+                "Icon" : "uixSvgIcon_ability_Sprint_Shoot"
             },
             "effectType" : "StatisticEffect",
             "nature" : "Buff",

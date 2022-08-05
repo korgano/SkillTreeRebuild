@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="150"
+   height="150"
+   viewBox="0 0 39.687499 39.687501"
+   version="1.1"
+   id="svg160"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="uixSvgIcon_ability_CIFS2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview162"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="2.8284272"
+     inkscape:cx="48.61359"
+     inkscape:cy="85.383142"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs157">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter1388"
+       x="-0.0033679117"
+       y="-0.0033773642"
+       width="1.0067323"
+       height="1.0067614">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix1384" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="fbSourceGraphic"
+         id="feColorMatrix1386" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix825" />
+      <feColorMatrix
+         id="feColorMatrix827"
+         type="hueRotate"
+         values="180"
+         result="color1"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix829"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter13295"
+       x="-0.0035726073"
+       y="-0.0058009393"
+       width="1.0086234"
+       height="1.0116019">
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="fbSourceGraphic"
+         id="feColorMatrix13293" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix848" />
+      <feColorMatrix
+         id="feColorMatrix850"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         in="fbSourceGraphic" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       fill="#000000"
+       d="M 7.1608355,4.0077288 V 10.076951 H 16.862463 V 4.0077288 Z m -5.79894,3.846985 v 5.8967702 l 7.646317,7.618743 H 20.303305 L 20.303148,7.8547928 H 18.32377 V 11.529324 H 5.6994495 V 7.8546368 h -4.337554 z m 20.4026395,1.466829 v 6.9484352 h 7.74172 l -3.646038,3.633264 h -4.095682 v 1.452374 h 4.701726 l 0.215049,-0.213722 4.584427,-4.568199 0.212701,-0.21139 v -0.09233 h 0.02675 V 9.3215398 Z m 11.202034,1.4282032 v 4.02185 h 5.35899 v -4.02185 z M 12.783827,22.822522 c 0.01548,1.043971 0.459498,1.983724 1.16814,2.652089 l -5.0902995,6.691037 c -2.020042,0.189629 -3.708206,1.578272 -4.455008,3.514123 h 9.8581045 c -0.648272,-1.680626 -2.006983,-2.948734 -3.675362,-3.378197 l 1.808355,-2.375338 h 7.922361 l 1.80601,2.375261 c -1.668145,0.42954 -3.024745,1.697648 -3.673016,3.378119 h 9.8556 C 27.562223,33.744 25.875935,32.355277 23.856285,32.165414 l -4.948445,-6.50164 c 0.832821,-0.673572 1.36614,-1.695005 1.383031,-2.841485 h -7.507122 z m 2.409552,3.431667 c 0.417583,0.15932 0.869887,0.245274 1.343931,0.245274 0.367693,0 0.722326,-0.05269 1.058035,-0.150537 l 1.617942,2.12509 h -5.708541 l 1.688555,-2.219905 z"
+       id="path992"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.0779577;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>
