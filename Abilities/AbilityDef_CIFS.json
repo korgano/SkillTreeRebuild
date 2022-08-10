@@ -3,7 +3,7 @@
 		"Id" : "AbilityDef_CIFS",
 		"Name" : "CLOSE-IN FIRE SUPPORT",
 		"Details" : "PASSIVE: Gain a +50% boost to all support weapon range brackets, as well as -20% heat from support weapons",
-		"Icon" : "uixSvgIcon_ability_knifefight"
+		"Icon" : "uixSvgIcon_ability_CIFS2"
 	},
     "DisplayParams" : "ShowInMWTRay",
 	"ReqSkill" : "Gunnery",

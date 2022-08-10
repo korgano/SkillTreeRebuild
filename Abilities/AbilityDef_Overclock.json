@@ -1,9 +1,9 @@
 {
     "Description": {
         "Id": "AbilityDef_Overclock",
-        "Name": "Overclock",
+        "Name": "OVERCLOCK",
         "Details": "ACTION: Supercharge your mech for a turn, dealing 25% greater damage, 10% greater crit chance, and hitting with +2 accuracy for the turn. Generates an extra 40 heat this turn. 3 turn cooldown.",
-        "Icon": "uixSvgIcon_skullAtlas"
+        "Icon": "uixSvgIcon_ability_overclock2"
     },
     "DisplayParams": "ShowInMWTRay",
     "ReqSkill": "Gunnery",
@@ -27,7 +27,7 @@
                 "Id": "StatusEffect-OverclockDamage",
                 "Name": "Overclocked Weapons",
                 "Details": "+25% Weapon Damage",
-                "Icon": "uixSvgIcon_ability_precisionstrike"
+                "Icon": "uixSvgIcon_ability_overclock2"
             },
             "nature": "Buff",
             "statisticData": {
@@ -58,7 +58,7 @@
                 "Id": "StatusEffect-OverclockAccuracy",
                 "Name": "Overclocked Targeting",
                 "Details": "+2 Accuracy",
-                "Icon": "uixSvgIcon_skullAtlas"
+                "Icon": "uixSvgIcon_ability_overclock2"
             },
             "nature": "Buff",
             "statisticData": {
@@ -79,7 +79,7 @@
                 "Id" : "StatusEffect-OverclockCrit",
                 "Name" : "Overclocked Criticals",
                 "Details" : "This unit fights with an unstoppable drive, taking less damage and having a much higher Critical Hit chance.",
-                "Icon" : "uixSvgIcon_statusCrit"
+                "Icon" : "uixSvgIcon_ability_overclock2"
             },
             "durationData" : {
                 "duration" : -1,
@@ -123,7 +123,7 @@
                 "Id": "StatusEffect-OverclockHeatPenalty",
                 "Name": "Overworked Cooling",
                 "Details": "+40 Heat Generated",
-                "Icon": "uixSvgIcon_skullAtlas"
+                "Icon": "uixSvgIcon_ability_overclock2"
             },
             "nature": "Buff",
             "statisticData": {

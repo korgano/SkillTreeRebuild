@@ -25,8 +25,8 @@
             "targetingData" : {
                 "effectTriggerType" : "OnActivation",
                 "effectTargetType" : "AllLanceMates",
-                "showInTargetPreview" : true,
-                "showInStatusPanel" : false,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : true,
                 "hideApplicationFloatie" : false
             },
             "effectType" : "StatisticEffect",
@@ -57,7 +57,7 @@
             "targetingData" : {
                 "effectTriggerType" : "OnActivation",
                 "effectTargetType" : "Creator",
-                "showInTargetPreview" : true,
+                "showInTargetPreview" : false,
                 "showInStatusPanel" : true,
                 "hideApplicationFloatie" : false
             },

@@ -19,7 +19,8 @@
 			"targetingData" :
 			{
 				"effectTriggerType" : "OnActivation",
-				"effectTargetType" : "Creator"
+				"effectTargetType" : "Creator",
+				"showInStatusPanel" : true
 			},
 			"effectType" : "StatisticEffect",
 			"Description" :

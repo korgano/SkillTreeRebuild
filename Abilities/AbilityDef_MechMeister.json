@@ -3,7 +3,7 @@
 		"Id" : "AbilityDef_MechMeister",
 		"Name" : "MECH MEISTER",
 		"Details" : "PASSIVE: Experienced MechWarriors recieve bonus movement speed and 25% damage reduction.",
-		"Icon" : "UixSvgIcon_specialAbility_BWCL"
+		"Icon" : "uixSvgIcon_ability_mechmeister"
 	},
 	"ShortDesc" : "+ 25% Movement and + 25% Damage Reduction",
     "DisplayParams" : "ShowInMWTRay",
@@ -17,7 +17,7 @@
                 "Id" : "StatusEffect-BWCL-WalkSpeed",
                 "Name" : "MECH MEISTER",
                 "Details" : "Experienced MechWarriors recieve bonus movement speed and take [AMT] less damage.",
-                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+                "Icon" : "uixSvgIcon_ability_mechmeister"
             },
             "effectType" : "StatisticEffect",
             "nature" : "Buff",
@@ -50,7 +50,7 @@
                 "Id" : "StatusEffect-BWCL-SprintSpeed",
                 "Name" : "MECH MEISTER",
                 "Details" : "Experienced MechWarriors recieve bonus movement speed and take [AMT] less damage.",
-                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+                "Icon" : "uixSvgIcon_ability_mechmeister"
             },
             "effectType" : "StatisticEffect",
             "nature" : "Buff",
@@ -83,7 +83,7 @@
                 "Id" : "StatusEffect-BWCL-DamageReduction",
                 "Name" : "MECH MEISTER",
                 "Details" : "Experienced MechWarriors recieve bonus movement speed and take [AMT] less damage.",
-                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+                "Icon" : "uixSvgIcon_ability_mechmeister"
             },
             "effectType" : "StatisticEffect",
             "nature" : "Buff",

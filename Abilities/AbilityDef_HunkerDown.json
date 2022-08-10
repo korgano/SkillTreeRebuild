@@ -7,7 +7,7 @@
 	},
     "DisplayParams" : "ShowInMWTRay",
 	"ReqSkill" : "Guts",
-	"ReqSkillLevel" : 6,
+	"ReqSkillLevel" : 4,
 	"ActivationTime" : "ConsumedByFiring",
 	"ActivationCooldown": 4,
 	"Targeting": "ActorSelf",

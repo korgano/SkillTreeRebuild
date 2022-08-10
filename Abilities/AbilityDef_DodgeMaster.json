@@ -40,7 +40,7 @@
                 "useActivationsOfTarget" : false,
                 "ticksOnEndOfRound" : false,
                 "ticksOnMovements" : false,
-                "stackLimit" : 0,
+                "stackLimit" : 1,
                 "clearedWhenAttacked" : false
             },
             "targetingData" : {

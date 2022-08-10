@@ -3,7 +3,7 @@
 		"Id" : "AbilityDef_KnifeFight",
 		"Name" : "KNIFE FIGHTER",
 		"Details" : "PASSIVE: Gain a +33% boost to all support weapon short and medium range brackets as well as +10% damage with support weapons",
-		"Icon" : "uixSvgIcon_ability_knifefight"
+		"Icon" : "uixSvgIcon_ability_knifefight2"
 	},
     "DisplayParams" : "ShowInPilotToolTip",
 	"ReqSkill" : "Tactics",
@@ -27,7 +27,7 @@
                 "Id": "AbilityDefT8Aa_ShortRange",
                 "Name": "Knife Fighter",
                 "Details": "The short and medium range brackets on this mech's support weapons are increased by 33% and its support weapon damage is increased by 10%.",
-                "Icon": "crossed-swords"
+                "Icon": "uixSvgIcon_ability_knifefight2"
             },
             "nature": "Buff",
             "statisticData": {
@@ -58,7 +58,7 @@
                 "Id": "AbilityDefT8Aa_MediumRange",
                 "Name": "Medium Range Increase",
                 "Details": "The Medium range brackets on this mech's support weapons are increased by 33%.",
-                "Icon": "crossed-swords"
+                "Icon": "uixSvgIcon_ability_knifefight2"
             },
             "nature": "Buff",
             "statisticData": {
@@ -88,7 +88,7 @@
                 "Id" : "AbilityDefG8a_APDamage",
                 "Name" : "Support Weapon Damage Increased",
                 "Details" : "Support weapon attacks deal 10% more damage.",
-                "Icon" : "crossed-swords"
+                "Icon" : "uixSvgIcon_ability_knifefight2"
             },
             "nature" : "Buff",
             "statisticData": {
