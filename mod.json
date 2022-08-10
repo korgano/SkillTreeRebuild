@@ -1,6 +1,6 @@
 {
     "Name": "Skill Tree Rebuild",
-    "Version": "0.2.0",
+    "Version": "0.2.5",
     "Enabled": true,
     "Author": "Kregano",
     "Website": "https://github.com/korgano/SkillTreeRebuild",
@@ -24,7 +24,7 @@
 		"extraAbilitiesAllowedPerSkill": 1,
 		"nonTreeAbilities": 3,
 		"cleanUpCombatUI": true,
-		"skillLockThreshold": 8,
+		"skillLockThreshold": 10,
 		"usingCACabilitySelector": false,
 		"usingHumanResources": false,
 		"disableCalledShotExploit": false,

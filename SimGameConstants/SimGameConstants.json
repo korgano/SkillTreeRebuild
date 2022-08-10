@@ -62,7 +62,7 @@
         [
             "AbilityDef_DodgeMaster",
             "AbilityDef_JumpMaven",
-            "TraitDefMeleeHit6",
+            "TraitDefMeleeHit6"
             
         ],
         [
@@ -103,7 +103,7 @@
         [		],
         [
             "AbilityDef_MaxArmor",
-            "AbilityDef_MaxStrength"
+            "AbilityDef_MaxStrength",
             "TraitDefHealthAddTwo"
         ],
         [

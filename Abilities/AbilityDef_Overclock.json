@@ -1,7 +1,7 @@
 {
     "Description": {
         "Id": "AbilityDef_Overclock",
-        "Name": "Overclock",
+        "Name": "OVERCLOCK",
         "Details": "ACTION: Supercharge your mech for a turn, dealing 25% greater damage, 10% greater crit chance, and hitting with +2 accuracy for the turn. Generates an extra 40 heat this turn. 3 turn cooldown.",
         "Icon": "uixSvgIcon_ability_overclock2"
     },

@@ -1,7 +1,7 @@
 {
 	"Description" : {
 		"Id" : "AbilityDef_ScoutStomp",
-		"Name" : "One Ping Only",
+		"Name" : "ONE PING ONLY",
 		"Details" : "ACTION: Locate all enemies within your detection radius. Generates 20 heat, 4 turn cooldown.",
 		"Icon" : "uixSvgIcon_ability_oneping2"
 	},

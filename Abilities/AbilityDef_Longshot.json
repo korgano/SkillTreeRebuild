@@ -1,7 +1,7 @@
 {
 	"Description" : {
 		"Id" : "AbilityDef_Longshot",
-		"Name" : "Longshot",
+		"Name" : "LONGSHOT",
 		"Details" : "PASSIVE: +25% Damage and 10% Crit to all long range weapons.",
 		"Icon" : "uixSvgIcon_ability_longshot"
 	},
@@ -66,7 +66,7 @@
             "nature" : "Buff",
             "statisticData" : {
                 "statName" : "CriticalChanceMultiplier",
-                "operation" : "Float_Add",
+                "operation" : "Float_Multiply",
                 "modValue" : "1.10",
                 "modType" : "System.Single",
                 "additionalRules" : "NotSet",

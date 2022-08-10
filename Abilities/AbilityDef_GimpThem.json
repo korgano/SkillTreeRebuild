@@ -30,8 +30,8 @@
                 "effectTriggerType" : "OnWeaponFire",
                 "effectTargetType" : "Creator",
                 "showInTargetPreview" : false,
-                "showInStatusPanel" : false,
-                "hideApplicationFloatie" : true
+                "showInStatusPanel" : true,
+                "hideApplicationFloatie" : false
             },
             "floatieData" : {
                 "targetCollection" : "NotSet"
@@ -59,7 +59,7 @@
                 "effectTriggerType" : "OnHit",
                 "effectTargetType" : "SingleTarget",
                 "showInTargetPreview" : true,
-                "showInStatusPanel" : true,
+                "showInStatusPanel" : false,
                 "hideApplicationFloatie" : false
             },
             "statisticData" : {
@@ -96,7 +96,7 @@
             "targetingData" : {
                 "effectTriggerType" : "OnHit",
                 "effectTargetType" : "SingleTarget",
-                "showInTargetPreview" : false,
+                "showInTargetPreview" : true,
                 "showInStatusPanel" : false,
                 "hideApplicationFloatie" : false
             },

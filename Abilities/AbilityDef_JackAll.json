@@ -1,7 +1,7 @@
 {
 	"Description" : {
 		"Id" : "AbilityDef_JackAll",
-		"Name" : "Jack of All Trades",
+		"Name" : "JACK OF ALL TRADES",
 		"Details" : "PASSIVE: +25% Damage and 10% Crit to all standard range weapons.",
 		"Icon" : "uixSvgIcon_ability_jack"
 	},
