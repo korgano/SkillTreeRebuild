@@ -6,6 +6,8 @@
 		"Icon" : "uixSvgIcon_action_jump"
 	},
 	"ShortDesc" : "+20% jump distance boost.",
+    "ReqSkill" : "Piloting",
+	"ReqSkillLevel" : 6,
     "DisplayParams" : "ShowInMWTRay",
 	"ActivationTime" : "Passive",
     "EffectData": [
@@ -46,5 +48,6 @@
                 "modType" : "System.Single"
             }
         }
-	]
+	],
+    "IsPrimaryAbility": true
 }

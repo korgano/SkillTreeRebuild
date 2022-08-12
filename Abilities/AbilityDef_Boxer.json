@@ -7,7 +7,7 @@
 	},
 	"DisplayParams": "ShowInMWTRay",
 	"ReqSkill": "Piloting",
-	"ReqSkillLevel": 10,
+	"ReqSkillLevel": 8,
 	"ActivationTime": "ConsumedByFiring",
 	"ActivationCooldown": 3,
 	"Targeting": "ActorSelf",
@@ -74,6 +74,5 @@
 			}
 		}
 	],
-	"IsPrimaryAbility": true,
-	"Priority": 2
+	"IsPrimaryAbility": true
 }

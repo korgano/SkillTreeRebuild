@@ -73,5 +73,6 @@
                 "targetWeaponSubType": "NotSet"
             }
         }
-	]
+	],
+	"IsPrimaryAbility": true
 }
