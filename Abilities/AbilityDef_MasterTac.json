@@ -25,7 +25,7 @@
 			"Description" :
 			{
 				"Id" : "AbilityDefT8A",
-				"Name" : "MASTER TACTICIAN",
+				"Name" : "MASTER TACTICIAN - Initiative",
 				"Details" : "+1 to base Initiative",
 				"Icon" : "uixSvgIcon_ability_mastertactician"
 			},
@@ -52,7 +52,7 @@
 			"Description" :
 			{
 				"Id" : "AbilityDefT8A",
-				"Name" : "MASTER TACTICIAN",
+				"Name" : "MASTER TACTICIAN - Stability",
 				"Details" : "DEFER ACTION CLEARS UNSTEADY",
 				"Icon" : "uixSvgIcon_ability_mastertactician"
 			},

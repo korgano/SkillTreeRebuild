@@ -13,7 +13,7 @@
 		{
 			"durationData": {
 				"duration": -1,
-				"stackLimit": -1
+				"stackLimit": 1
 			},
 			"targetingData": {
 				"effectTriggerType": "Passive",
@@ -22,8 +22,8 @@
 			},
 			"effectType": "StatisticEffect",
 			"Description": {
-				"Id": "AbilityDefMissile_Evasion",
-				"Name": "Missile Evasion ignore",
+				"Id": "StatusEffect-MISSILEER-Evasion",
+				"Name": "MISSILEER - MISSILE EVASION IGNORE",
 				"Details": "Missile attacks ignore 2 evasion."
 			},
 			"nature": "Buff",
@@ -44,13 +44,13 @@
 		},
         {
             "Description": {
-                "Id": "StatusEffect-Missile Accuracy",
-                "Name": "Missileer",
+                "Id": "StatusEffect-MISSILEER-Accuracy",
+                "Name": "MISSILEER - ACCURACY INCREASE",
                 "Details": "+1 Accuracy"
             },
 		"durationData": {
                 "duration": -1,
-                "stackLimit": -1
+                "stackLimit": 1
             },
             "targetingData": {
                 "effectTriggerType": "Passive",

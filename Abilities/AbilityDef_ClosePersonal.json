@@ -14,14 +14,14 @@
 	[
 		{
             "Description": {
-                "Id": "StatusEffect-CloseRange",
-                "Name": "Damage Boost",
+                "Id": "StatusEffect-CloseRange-DMG",
+                "Name": "DAMAGE BOOST - CLOSE RANGE",
                 "Details": "+25% Close Range Weapon Damage.",
                 "Icon": "uixSvgIcon_ability_closepersonal"
             },
 		"durationData": {
-                "duration": 1,
-                "stackLimit": 1
+                "duration": -1,
+                "stackLimit": -1
             },
             "targetingData": {
                 "effectTriggerType": "Passive",
@@ -46,14 +46,14 @@
         },
         {
             "Description" : {
-                "Id" : "StatusEffect-CloseRange",
-                "Name" : "Crit Boost",
+                "Id" : "StatusEffect-CloseRange-CRIT",
+                "Name" : "CRIT BOOST  - CLOSE RANGE",
                 "Details" : "+10% Close Range Weapon Crit Chance.",
                 "Icon" : "uixSvgIcon_statusCrit"
             },
             "durationData" : {
-                "duration" : 1,
-                "stackLimit" : 1
+                "duration" : -1,
+                "stackLimit" : -1
             },
             "targetingData" : {
                 "effectTriggerType" : "Passive",

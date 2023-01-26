@@ -54,14 +54,14 @@
 				"stackLimit": 1
 			},
 			"targetingData": {
-				"effectTriggerType": "OnActivation",
+				"effectTriggerType": "OnHit",
 				"effectTargetType": "Creator",
-				"showInStatusPanel": true
+				"showInStatusPanel": false
 			},
 			"effectType": "StatisticEffect",
 			"Description": {
 				"Id": "AbilityDefGu10a_DR",
-				"Name": "Damage Reduction",
+				"Name": "DAMAGE REDUCTION",
 				"Details": "All incoming damage reduced by 25% for 1 turn.",
 				"Icon": "guards"
 			},

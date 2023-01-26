@@ -1,0 +1,69 @@
+{
+	"Description" : {
+		"Id" : "AbilityDef_RunGun",
+		"Name" : "GUN & RUN",
+		"Details" : "PASSIVE: A 'Mech piloted by this MechWarrior can move after shooting if it has not moved yet. Chance of receiving a Critical Hit is reduced by [AMT]%.",
+		"Icon" : "uixSvgIcon_run_n_gun"
+	},
+    "DisplayParams" : "ShowInMWTRay",
+	"ReqSkill" : "Piloting",
+	"ReqSkillLevel" : 4,
+	"ActivationTime" : "Passive",
+	"EffectData" :
+	[
+		{
+			"durationData" :
+			{
+				"duration" : -1
+			},
+			"targetingData" : 
+			{
+				"effectTriggerType" : "OnActivation",
+				"effectTargetType" : "Creator"
+			},
+			"effectType" : "StatisticEffect",
+			"Description" :
+			{
+				"Id" : "AbilityDefP8",
+				"Name" : "RUN & GUN",
+				"Details" : "PASSIVE: A 'Mech piloted by this MechWarrior can move after shooting if it has not moved yet.",
+				"Icon" : "uixSvgIcon_run_n_gun"
+			},
+			"statisticData" : 
+			{
+				"statName" : "CanMoveAfterShooting",
+				"operation" : "Set",
+				"modValue" : "true",
+				"modType" : "System.Boolean"
+			},
+			"nature" : "Buff"
+		},
+		{
+            "Description" : {
+                "Id" : "StatusEffect-RunGun-Crit",
+                "Name" : "CRIT CHANCE REDUCTION",
+                "Details" : "Critical Hit Chance reduced by [AMT]%."
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Buff",
+            "durationData" : {
+                "duration" : -1,
+                "stackLimit": -1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : true
+            },
+            "statisticData" : {
+                "statName" : "CriticalHitChanceReceivedMultiplier",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.5",
+                "modType" : "System.Single"
+            }
+        }
+    ],
+	"IsPrimaryAbility" : true
+}

@@ -14,14 +14,14 @@
 	[
 		{
             "Description": {
-                "Id": "StatusEffect-CloseRange",
-                "Name": "Blinding Shot",
+                "Id": "StatusEffect-CloseRange-ACC",
+                "Name": "BLINDING SHOT",
                 "Details": "+1 Accuracy",
                 "Icon": "uixSvgIcon_skullAtlas"
             },
 		"durationData": {
-                "duration": 1,
-                "stackLimit": 1
+                "duration": -1,
+                "stackLimit": -1
             },
             "targetingData": {
                 "effectTriggerType": "Passive",
@@ -68,7 +68,7 @@
             },
             "effectType" : "StatisticEffect",
             "Description" : {
-                "Id" : "StatusEffect-CloseRange",
+                "Id" : "StatusEffect-CloseRange-IMP",
                 "Name" : "SENSORS IMPAIRED",
                 "Details" : "[AMT] Difficulty to all of this unit's attacks until its next activation.",
                 "Icon" : "uixSvgIcon_status_sensorsImpaired"

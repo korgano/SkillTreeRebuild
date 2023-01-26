@@ -14,13 +14,13 @@
 	[
 		{
             "Description": {
-                "Id": "StatusEffect-StandardRange",
-                "Name": "Damage Boost",
+                "Id": "StatusEffect-StandardRange-DMG",
+                "Name": "Damage Boost (Standard Range)",
                 "Details": "+25% damage on all standard range weapons.",
                 "Icon": "uixSvgIcon_ability_jack"
             },
 		"durationData": {
-                "duration": 1,
+                "duration": -1,
                 "stackLimit": 1
             },
             "targetingData": {
@@ -28,8 +28,7 @@
                 "effectTargetType": "Creator",
                 "showInStatusPanel": false
             },
-            "effectType": "StatisticEffect",
-            
+            "effectType": "StatisticEffect",            
             "nature": "Buff",
             "statisticData": {
                 "statName": "DamagePerShot",
@@ -46,13 +45,13 @@
         },
         {
             "Description" : {
-                "Id" : "StatusEffect-StandardRange",
-                "Name" : "Crit Boost",
+                "Id" : "StatusEffect-StandardRange-CRIT",
+                "Name" : "Crit Boost (Standard Range)",
                 "Details" : "+10% Critical Hit chance.",
                 "Icon" : "uixSvgIcon_statusCrit"
             },
             "durationData" : {
-                "duration" : 1,
+                "duration" : -1,
                 "stackLimit" : 1
             },
             "targetingData" : {

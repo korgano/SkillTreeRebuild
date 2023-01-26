@@ -10,5 +10,6 @@
 	"ReqSkillLevel" : 1,
 	"ActivationTime" : "ConsumedByFiring",
     "Targeting" : "MultiFire",
+	"IgnoresUniversalCooldown": true,
 	"IsPrimaryAbility": true
 }

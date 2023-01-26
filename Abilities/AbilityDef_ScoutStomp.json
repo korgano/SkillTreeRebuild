@@ -13,5 +13,39 @@
     "ActivationCooldown" : 4,
     "FloatParam1": 2000.0,
     "FloatParam2": 20.0,
+	"EffectData" :
+	[
+		{
+			"durationData" :
+			{
+				"duration" : 2,
+				"stackLimit": 1
+			},
+			"targetingData" : 
+			{
+				"effectTriggerType" : "OnHit",
+				"effectTargetType" : "EnemiesWithinRange",
+				"showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : false
+			},
+			"effectType" : "StatisticEffect",
+			"Description" :
+			{
+				"Id" : "StatusEffect-EnemyCripple",
+				"Name" : "SCOUT STOMP",
+				"Details" : "-1 to base Initiative",
+				"Icon" : "uixSvgIcon_ability_mastertactician"
+			},
+			"statisticData" : 
+			{
+				"statName" : "BaseInitiative",
+				"operation" : "Int_Add",
+				"modValue" : "1",
+				"modType" : "System.Int32"
+			},
+			"nature" : "Debuff"
+		}
+	],
 	"IsPrimaryAbility" : true
 }
