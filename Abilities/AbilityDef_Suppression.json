@@ -37,7 +37,7 @@
                 "targetCollection": "Weapon",
                 "targetWeaponCategory": "Missile",
                 "targetWeaponType": "SRM",
-                "targetAmmoCategory": "NotSet",
+                "targetAmmoCategory": "SRM",
                 "targetWeaponSubType": "NotSet"
             }
         },

@@ -60,7 +60,7 @@
             "effectType" : "StatisticEffect",
             "nature" : "Buff",
             "durationData" : {
-                "duration" : 1,
+                "duration" : 2,
                 "ticksOnActivations" : true,
                 "useActivationsOfTarget" : true,
                 "ticksOnEndOfRound" : false,
@@ -90,12 +90,12 @@
         },
         {
             "durationData" : {
-                "duration" : -1,
+                "duration" : 2,
                 "ticksOnActivations" : false,
                 "useActivationsOfTarget" : false,
                 "ticksOnEndOfRound" : false,
                 "ticksOnMovements" : false,
-                "stackLimit" : -1,
+                "stackLimit" : 1,
                 "clearedWhenAttacked" : false
             },
             "targetingData" : {
