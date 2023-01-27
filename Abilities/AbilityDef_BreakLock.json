@@ -1,0 +1,77 @@
+{
+	"Description": {
+		"Id": "AbilityDef_BreakLock",
+		"Name": "BREAK LOCK",
+		"Details": "ACTION: Select an allied unit within sensor range and give it +3 Hit Defense and Critical Hit immunity for 2 turns.",
+		"Icon": "uixSvgIcon_ability_breaklock"
+	},
+	"DisplayParams": "ShowInMWTRay",
+	"ReqSkill": "Tactics",
+	"ReqSkillLevel": 4,
+	"ActivationTime": "ConsumedByFiring",
+	"Targeting": "ActorTarget",
+	"TargetFriendlyUnit": "FRIENDLY",
+    "EffectData" :
+	[
+		{
+			"durationData" :
+			{
+				"duration" : 2,
+                "stackLimit": 1
+			},
+			"targetingData" :
+			{
+				"effectTriggerType" : "OnActivation",
+				"effectTargetType" : "SingleTarget"
+			},
+			"effectType" : "StatisticEffect",
+			"Description" :
+			{
+				"Id" : "StatusEffect-BreakLock",
+				"Name" : "BREAK LOCK",
+				"Details" : "ACTION: elect an allied unit within sensor range and give it +3 Hit Defense and Critical Hit immunity for 2 turns.",
+				"Icon" : "uixSvgIcon_ability_fortify"
+			},
+			"statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "ToHitThisActor",
+                "operation" : "Float_Add",
+                "modValue" : "3",
+                "modType" : "System.Single"
+            },
+			"nature" : "Buff"
+		},
+        {
+			"durationData" :
+			{
+				"duration" : 2,
+                "stackLimit": 1
+			},
+			"targetingData" : 
+			{
+				"effectTriggerType" : "OnActivation",
+				"effectTargetType" : "SingleTarget",
+				"hideApplicationFloatie" : false
+			},
+			"effectType" : "StatisticEffect",
+			"Description" :
+			{
+				"Id" : "AbilityDef-CritImmunity",
+				"Name" : "CRIT IMMUNITY",
+				"Details" : "PASSIVE: Unit is immune to Crits for 2 turns.",
+				"Icon" : "uixSvgIcon_run_n_gun"
+			},
+			"statisticData" : 
+			{
+				"statName" : "CriticalHitImmunity",
+				"operation" : "Set",
+				"modValue" : "true",
+				"modType" : "System.Boolean"
+			},
+			"nature" : "Buff"
+		}
+	],
+	"IsPrimaryAbility": true,
+	"IgnoresUniversalCooldown": true
+}

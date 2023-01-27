@@ -6,6 +6,8 @@
 		"Icon" : "uixSvgIcon_action_jump"
 	},
 	"ShortDesc" : "+20% jump distance boost.",
+    "ReqSkill" : "Piloting",
+	"ReqSkillLevel" : 6,
     "DisplayParams" : "ShowInMWTRay",
 	"ActivationTime" : "Passive",
     "EffectData": [
@@ -16,7 +18,7 @@
                 "useActivationsOfTarget" : false,
                 "ticksOnEndOfRound" : false,
                 "ticksOnMovements" : false,
-                "stackLimit" : -1,
+                "stackLimit" : 1,
                 "clearedWhenAttacked" : false
             },
             "targetingData" : {
@@ -33,7 +35,7 @@
             },
             "effectType" : "StatisticEffect",
             "Description" : {
-                "Id" : "StatusEffect-Jump-DistanceBoost",
+                "Id" : "StatusEffect-JumpMaven-DistanceBoost",
                 "Name" : "JUMP BOOSTER",
                 "Details" : "Increases the distance this unit can travel when jumping by [AMT].",
                 "Icon" : "uixSvgIcon_action_jump"
@@ -46,5 +48,6 @@
                 "modType" : "System.Single"
             }
         }
-	]
+	],
+    "IsPrimaryAbility": true
 }

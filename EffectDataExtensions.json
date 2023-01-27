@@ -1,5 +1,9 @@
 {
 	"StatusEffect-PotatoAccuracy": {
+		"TargetCollectionForSearch": "Unit",
+		"TargetCollectionTagMatch": [
+			"ImADumbUnitTag"
+		],
 		"TargetComponentTagMatch": [
 			"Potato_Gun"
 		]
@@ -14,12 +18,100 @@
 			"range_close"
 		]
 	},
-	"StatusEffect-StandardRange": {
+	"StatusEffect-CloseRange-DMG": {
+		"TargetCollectionForSearch": "Component",
+		"TargetCollectionTagMatch": [
+			"NotSet"
+		],
+		"TargetComponentTagMatch": [
+			"range_close"
+		]
+	},
+	"StatusEffect-CloseRange-CRIT": {
+		"TargetCollectionForSearch": "Component",
+		"TargetCollectionTagMatch": [
+			"NotSet"
+		],
+		"TargetComponentTagMatch": [
+			"range_close"
+		]
+	},
+	"StatusEffect-CloseRange-SR": {
+		"TargetCollectionForSearch": "Component",
+		"TargetCollectionTagMatch": [
+			"NotSet"
+		],
+		"TargetComponentTagMatch": [
+			"range_close"
+		]
+	},
+	"StatusEffect-CloseRange-MR": {
+		"TargetCollectionForSearch": "Component",
+		"TargetCollectionTagMatch": [
+			"NotSet"
+		],
+		"TargetComponentTagMatch": [
+			"range_close"
+		]
+	},
+	"StatusEffect-CloseRange-LR": {
+		"TargetCollectionForSearch": "Component",
+		"TargetCollectionTagMatch": [
+			"NotSet"
+		],
+		"TargetComponentTagMatch": [
+			"range_close"
+		]
+	},
+	"StatusEffect-CloseRange-STB": {
+		"TargetCollectionForSearch": "Component",
+		"TargetComponentTagMatch": [
+			"range_close"
+		]
+	},
+	"StatusEffect-CloseRange-HR": {
+		"TargetCollectionForSearch": "Component",
+		"TargetCollectionTagMatch": [
+			"NotSet"
+		],
+		"TargetComponentTagMatch": [
+			"range_close"
+		]
+	},
+	"StatusEffect-CloseRange-ACC": {
+		"TargetCollectionForSearch": "Component",
+		"TargetCollectionTagMatch": [
+			"NotSet"
+		],
+		"TargetComponentTagMatch": [
+			"range_close"
+		]
+	},
+	"StatusEffect-CloseRange-IMP": {
+		"TargetCollectionForSearch": "Component",
+		"TargetCollectionTagMatch": [
+			"NotSet"
+		],
+		"TargetComponentTagMatch": [
+			"range_close"
+		]
+	},
+	"StatusEffect-StandardRange-DMG": {
 		"TargetComponentTagMatch": [
 			"range_standard"
 		]
 	},
-	"StatusEffect-LongRange": {
+	"StatusEffect-StandardRange-CRIT": {
+		"TargetComponentTagMatch": [
+			"range_standard"
+		]
+	},
+	"StatusEffect-LongRange-DMG": {
+		"TargetComponentTagMatch": [
+			"range_long"
+		]
+	},
+	"StatusEffect-LongRange-CRIT": {
 		"TargetComponentTagMatch": [
 			"range_long"
 		]
@@ -36,7 +128,8 @@
 		]
 	},
 	"StatusEffect-SquishScouts": {
-		"TargetComponentTagMatch": [
+		"TargetCollectionForSearch": "Unit",
+		"TargetCollectionTagMatch": [
 			"unit_role_scout"
 		]
 	}

@@ -16,14 +16,15 @@
             "Description" : {
                 "Id" : "StatusEffect-MissileDefence",
                 "Name" : "ANTI-MISSILE COUNTERMEASURES",
-                "Details" : "All lance units take [AMT] less damage from missiles."
+                "Details" : "All lance units take [AMT] less damage from missiles.",
+                "Icon" : "uixSvgIcon_ability_AMS"
             },
             "durationData" : {
                 "duration" : -1,
-                "stackLimit" : 1
+                "stackLimit" : -1
             },
             "targetingData" : {
-                "effectTriggerType" : "OnActivation",
+                "effectTriggerType" : "OnHit",
                 "effectTargetType" : "AllLanceMates",
                 "showInTargetPreview" : false,
                 "showInStatusPanel" : true,
@@ -52,10 +53,10 @@
             },
             "durationData" : {
                 "duration" : -1,
-                "stackLimit" : 1
+                "stackLimit" : -1
             },
             "targetingData" : {
-                "effectTriggerType" : "OnActivation",
+                "effectTriggerType" : "OnHit",
                 "effectTargetType" : "Creator",
                 "showInTargetPreview" : false,
                 "showInStatusPanel" : true,
@@ -77,5 +78,5 @@
             }
         }
 	],
-    "IsPrimaryAbility" : true
+    "IsPrimaryAbility": true
 }

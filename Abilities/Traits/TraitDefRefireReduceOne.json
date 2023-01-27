@@ -61,7 +61,6 @@
                 "showInStatusPanel" : true
             },
             "effectType" : "StatisticEffect",
-            "DisplayParams" : "ShowInMWTRay",
             "Description" : {
                 "Id" : "StatusEffect-Defense_ToHit-T3",
                 "Name" : "HARDER TO HIT",
@@ -98,7 +97,7 @@
                 "forcePathRebuild" : false,
                 "forceVisRebuild" : false,
                 "showInTargetPreview" : false,
-                "showInStatusPanel" : true
+                "showInStatusPanel" : false
             },
             "effectType" : "StatisticEffect",
             "Description" : {
@@ -121,6 +120,32 @@
                 "targetWeaponType" : "NotSet",
                 "targetAmmoCategory" : "NotSet",
                 "targetWeaponSubType" : "Melee"
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "StatusEffect-BerserkFloatie",
+                "Name" : "BERSERK",
+                "Details" : "+60 Melee damage at 50% or less armor.",
+                "Icon" : "uixSvgIcon_ability_berserk"
+            },
+            "effectType" : "FloatieEffect",
+            "nature" : "Buff",
+            "durationData" : {
+                "duration" : 1,
+                "stackLimit" : 0,
+                "triggerLimit" : 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnDamaged",
+                "specialRules" : "HalfArmorOrLess",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : true
+            },
+            "floatieData" : {
+                "targetCollection" : "NotSet"
             }
         }
 	]

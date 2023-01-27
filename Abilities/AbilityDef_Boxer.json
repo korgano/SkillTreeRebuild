@@ -2,19 +2,19 @@
 	"Description": {
 		"Id": "AbilityDef_Boxer",
 		"Name": "BOXER",
-		"Details": "ACTION: Use superior piloting skills to deal 50% more stability damage with melee, while taking 25% less damage this turn. 3 turn cooldown.",
+		"Details": "ACTION: Use superior piloting skills to deal 50% more stability damage with melee, while taking 25% less damage for 2 turns. 3 turn cooldown.",
 		"Icon": "uixSvgIcon_ability_brawler"
 	},
 	"DisplayParams": "ShowInMWTRay",
 	"ReqSkill": "Piloting",
-	"ReqSkillLevel": 10,
+	"ReqSkillLevel": 8,
 	"ActivationTime": "ConsumedByFiring",
 	"ActivationCooldown": 3,
 	"Targeting": "ActorSelf",
 	"EffectData": [
 		{
             "durationData" : {
-                "duration" : -1,
+                "duration" : 2,
                 "stackLimit" : 1
             },
             "targetingData" : {
@@ -54,14 +54,14 @@
 				"stackLimit": 1
 			},
 			"targetingData": {
-				"effectTriggerType": "OnActivation",
+				"effectTriggerType": "OnHit",
 				"effectTargetType": "Creator",
-				"showInStatusPanel": true
+				"showInStatusPanel": false
 			},
 			"effectType": "StatisticEffect",
 			"Description": {
 				"Id": "AbilityDefGu10a_DR",
-				"Name": "Damage Reduction",
+				"Name": "DAMAGE REDUCTION",
 				"Details": "All incoming damage reduced by 25% for 1 turn.",
 				"Icon": "guards"
 			},
@@ -74,6 +74,5 @@
 			}
 		}
 	],
-	"IsPrimaryAbility": true,
-	"Priority": 2
+	"IsPrimaryAbility": true
 }

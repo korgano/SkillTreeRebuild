@@ -15,7 +15,7 @@
 		{
             "Description" : {
                 "Id" : "StatusEffect-MaxStrength-RunSpeed",
-                "Name" : "MOVEMENT INCREASED",
+                "Name" : "MAXIMUM STRENGTH - RUN SPEED INCREASED",
                 "Details" : "Maximum Strength increases speed by 50%.",
                 "Icon" : "uixSvgIcon_ability_maxstrength"
             },
@@ -53,14 +53,14 @@
         {
             "Description" : {
                 "Id" : "StatusEffect-MaxStrength-WalkSpeed",
-                "Name" : "ACTUATOR OVERCLOCKED",
+                "Name" : "MAXIMUM STRENGTH - WALK SPEED INCREASED",
                 "Details" : "Maximum Strength increases speed by 50%.",
                 "Icon" : "uixSvgIcon_ability_maxstrength"
             },
             "effectType" : "StatisticEffect",
             "nature" : "Buff",
             "durationData" : {
-                "duration" : 1,
+                "duration" : 2,
                 "ticksOnActivations" : true,
                 "useActivationsOfTarget" : true,
                 "ticksOnEndOfRound" : false,
@@ -90,12 +90,12 @@
         },
         {
             "durationData" : {
-                "duration" : -1,
+                "duration" : 2,
                 "ticksOnActivations" : false,
                 "useActivationsOfTarget" : false,
                 "ticksOnEndOfRound" : false,
                 "ticksOnMovements" : false,
-                "stackLimit" : -1,
+                "stackLimit" : 1,
                 "clearedWhenAttacked" : false
             },
             "targetingData" : {
@@ -113,7 +113,7 @@
             "effectType" : "StatisticEffect",
             "Description" : {
                 "Id" : "StatusEffect-Attack_DamageMelee-MS",
-                "Name" : "MELEE DAMAGE INCREASED",
+                "Name" : "MAXIMUM STRENGTH - MELEE DAMAGE INCREASED",
                 "Details" : "Melee attacks deal [AMT] more damage.",
                 "Icon" : "uixSvgIcon_equipment_ActuatorArm"
             },
@@ -151,8 +151,8 @@
             },
             "effectType": "StatisticEffect",
             "Description": {
-                "Id": "StatusEffect-OverclockHeatPenalty",
-                "Name": "Overworked Cooling",
+                "Id": "StatusEffect-MaxStrength-HeatPenalty",
+                "Name": "MAXIMUM STRENGTH - HEAT PENALTY",
                 "Details": "+40 Heat Generated",
                 "Icon": "uixSvgIcon_ability_maxstrength"
             },

@@ -14,8 +14,8 @@
 	"EffectData": [
 		{
             "Description" : {
-                "Id" : "StatusEffect-BWCL-WidowsKissRunSpeed",
-                "Name" : "MOVEMENT SLOWED",
+                "Id" : "StatusEffect-MaxArmor-RunSpeed",
+                "Name" : "MAXIMUM ARMOR - MOVEMENT SLOWED",
                 "Details" : "Maximum Armor reduces speed by 50%.",
                 "Icon" : "uixSvgIcon_ability_maxarmor"
             },
@@ -52,8 +52,8 @@
         },
 		{
             "Description" : {
-                "Id" : "StatusEffect-Victoria-Aura2",
-                "Name" : "MAXIMUM ARMOR",
+                "Id" : "StatusEffect-MaxArmor-DamageReduction",
+                "Name" : "MAXIMUM ARMOR - DAMAGE REDUCTION",
                 "Details" : "This unit takes [AMT] less damage.",
                 "Icon" : "uixSvgIcon_ability_maxarmor"
             },

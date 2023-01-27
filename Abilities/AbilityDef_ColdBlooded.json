@@ -18,7 +18,7 @@
                 "useActivationsOfTarget" : false,
                 "ticksOnEndOfRound" : false,
                 "ticksOnMovements" : false,
-                "stackLimit" : -1,
+                "stackLimit" : 1,
                 "clearedWhenAttacked" : false
             },
             "targetingData" : {
@@ -35,7 +35,7 @@
             },
             "effectType" : "StatisticEffect",
             "Description" : {
-                "Id" : "StatusEffect-Morale_Gain-T1",
+                "Id" : "StatusEffect-Morale_Gain-CB",
                 "Name" : "RESOLVE GENERATION INCREASED",
                 "Details" : "Provides a [AMT] bonus to actions that generate Resolve.",
                 "Icon" : "uixSvgIcon_ability_coldblooded"
@@ -62,5 +62,5 @@
             "poorlyMaintainedEffectData" : null
         }
 	],
-	"IsPrimaryAbility" : true
+	"IsPrimaryAbility": true
 }

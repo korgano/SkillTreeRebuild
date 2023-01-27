@@ -1,0 +1,108 @@
+{
+	"Description": {
+		"Id": "AbilityDef_Suppression",
+		"Name": "SUPPRESSION",
+		"Details": "PASSIVE: Direct Fire attacks inflict a -1 accuracy penalty on enemy units for 2 turns.",
+		"Icon": "uixSvgIcon_ability_suppression"
+	},
+	"DisplayParams": "ShowInMWTRay",
+	"ReqSkill" : "Gunnery",
+	"ReqSkillLevel" : 4,
+	"ActivationTime": "Passive",
+	"EffectData": [
+        {
+            "Description": {
+                "Id": "StatusEffect-SuppressionSRM",
+                "Name": "SUPPRESSION: -1 ACC",
+                "Details": "-1 Accuracy on Target"
+            },
+		"durationData": {
+                "duration": 2,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "OnWeaponFire",
+                "effectTargetType": "SingleTarget",
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            
+            "nature": "Debuff",
+            "statisticData": {
+                "statName": "AccuracyModifier",
+                "operation": "Float_Add",
+                "modValue": "1",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "Weapon",
+                "targetWeaponCategory": "Missile",
+                "targetWeaponType": "SRM",
+                "targetAmmoCategory": "SRM",
+                "targetWeaponSubType": "NotSet"
+            }
+        },
+        {
+            "Description": {
+                "Id": "StatusEffect-SuppressionEnergy",
+                "Name": "SUPPRESSION: -1 ACC",
+                "Details": "-1 Accuracy on Target"
+            },
+		"durationData": {
+                "duration": 2,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "OnWeaponFire",
+                "effectTargetType": "SingleTarget",
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            
+            "nature": "Debuff",
+            "statisticData": {
+                "statName": "AccuracyModifier",
+                "operation": "Float_Add",
+                "modValue": "1",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "Weapon",
+                "targetWeaponCategory": "Energy",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            }
+        },
+        {
+            "Description": {
+                "Id": "StatusEffect-SuppressionBallistic",
+                "Name": "SUPPRESSION: -1 ACC",
+                "Details": "-1 Accuracy on Target"
+            },
+		"durationData": {
+                "duration": 2,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "OnWeaponFire",
+                "effectTargetType": "SingleTarget",
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            
+            "nature": "Debuff",
+            "statisticData": {
+                "statName": "AccuracyModifier",
+                "operation": "Float_Add",
+                "modValue": "1",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "Weapon",
+                "targetWeaponCategory": "Ballistic",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            }
+        }
+	],
+	"IsPrimaryAbility": true
+}

@@ -14,13 +14,13 @@
 	[
 		{
             "Description": {
-                "Id": "StatusEffect-LongRange",
-                "Name": "Damage Boost",
+                "Id": "StatusEffect-LongRange-DMG",
+                "Name": "Damage Boost (Long Range)",
                 "Details": "+25% damage on all long range weapons.",
                 "Icon": "uixSvgIcon_ability_longshot"
             },
 		"durationData": {
-                "duration": 1,
+                "duration": -1,
                 "stackLimit": 1
             },
             "targetingData": {
@@ -46,13 +46,13 @@
         },
         {
             "Description" : {
-                "Id" : "StatusEffect-LongRange",
-                "Name" : "Crit Boost",
+                "Id" : "StatusEffect-LongRange-CRIT",
+                "Name" : "Crit Boost (Long Range)",
                 "Details" : "+10% boost to critical hit chance.",
                 "Icon" : "uixSvgIcon_statusCrit"
             },
             "durationData" : {
-                "duration" : 1,
+                "duration" : -1,
                 "stackLimit" : 1
             },
             "targetingData" : {
@@ -78,5 +78,5 @@
             }
         }
 	],
-    "IsPrimaryAbility" : true
+    "IsPrimaryAbility": true
 }

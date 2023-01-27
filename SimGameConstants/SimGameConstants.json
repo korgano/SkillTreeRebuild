@@ -14,6 +14,7 @@
         [
             "AbilityDef_CIFS",
             "AbilityDef_Missileer",
+            "AbilityDef_Suppression",
             "TraitDefWeaponHit4"
         ],
         [
@@ -53,10 +54,12 @@
         ],
         [
             "TraitDefMeleeHit4",
+            "AbilityDef_RunGun",
             "AbilityDef_SureFooting"
         ],
         [
             "TraitDefMeleeHit5",
+            "TraitDefEvasionBoost",
             "TraitDefEvasiveChargeAddOne"
         ],
         [
@@ -78,9 +81,7 @@
         ],
         [
             
-            
-            "TraitDefMeleeHit9",
-            "TraitDefEvasionBoost"
+            "TraitDefMeleeHit9"
 
         ],
         [
@@ -104,6 +105,7 @@
         [
             "AbilityDef_MaxArmor",
             "AbilityDef_MaxStrength",
+            "TraitDefBulwark",
             "TraitDefHealthAddTwo"
         ],
         [
@@ -132,6 +134,7 @@
         [        ],
         [
             "AbilityDef_BlindShot",
+            "AbilityDef_BreakLock",
             "AbilityDef_MissileCounter",
             "TraitDefMinRangeReduce45"
         ],
@@ -156,6 +159,6 @@
         [
             "TraitDefIndirectReduceThree"
         ]
-    ],
+    ]
 }
 }

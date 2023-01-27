@@ -28,7 +28,7 @@
 			"effectType": "StatisticEffect",
 			"Description": {
 				"Id": "AbilityDefGu5a_DR",
-				"Name": "Damage Reduction",
+				"Name": "HUNKER DOWN - CREATOR DAMAGE REDUCTION",
 				"Details": "All incoming damage reduced by 25% for 2 turns.",
 				"Icon": "layeredarmor"
 			},
@@ -55,7 +55,7 @@
 			"effectType": "StatisticEffect",
 			"Description": {
 				"Id": "AbilityDefGu10a_DR",
-				"Name": "Damage Reduction",
+				"Name": "HUNKER DOWN - LANCE DAMAGE REDUCTION",
 				"Details": "All incoming damage reduced by 25% for 2 turns.",
 				"Icon": "guards"
 			},
@@ -68,5 +68,5 @@
 			}
 		}
 	],
-	"IsPrimaryAbility" : true
+	"IsPrimaryAbility": true
 }

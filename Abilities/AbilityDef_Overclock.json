@@ -25,7 +25,7 @@
             "effectType": "StatisticEffect",
             "Description": {
                 "Id": "StatusEffect-OverclockDamage",
-                "Name": "Overclocked Weapons",
+                "Name": "OVERCLOCKED WEAPONS",
                 "Details": "+25% Weapon Damage",
                 "Icon": "uixSvgIcon_ability_overclock2"
             },
@@ -56,7 +56,7 @@
             "effectType": "StatisticEffect",
             "Description": {
                 "Id": "StatusEffect-OverclockAccuracy",
-                "Name": "Overclocked Targeting",
+                "Name": "OVERCLOCKED TARGETING",
                 "Details": "+2 Accuracy",
                 "Icon": "uixSvgIcon_ability_overclock2"
             },
@@ -77,13 +77,13 @@
         {
             "Description" : {
                 "Id" : "StatusEffect-OverclockCrit",
-                "Name" : "Overclocked Criticals",
+                "Name" : "OVERCLOCKED CRITS",
                 "Details" : "This unit fights with an unstoppable drive, taking less damage and having a much higher Critical Hit chance.",
                 "Icon" : "uixSvgIcon_ability_overclock2"
             },
             "durationData" : {
-                "duration" : -1,
-                "stackLimit" : -1
+                "duration" : 1,
+                "stackLimit" : 1
             },
             "targetingData" : {
                 "effectTriggerType" : "Passive",
@@ -96,7 +96,7 @@
             "nature" : "Buff",
             "statisticData" : {
                 "statName" : "CriticalChanceMultiplier",
-                "operation" : "Float_Add",
+                "operation" : "Float_Multiply",
                 "modValue" : "1.10",
                 "modType" : "System.Single",
                 "additionalRules" : "NotSet",
@@ -121,7 +121,7 @@
             "effectType": "StatisticEffect",
             "Description": {
                 "Id": "StatusEffect-OverclockHeatPenalty",
-                "Name": "Overworked Cooling",
+                "Name": "OVERWORKED COOLING",
                 "Details": "+40 Heat Generated",
                 "Icon": "uixSvgIcon_ability_overclock2"
             },

@@ -14,23 +14,23 @@
 	[
 		{
             "Description" : {
-                "Id" : "StatusEffect-BWCL-WidowsKissFloatie",
-                "Name" : "GIMP THEM",
+                "Id" : "StatusEffect-GimpThemFloatie",
+                "Name" : "ACTUATOR WRENCHED",
                 "Details" : "GIMP THEM",
                 "Icon" : "uixSvgIcon_ability_gimpthem"
             },
             "effectType" : "FloatieEffect",
-            "nature" : "Buff",
+            "nature" : "Debuff",
             "durationData" : {
                 "duration" : 1,
-                "stackLimit" : 0,
+                "stackLimit" : 1,
                 "triggerLimit" : 1
             },
             "targetingData" : {
-                "effectTriggerType" : "OnWeaponFire",
-                "effectTargetType" : "Creator",
+                "effectTriggerType" : "OnHit",
+                "effectTargetType" : "SingleTarget",
                 "showInTargetPreview" : false,
-                "showInStatusPanel" : true,
+                "showInStatusPanel" : false,
                 "hideApplicationFloatie" : false
             },
             "floatieData" : {
@@ -40,7 +40,7 @@
         {
             "Description" : {
                 "Id" : "StatusEffect-BWCL-WidowsKissWalkSpeed",
-                "Name" : "ACTUATOR WRENCHED",
+                "Name" : "WALK SPEED REDUCED",
                 "Details" : "Attacks target and wrench opponent's Actuators, slowing their movement speed.",
                 "Icon" : "uixSvgIcon_ability_gimpthem"
             },
@@ -60,7 +60,7 @@
                 "effectTargetType" : "SingleTarget",
                 "showInTargetPreview" : true,
                 "showInStatusPanel" : false,
-                "hideApplicationFloatie" : false
+                "hideApplicationFloatie" : true
             },
             "statisticData" : {
                 "statName" : "WalkSpeed",
@@ -78,7 +78,7 @@
         {
             "Description" : {
                 "Id" : "StatusEffect-BWCL-WidowsKissRunSpeed",
-                "Name" : "MOVEMENT SLOWED",
+                "Name" : "RUN SPEED REDUCED",
                 "Details" : "Attacks target and wrench opponent's Actuators, slowing their movement speed.",
                 "Icon" : "uixSvgIcon_ability_gimpthem"
             },
@@ -98,7 +98,7 @@
                 "effectTargetType" : "SingleTarget",
                 "showInTargetPreview" : true,
                 "showInStatusPanel" : false,
-                "hideApplicationFloatie" : false
+                "hideApplicationFloatie" : true
             },
             "statisticData" : {
                 "statName" : "RunSpeed",
@@ -114,5 +114,5 @@
             }
         }
 	],
-    "IsPrimaryAbility" : true
+    "IsPrimaryAbility": true
 }

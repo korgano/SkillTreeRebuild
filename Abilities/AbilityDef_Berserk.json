@@ -18,7 +18,7 @@
                 "useActivationsOfTarget" : false,
                 "ticksOnEndOfRound" : false,
                 "ticksOnMovements" : false,
-                "stackLimit" : -1,
+                "stackLimit" : 1,
                 "clearedWhenAttacked" : false
             },
             "targetingData" : {
@@ -35,10 +35,9 @@
             },
             "effectType" : "StatisticEffect",
             "Description" : {
-                "Id" : "StatusEffect-Defense_ToHit-T3",
-                "Name" : "HARDER TO HIT",
-                "Details" : "Provides a [AMT] penalty to all attacks against this unit.",
-                "Icon" : "uixSvgIcon_ability_berserk"
+                "Id" : "StatusEffect-Defense_ToHit-Berserk",
+                "Name" : "BERSERK - HARDER TO HIT",
+                "Details" : "Provides a [AMT] penalty to all attacks against this unit."
             },
             "nature" : "Buff",
             "statisticData" : {
@@ -57,7 +56,7 @@
                 "useActivationsOfTarget" : false,
                 "ticksOnEndOfRound" : false,
                 "ticksOnMovements" : false,
-                "stackLimit" : -1,
+                "stackLimit" : 1,
                 "clearedWhenAttacked" : false
             },
             "targetingData" : {
@@ -74,9 +73,9 @@
             },
             "effectType" : "StatisticEffect",
             "Description" : {
-                "Id" : "StatusEffect-Attack_DamageMelee-T6",
-                "Name" : "MELEE DAMAGE INCREASED",
-                "Details" : "Melee attacks deal [AMT] more damage.",
+                "Id" : "StatusEffect-Attack_DamageMelee-Berserk",
+                "Name" : "BERSERK - MELEE DAMAGE INCREASED",
+                "Details" : "At 50% or less armor, melee attacks deal [AMT] more damage.",
                 "Icon" : "uixSvgIcon_ability_berserk"
             },
             "nature" : "Buff",
@@ -93,6 +92,31 @@
                 "targetWeaponType" : "NotSet",
                 "targetAmmoCategory" : "NotSet",
                 "targetWeaponSubType" : "Melee"
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "StatusEffect-BerserkFloatie",
+                "Name" : "BERSERK",
+                "Details" : "Gain +6 Hit Defense, as well as +60 Melee damage at 50% or less armor.",
+                "Icon" : "uixSvgIcon_ability_berserk"
+            },
+            "effectType" : "FloatieEffect",
+            "nature" : "Buff",
+            "durationData" : {
+                "duration" : 1,
+                "stackLimit" : 0,
+                "triggerLimit" : 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnWeaponFire",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : true
+            },
+            "floatieData" : {
+                "targetCollection" : "NotSet"
             }
         }
 	],

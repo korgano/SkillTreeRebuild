@@ -5,7 +5,7 @@
 		"Details" : "PASSIVE: Experienced MechWarriors recieve bonus movement speed and 25% damage reduction.",
 		"Icon" : "uixSvgIcon_ability_mechmeister"
 	},
-	"ShortDesc" : "+ 25% Movement and + 25% Damage Reduction",
+	"ShortDesc" : "+ 25% Movement Speed and + 25% Damage Reduction",
     "DisplayParams" : "ShowInMWTRay",
     "ReqSkill" : "Piloting",
 	"ReqSkillLevel" : 8,
@@ -14,8 +14,8 @@
 	[
 		{
             "Description" : {
-                "Id" : "StatusEffect-BWCL-WalkSpeed",
-                "Name" : "MECH MEISTER",
+                "Id" : "StatusEffect-MechMeister-WalkSpeed",
+                "Name" : "MECH MEISTER - WALK SPEED INCREASE",
                 "Details" : "Experienced MechWarriors recieve bonus movement speed and take [AMT] less damage.",
                 "Icon" : "uixSvgIcon_ability_mechmeister"
             },
@@ -23,7 +23,7 @@
             "nature" : "Buff",
             "durationData" : {
                 "duration" : -1,
-                "stackLimit" : -1
+                "stackLimit" : 1
             },
             "targetingData" : {
                 "effectTriggerType" : "Passive",
@@ -47,8 +47,8 @@
         },
         {
             "Description" : {
-                "Id" : "StatusEffect-BWCL-SprintSpeed",
-                "Name" : "MECH MEISTER",
+                "Id" : "StatusEffect-MechMeister-SprintSpeed",
+                "Name" : "MECH MEISTER - RUN SPEED INCREASE",
                 "Details" : "Experienced MechWarriors recieve bonus movement speed and take [AMT] less damage.",
                 "Icon" : "uixSvgIcon_ability_mechmeister"
             },
@@ -56,7 +56,7 @@
             "nature" : "Buff",
             "durationData" : {
                 "duration" : -1,
-                "stackLimit" : -1
+                "stackLimit" : 1
             },
             "targetingData" : {
                 "effectTriggerType" : "Passive",
@@ -80,8 +80,8 @@
         },
         {
             "Description" : {
-                "Id" : "StatusEffect-BWCL-DamageReduction",
-                "Name" : "MECH MEISTER",
+                "Id" : "StatusEffect-MechMeister-DamageReduction",
+                "Name" : "MECH MEISTER - DAMAGE REDUCTION",
                 "Details" : "Experienced MechWarriors recieve bonus movement speed and take [AMT] less damage.",
                 "Icon" : "uixSvgIcon_ability_mechmeister"
             },
@@ -89,13 +89,13 @@
             "nature" : "Buff",
             "durationData" : {
                 "duration" : -1,
-                "stackLimit" : -1
+                "stackLimit" : 1
             },
             "targetingData" : {
                 "effectTriggerType" : "Passive",
                 "effectTargetType" : "Creator",
-                "showInTargetPreview" : true,
-                "showInStatusPanel" : true,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
                 "hideApplicationFloatie" : true
             },
             "statisticData" : {
@@ -111,5 +111,6 @@
                 "targetWeaponSubType" : "NotSet"
             }
         }
-	]
+	],
+    "IsPrimaryAbility": true
 }

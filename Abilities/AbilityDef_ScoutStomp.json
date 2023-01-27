@@ -13,5 +13,8 @@
     "ActivationCooldown" : 4,
     "FloatParam1": 2000.0,
     "FloatParam2": 20.0,
+	"EffectData" :
+	[
+	],
 	"IsPrimaryAbility" : true
 }

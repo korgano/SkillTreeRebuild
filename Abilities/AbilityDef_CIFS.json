@@ -2,7 +2,7 @@
 	"Description" : {
 		"Id" : "AbilityDef_CIFS",
 		"Name" : "CLOSE-IN FIRE SUPPORT",
-		"Details" : "PASSIVE: Gain a +50% boost to all support weapon range brackets, as well as -20% heat from support weapons",
+		"Details" : "PASSIVE: Gain a +50% boost to all support weapon range brackets, as well as -20% heat from support weapons and +1 Stability damage.",
 		"Icon" : "uixSvgIcon_ability_CIFS2"
 	},
     "DisplayParams" : "ShowInMWTRay",
@@ -24,10 +24,10 @@
             },
             "effectType": "StatisticEffect",
             "Description": {
-                "Id": "StatusEffect-CloseRange",
-                "Name": "Knife Fighter",
+                "Id": "StatusEffect-CloseRange-SR",
+                "Name": "CLOSE-IN FIRE SUPPORT - SHORT RANGE",
                 "Details": "The short and medium range brackets on this mech's support weapons are increased by 50% and its support weapon damage is increased by 10%.",
-                "Icon": "uixSvgIcon_ability_knifefight"
+                "Icon": "uixSvgIcon_ability_CIFS2"
             },
             "nature": "Buff",
             "statisticData": {
@@ -55,10 +55,10 @@
             },
             "effectType": "StatisticEffect",
             "Description": {
-                "Id": "StatusEffect-CloseRange",
-                "Name": "Medium Range Increase",
+                "Id": "StatusEffect-CloseRange-MR",
+                "Name": "CLOSE-IN FIRE SUPPORT - MEDIUM RANGE",
                 "Details": "The Medium range brackets on this mech's support weapons are increased by 50%.",
-                "Icon": "uixSvgIcon_ability_knifefight"
+                "Icon": "uixSvgIcon_ability_CIFS2"
             },
             "nature": "Buff",
             "statisticData": {
@@ -86,10 +86,10 @@
             },
             "effectType": "StatisticEffect",
             "Description": {
-                "Id": "StatusEffect-CloseRange",
-                "Name": "Medium Range Increase",
+                "Id": "StatusEffect-CloseRange-LR",
+                "Name": "CLOSE-IN FIRE SUPPORT - LONG RANGE",
                 "Details": "The Medium range brackets on this mech's support weapons are increased by 50%.",
-                "Icon": "uixSvgIcon_ability_knifefight"
+                "Icon": "uixSvgIcon_ability_CIFS2"
             },
             "nature": "Buff",
             "statisticData": {
@@ -107,7 +107,7 @@
 		{
             "durationData" : {
                 "duration" : -1,
-                "stackLimit" : -1
+                "stackLimit" : 1
             },
             "targetingData" : {
                 "effectTriggerType" : "Passive",
@@ -116,17 +116,17 @@
             },
             "effectType" : "StatisticEffect",
             "Description" : {
-                "Id" : "StatusEffect-CloseRange",
-                "Name" : "Support Weapon Damage Increased",
+                "Id" : "StatusEffect-CloseRange-STB",
+                "Name" : "SUPPORT WEAPON STAB DAMAGE INCREASE",
                 "Details" : "Support weapon attacks deal 10% more damage.",
-                "Icon" : "uixSvgIcon_ability_knifefight"
+                "Icon" : "uixSvgIcon_ability_CIFS2"
             },
             "nature" : "Buff",
             "statisticData": {
 				"modType": "System.Single",
-				"modValue": "1.1",
-				"operation": "Float_Multiply",
-				"statName": "DamagePerShot",
+				"modValue": "1",
+				"operation": "Float_Add",
+				"statName": "Instability",
 				"targetAmmoCategory": "NotSet",
 				"targetCollection": "Weapon",
 				"targetWeaponCategory": "NotSet",
@@ -137,7 +137,7 @@
         {
             "durationData" : {
                 "duration" : -1,
-                "stackLimit" : -1
+                "stackLimit" : 1
             },
             "targetingData" : {
                 "effectTriggerType" : "Passive",
@@ -146,10 +146,10 @@
             },
             "effectType" : "StatisticEffect",
             "Description" : {
-                "Id" : "StatusEffect-CloseRange",
-                "Name" : "Support Weapon Heat Reduction",
+                "Id" : "StatusEffect-CloseRange-HR",
+                "Name" : "SUPPORT WEAPON HEAT REDUCTION - 20%",
                 "Details" : "20% reduction in heat generation.",
-                "Icon" : "uixSvgIcon_ability_knifefight"
+                "Icon" : "uixSvgIcon_ability_CIFS2"
             },
             "nature" : "Buff",
             "statisticData": {
@@ -165,5 +165,5 @@
 			}
         }
 	],
-	"IsPrimaryAbility" : true
+	"IsPrimaryAbility": true
 }

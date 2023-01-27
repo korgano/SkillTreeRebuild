@@ -14,15 +14,16 @@
 	[
 		{
             "Description" : {
-                "Id" : "StatusEffect-VeryLongRange",
+                "Id" : "StatusEffect-LongestRanges",
                 "Name" : "ARMOR BYPASS",
-                "Details" : "Very long and extreme range weapons bypass armor and deal structure damage to the target."
+                "Details" : "Very long and extreme range weapons bypass armor and deal structure damage to the target.",
+                "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
             },
             "effectType" : "StatisticEffect",
             "nature" : "Buff",
             "durationData" : {
                 "duration" : -1,
-                "stackLimit": 1
+                "stackLimit": -1
             },
             "targetingData" : {
                 "effectTriggerType" : "Passive",
@@ -34,37 +35,11 @@
             "statisticData" : {
                 "statName" : "StructureDamagePerShot",
                 "operation" : "Float_Add",
-                "modValue" : "5",
-                "modType" : "System.Single",
-                "targetCollection" : "Weapon"
-            }
-        },
-        {
-            "Description" : {
-                "Id" : "StatusEffect-ExtremeRange",
-                "Name" : "ARMOR BYPASS",
-                "Details" : "Very long and extreme range weapons bypass armor and deal structure damage to the target."
-            },
-            "effectType" : "StatisticEffect",
-            "nature" : "Buff",
-            "durationData" : {
-                "duration" : -1,
-                "stackLimit": 1
-            },
-            "targetingData" : {
-                "effectTriggerType" : "Passive",
-                "effectTargetType" : "Creator",
-                "showInTargetPreview" : false,
-                "showInStatusPanel" : false,
-                "hideApplicationFloatie" : false
-            },
-            "statisticData" : {
-                "statName" : "StructureDamagePerShot",
-                "operation" : "Float_Add",
-                "modValue" : "5",
+                "modValue" : "5.0",
                 "modType" : "System.Single",
                 "targetCollection" : "Weapon"
             }
         }
-	]
+	],
+    "IsPrimaryAbility": true
 }

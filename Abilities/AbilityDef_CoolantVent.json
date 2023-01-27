@@ -11,5 +11,5 @@
 	"ActivationTime" : "ConsumedByFiring",
     "Targeting" : "ConfirmCoolantVent",
     "ActivationCooldown" : 4,
-	"IsPrimaryAbility" : true
+	"IsPrimaryAbility": true
 }

@@ -2,7 +2,7 @@
 	"Description" : {
 		"Id" : "AbilityDef_NetAttack",
 		"Name" : "NETWORKED ATTACK",
-		"Details" : "ACTION: Advanced heuristics provide your lancemates with +3 accuracy, 30% increase to long & max range brackets, and 10% Called Shot bonus for the remainder of this turn. Does not affect this unit. +30 heat to this unit, 5 turn cooldown.",
+		"Details" : "ACTION: Advanced heuristics provide your lancemates with +3 accuracy, 30% increase to long & max range brackets, and 25% Called Shot bonus for the remainder of this turn. Does not affect this unit. +30 heat to this unit, 5 turn cooldown.",
 		"Icon" : "uixSvgIcon_ability_tarpre"
 	},
     "DisplayParams" : "ShowInMWTRay",
@@ -14,7 +14,7 @@
 	"EffectData": [
 		{
 			"durationData": {
-				"duration": 2,
+				"duration": 1,
 				"ticksOnActivations": true,
 				"useActivationsOfTarget": true,
 				"stackLimit": 1
@@ -26,21 +26,20 @@
 			"effectType": "StatisticEffect",
 			"Description": {
 				"Id": "StatusEffect-TargetPredictionAccuracy",
-				"Name": "Target Prediction",
-				"Details": "Allies gains +2 to accuracy for this turn.",
-				"Icon": "C3Systems"
+				"Name": "NETWORKED ATTACK - Target Prediction",
+				"Details": "Allies gains +2 to accuracy for this turn."
 			},
 			"statisticData": {
 				"statName": "AccuracyModifier",
 				"operation": "Float_Add",
-				"modValue": "-2.0",
+				"modValue": "-3.0",
 				"modType": "System.Single"
 			},
 			"nature": "Buff"
 		},
 		{
             "durationData": {
-                "duration": -1,
+                "duration": 1,
                 "stackLimit": 1
             },
             "targetingData": {
@@ -51,10 +50,9 @@
             },
             "effectType": "StatisticEffect",
             "Description": {
-                "Id": "AbilityDefT10Aa_LongRange",
-                "Name": "Eagle Eye",
-                "Details": "The long/max range brackets on this mech's weapons are increased by 30%, sensor and sight ranges are increased by 30%, and this mech gets a 10% boost to called shots.",
-                "Icon": "lv_eye-target"
+                "Id": "StatusEffect-RangeBrackets-Long",
+                "Name": "NETWORKED ATTACK - LONG RANGE INCREASE",
+                "Details": "The long/max range brackets on this mech's weapons are increased by 30%, sensor and sight ranges are increased by 30%, and this mech gets a 10% boost to called shots."
             },
             "nature": "Buff",
             "statisticData": {
@@ -67,7 +65,7 @@
         },
 		{
             "durationData": {
-                "duration": -1,
+                "duration": 1,
                 "stackLimit": 1
             },
             "targetingData": {
@@ -78,8 +76,8 @@
             },
             "effectType": "StatisticEffect",
             "Description": {
-                "Id": "AbilityDefT10Aa_MaxRange",
-                "Name": "Max Range Increase",
+                "Id": "StatusEffect-RangeBrackets-Max",
+                "Name": "NETWORKED ATTACK - MAX RANGE INCREASE",
                 "Details": "The max range brackets on this mech's weapons are increased by 30%.",
                 "Icon": "lv_eye-target"
             },
@@ -94,7 +92,8 @@
         },
         {
             "durationData": {
-                "duration": -1
+                "duration": 1,
+                "stackLimit": 1
             },
             "targetingData": {
                 "effectTriggerType": "OnActivation",
@@ -104,15 +103,14 @@
             },
             "effectType": "StatisticEffect",
             "Description": {
-                "Id": "AbilityDefT10Aa_CalledShot",
+                "Id": "StatusEffect-CalledShot-NetworkedTarget",
                 "Name": "Improved Called Shot",
-                "Details": "Called Shots twice as reliable",
-                "Icon": "lv_eye-target"
+                "Details": "25% Called Shot bonus"
             },
             "statisticData": {
                 "statName": "CalledShotBonusMultiplier",
                 "operation": "Float_Multiply",
-                "modValue": "1.1",
+                "modValue": "1.25",
                 "modType": "System.Single"
             }
         },
@@ -129,11 +127,11 @@
             "effectType": "StatisticEffect",
             "Description": {
                 "Id": "StatusEffect-FryElectronics",
-                "Name": "Fry Electronics",
+                "Name": "FRY ELECTRONICS",
                 "Details": "+30 Heat Damage.",
                 "Icon": "snowflake"
             },
-            "nature": "Buff",
+            "nature": "Debuff",
             "statisticData": {
                 "statName": "HeatSinkCapacity",
                 "operation": "Int_Add",
@@ -142,5 +140,5 @@
             }
         }
 	],
-	"IsPrimaryAbility" : true
+	"IsPrimaryAbility": true
 }
