@@ -1,0 +1,15 @@
+{
+    "TargetID": "pilot_d1_recruit",
+    "Instructions": [
+        {
+            "JSONPath": "PilotTags.items",
+            "Action": "Replace",
+            "Value": [
+                "pilot_npc_recruit",
+                "pilot_npc_dynamic",
+                "pilot_npc_d1",
+                "base_skills_only"
+            ]
+        }
+    ]
+}

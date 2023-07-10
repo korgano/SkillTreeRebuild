@@ -1,0 +1,35 @@
+{
+   "TargetID": "pilot_story_kamea_mid",
+   "Instructions": [
+       {
+           "JSONPath": "abilityDefNames",
+           "Action": "Replace",
+           "Value": [
+               "AbilityDef_MultiTarget",
+               "AbilityDef_Missileer",
+               "AbilityDef_JackAll",
+               "AbilityDef_TargetFiring",
+               "AbilityDefT5A",
+               "AbilityDef_RunGun",
+               "AbilityDef_JumpMaven",
+               "AbilityDef_MechMeister",
+               "TraitDefWeaponHit5",
+               "TraitDefWeaponHit8",
+               "TraitDefBulwark",
+               "TraitDefBerserkHitDefense",
+               "TraitDefHealthAddOne",
+               "TraitDefRefireReduceOne",
+               "TraitDefOverheatAddFifteen",
+	            "TraitDefHealthAddTwo",
+                "TraitDefIndirectReduceOne",
+                "TraitDefUnsteadySet60",
+                "TraitDefMinRangeReduce45",
+                "TraitDefOverheatAddThirty",
+                "TraitDefUnsteadySet60",
+                "TraitDefSprintIncrease20",
+                "TraitDefMinRangeReduce45",
+                "TraitDefCalledShotImprove"
+           ]
+       }
+   ]
+}

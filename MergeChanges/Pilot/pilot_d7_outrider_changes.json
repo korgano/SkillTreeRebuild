@@ -1,0 +1,15 @@
+{
+    "TargetID": "pilot_d7_outrider",
+    "Instructions": [
+        {
+            "JSONPath": "PilotTags.items",
+            "Action": "Replace",
+            "Value": [
+                "pilot_npc_outrider",
+                "pilot_npc_dynamic",
+                "pilot_npc_d7",
+                "base_skills_only"
+            ]
+        }
+    ]
+}

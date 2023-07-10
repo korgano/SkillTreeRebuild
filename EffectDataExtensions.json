@@ -1,136 +1,282 @@
 {
-	"StatusEffect-PotatoAccuracy": {
-		"TargetCollectionForSearch": "Unit",
-		"TargetCollectionTagMatch": [
-			"ImADumbUnitTag"
-		],
-		"TargetComponentTagMatch": [
-			"Potato_Gun"
-		]
-	},
 	"StatusEffect-ExtremeRange": {
 		"TargetComponentTagMatch": [
 			"range_extreme"
-		]
+		],
+		"MustMatchAllComponent": false
 	},
 	"StatusEffect-CloseRange": {
 		"TargetComponentTagMatch": [
 			"range_close"
-		]
+		],
+		"MustMatchAllComponent": false
 	},
 	"StatusEffect-CloseRange-DMG": {
-		"TargetCollectionForSearch": "Component",
-		"TargetCollectionTagMatch": [
-			"NotSet"
-		],
 		"TargetComponentTagMatch": [
 			"range_close"
-		]
+		],
+		"MustMatchAllComponent": false
 	},
 	"StatusEffect-CloseRange-CRIT": {
-		"TargetCollectionForSearch": "Component",
-		"TargetCollectionTagMatch": [
-			"NotSet"
-		],
 		"TargetComponentTagMatch": [
 			"range_close"
-		]
+		],
+		"MustMatchAllComponent": false
 	},
 	"StatusEffect-CloseRange-SR": {
-		"TargetCollectionForSearch": "Component",
-		"TargetCollectionTagMatch": [
-			"NotSet"
-		],
 		"TargetComponentTagMatch": [
 			"range_close"
-		]
+		],
+		"MustMatchAllComponent": false
 	},
 	"StatusEffect-CloseRange-MR": {
-		"TargetCollectionForSearch": "Component",
-		"TargetCollectionTagMatch": [
-			"NotSet"
-		],
 		"TargetComponentTagMatch": [
 			"range_close"
-		]
+		],
+		"MustMatchAllComponent": false
 	},
 	"StatusEffect-CloseRange-LR": {
-		"TargetCollectionForSearch": "Component",
-		"TargetCollectionTagMatch": [
-			"NotSet"
-		],
 		"TargetComponentTagMatch": [
 			"range_close"
-		]
+		],
+		"MustMatchAllComponent": false
 	},
 	"StatusEffect-CloseRange-STB": {
-		"TargetCollectionForSearch": "Component",
 		"TargetComponentTagMatch": [
 			"range_close"
-		]
+		],
+		"MustMatchAllComponent": false
 	},
 	"StatusEffect-CloseRange-HR": {
-		"TargetCollectionForSearch": "Component",
-		"TargetCollectionTagMatch": [
-			"NotSet"
-		],
 		"TargetComponentTagMatch": [
 			"range_close"
-		]
+		],
+		"MustMatchAllComponent": false
 	},
 	"StatusEffect-CloseRange-ACC": {
-		"TargetCollectionForSearch": "Component",
-		"TargetCollectionTagMatch": [
-			"NotSet"
-		],
 		"TargetComponentTagMatch": [
 			"range_close"
-		]
+		],
+		"MustMatchAllComponent": false
 	},
 	"StatusEffect-CloseRange-IMP": {
-		"TargetCollectionForSearch": "Component",
-		"TargetCollectionTagMatch": [
-			"NotSet"
-		],
 		"TargetComponentTagMatch": [
 			"range_close"
-		]
+		],
+		"MustMatchAllComponent": false
 	},
 	"StatusEffect-StandardRange-DMG": {
 		"TargetComponentTagMatch": [
 			"range_standard"
-		]
+		],
+		"MustMatchAllComponent": false
 	},
 	"StatusEffect-StandardRange-CRIT": {
 		"TargetComponentTagMatch": [
 			"range_standard"
-		]
+		],
+		"MustMatchAllComponent": false
 	},
 	"StatusEffect-LongRange-DMG": {
 		"TargetComponentTagMatch": [
 			"range_long"
-		]
+		],
+		"MustMatchAllComponent": false
 	},
 	"StatusEffect-LongRange-CRIT": {
 		"TargetComponentTagMatch": [
 			"range_long"
-		]
+		],
+		"MustMatchAllComponent": false
 	},
 	"StatusEffect-VeryLongRange": {
 		"TargetComponentTagMatch": [
 			"range_very-long"
-		]
+		],
+		"MustMatchAllComponent": false
 	},
 	"StatusEffect-LongestRanges": {
 		"TargetComponentTagMatch": [
 			"range_very-long",
 			"range_extreme"
-		]
+		],
+		"MustMatchAllComponent": false
 	},
-	"StatusEffect-SquishScouts": {
-		"TargetCollectionForSearch": "Unit",
-		"TargetCollectionTagMatch": [
-			"unit_role_scout"
-		]
+	"StatusEffect-LongestRanges-MaxDMG": {
+		"TargetComponentTagMatch": [
+			"range_very-long",
+			"range_extreme"
+		],
+		"MustMatchAllComponent": false
+	},
+	"StatusEffect-TargetDesignator-Acc": {
+		"TargetCollectionsForSearch": {
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		},
+		"TargetComponentTagMatch": [
+			"target_designator"
+		],
+		"MustMatchAllComponent": false
+	},
+	"StatusEffect-TargetDesignator-SR": {
+		"TargetCollectionsForSearch": {
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		},
+		"TargetComponentTagMatch": [
+			"target_designator"
+		],
+		"MustMatchAllComponent": false
+	},
+	"StatusEffect-TargetDesignator-MR": {
+		"TargetCollectionsForSearch": {
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		},
+		"TargetComponentTagMatch": [
+			"target_designator"
+		],
+		"MustMatchAllComponent": false
+	},
+	"StatusEffect-TargetDesignator-LR": {
+		"TargetCollectionsForSearch": {
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		},
+		"TargetComponentTagMatch": [
+			"target_designator"
+		],
+		"MustMatchAllComponent": false
+	},
+	"StatusEffect-Berserk-HitDefense": {
+		"TargetCollectionsForSearch": {
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"StatusEffect-Bulwark": {
+		"TargetCollectionsForSearch": {
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"StatusEffect-LowProfile": {
+		"TargetCollectionsForSearch": {
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"StatusEffect_SafeEvasive": {
+		"TargetCollectionsForSearch": {
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"StatusEffect-Elite-ShootAfterSprint": {
+		"TargetCollectionsForSearch": {
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"StatusEffect-Elite-HeadshotImmunity": {
+		"TargetCollectionsForSearch": {
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"StatusEffect-OverheatedDamageMultiplier": {
+		"TargetCollectionsForSearch": {
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
 	}
 }

@@ -1,0 +1,28 @@
+{
+   "TargetID": "pilot_story_KameaGuard2",
+   "Instructions": [
+       {
+           "JSONPath": "abilityDefNames",
+           "Action": "Replace",
+           "Value": [
+               "AbilityDef_MultiTarget",
+               "AbilityDef_Missileer",
+               "AbilityDef_JackAll",
+               
+               "AbilityDefT5A",
+               "AbilityDef_ColdBlooded",
+               "AbilityDef_MaxArmor",
+               "AbilityDef_CoolantVent",
+               "TraitDefWeaponHit5",
+               "TraitDefWeaponHit7",
+               "TraitDefBulwark",
+               "TraitDefBerserkHitDefense",
+                "TraitDefUnsteadySet60",
+                "TraitDefHealthAddOne",
+	            "TraitDefRefireReduceOne",
+	            "TraitDefOverheatAddFifteen",
+                "TraitDefIndirectReduceOne"
+           ]
+       }
+   ]
+}

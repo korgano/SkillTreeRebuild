@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "AbilityDef_Missileer",
 		"Name": "MISSILEER",
-		"Details": "PASSIVE: Missiles gain +1 accuracy and ignore 2 evasion.",
+		"Details": "PASSIVE: Missiles gain +2 accuracy and ignore 2 evasion. 10% Weapon Damage Boost.",
 		"Icon": "uixSvgIcon_weapon_Missile"
 	},
 	"DisplayParams": "ShowInMWTRay",
@@ -18,7 +18,8 @@
 			"targetingData": {
 				"effectTriggerType": "Passive",
 				"effectTargetType": "Creator",
-				"showInStatusPanel": false
+				"showInStatusPanel": false,
+                "hideApplicationFloatie" : true
 			},
 			"effectType": "StatisticEffect",
 			"Description": {
@@ -46,7 +47,7 @@
             "Description": {
                 "Id": "StatusEffect-MISSILEER-Accuracy",
                 "Name": "MISSILEER - ACCURACY INCREASE",
-                "Details": "+1 Accuracy"
+                "Details": "+2 Accuracy"
             },
 		"durationData": {
                 "duration": -1,
@@ -58,12 +59,11 @@
                 "showInStatusPanel": false
             },
             "effectType": "StatisticEffect",
-            
             "nature": "Buff",
             "statisticData": {
                 "statName": "AccuracyModifier",
                 "operation": "Float_Add",
-                "modValue": "-1",
+                "modValue": "-2",
                 "modType": "System.Single",
                 "additionalRules": "NotSet",
                 "targetCollection": "Weapon",

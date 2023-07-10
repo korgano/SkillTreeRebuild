@@ -1,0 +1,15 @@
+{
+    "TargetID": "pilot_d8_recon",
+    "Instructions": [
+        {
+            "JSONPath": "PilotTags.items",
+            "Action": "Replace",
+            "Value": [
+                "pilot_npc_recon",
+                "pilot_npc_dynamic",
+                "pilot_npc_d8",
+                "base_skills_only"
+            ]
+        }
+    ]
+}

@@ -1,13 +1,15 @@
 {
     "Name": "Skill Tree Rebuild",
-    "Version": "0.3.0",
+    "Version": "0.4.0",
     "Enabled": true,
     "Author": "Kregano",
     "Website": "https://github.com/korgano/SkillTreeRebuild",
     "Description": "A mod to add new skills to MechWarrior skill trees, using Abilifier-NO-CAE.",
     "CustomResourceTypes": ["CustomSVGIcon"],		
 
+	
     "DLL": "Abilifier.dll",
+	"DependsOn": ["IRBTModUtils"],
 
     "Settings": {
 		"enableTrace": true,
@@ -34,11 +36,21 @@
 		"tagTraitForTree": {},
 		"defaultTagTraitForTree": {},
 		"defaultTagTraitException": "pilot_nomech_crew",
-		"abilityReqs": {}
+		"abilityReqs": {},
+		"ticksOnMovementDistanceIDs": [],
+		"retrainerSettings": {
+			"enableRetrainer": false,
+			"cost": 250000,
+			"onceOnly": false,
+			"trainingModuleRequired": false,
+			"ignoredAbilities": [],
+			"confirmAbilityText": ""
+		}
         },
-		"CustomResourceTypes": [],    
         "Manifest": [
             {"Type": "SVGAsset", "Path": "icons/", "AddtoDB": true},
+			{ "Type": "AdvancedJSONMerge", "Path": "MergeChanges"},
+			{ "Type": "PilotDef", "Path": "pilot" },
             { "Type": "SimGameConstants", "Path": "simGameConstants", "ShouldMergeJSON": true },
 		    { "Type": "AbilityDef", "Path": "Abilities", "AddtoDB": true }
         ]

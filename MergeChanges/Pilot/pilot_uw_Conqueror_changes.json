@@ -1,0 +1,24 @@
+{
+    "TargetID": "pilot_uw_Conqueror",
+    "Instructions": [
+        {
+            "JSONPath": "abilityDefNames",
+            "Action": "Replace",
+            "Value": [
+                "AbilityDef_MultiTarget",
+                "AbilityDefT5A",
+                "AbilityDef_HunkerDown",
+                "AbilityDef_MaxArmor",
+                "AbilityDef_CoolantVent",
+                "TraitDefBerserkHitDefense",
+                "TraitDefBulwark",
+                "TraitDefHealthAddTwo",
+		        "TraitDefRefireReduceOne",
+		        "TraitDefOverheatAddFifteen",
+                "TraitDefWeaponHit5",
+		        "TraitDefIndirectReduceOne",
+		        "TraitDefMinRangeReduce45"
+            ]
+        }
+    ]
+}

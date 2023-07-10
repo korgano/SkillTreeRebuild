@@ -1,0 +1,41 @@
+{
+	"Description" : {
+		"Id" : "TraitDefBulwark",
+		"Name" : "BULWARK",
+		"Details" : "PASSIVE: COVER and GUARDED states both provide 40% damage reduction rather than 20% damage reduction. COVER and GUARDED together provide 60% damage reduction.",
+		"Icon" : "uixSvgIcon_ability_fortify"
+	},
+	"ShortDesc" : "40% COVER/GUARDED DR, 60% COVER + GUARDED DR",
+    "DisplayParams" : "ShowInPilotToolTip",
+	"ActivationTime" : "Passive",
+	"EffectData" :
+	[
+		{
+			"durationData" :
+			{
+				"duration" : -1
+			},
+			"targetingData" :
+			{
+				"effectTriggerType" : "OnActivation",
+				"effectTargetType" : "Creator"
+			},
+			"effectType" : "StatisticEffect",
+			"Description" :
+			{
+				"Id" : "StatusEffect-Bulwark",
+				"Name" : "BULWARK",
+				"Details" : "PASSIVE: COVER and GUARDED states both provide 40% damage reduction rather than 20% damage reduction. COVER and GUARDED together provide 60% damage reduction.",
+				"Icon" : "uixSvgIcon_ability_fortify"
+			},
+			"statisticData" :
+			{
+				"statName" : "GuardedIsUpgraded",
+				"operation" : "Set",
+				"modValue" : "true",
+				"modType" : "System.Boolean"
+			},
+			"nature" : "Buff"
+		}
+	]
+}

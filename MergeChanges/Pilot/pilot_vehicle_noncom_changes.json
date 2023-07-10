@@ -1,0 +1,13 @@
+{
+    "TargetID": "pilot_vehicle_noncom",
+    "Instructions": [
+        {
+            "JSONPath": "PilotTags.items",
+            "Action": "Replace",
+            "Value": [
+                "pilot_sensor",
+                "base_skills_only"
+            ]
+        }
+    ]
+}

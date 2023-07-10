@@ -5,6 +5,11 @@ Based on Abifilier by gnivler & ajkroeg/tbone, abilities inspired by bloodydoves
 
 Does **NOT** include any Resolverator code. Uses only Abilifier (master), which currently lacks that feature.
 
+Now dependent on [IRModUtils](https://github.com/BattletechModders/IRBTModUtils) due to Abilifier updates.
+
+[New Skill Tree](SkillTree_revamp.md)
+[Ranged Pushback Functionality](RangedPushBack.md)
+
 # How to Replace the Existing Skill Tree
 
 In your mod.json file, add this to your Manifest:

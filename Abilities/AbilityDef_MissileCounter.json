@@ -24,7 +24,7 @@
                 "stackLimit" : -1
             },
             "targetingData" : {
-                "effectTriggerType" : "OnHit",
+                "effectTriggerType" : "Passive",
                 "effectTargetType" : "AllLanceMates",
                 "showInTargetPreview" : false,
                 "showInStatusPanel" : true,
@@ -33,48 +33,10 @@
             "effectType" : "StatisticEffect",
             "nature" : "Buff",
             "statisticData" : {
-                "statName" : "DamageReductionMultiplierAll",
+                "statName" : "DamageReductionMultiplierMissile",
                 "operation" : "Float_Multiply",
                 "modValue" : "0.5",
-                "modType" : "System.Single",
-                "additionalRules" : "NotSet",
-                "targetCollection": "Weapon",
-				"targetWeaponCategory": "Missile",
-                "targetWeaponType" : "NotSet",
-                "targetAmmoCategory" : "NotSet",
-                "targetWeaponSubType" : "NotSet"
-            }
-        },
-        {
-            "Description" : {
-                "Id" : "StatusEffect-MissileDefence",
-                "Name" : "ANTI-MISSILE COUNTERMEASURES",
-                "Details" : "All lance units take [AMT] less damage from missiles."
-            },
-            "durationData" : {
-                "duration" : -1,
-                "stackLimit" : -1
-            },
-            "targetingData" : {
-                "effectTriggerType" : "OnHit",
-                "effectTargetType" : "Creator",
-                "showInTargetPreview" : false,
-                "showInStatusPanel" : true,
-                "hideApplicationFloatie" : false
-            },
-            "effectType" : "StatisticEffect",
-            "nature" : "Buff",
-            "statisticData" : {
-                "statName" : "DamageReductionMultiplierAll",
-                "operation" : "Float_Multiply",
-                "modValue" : "0.5",
-                "modType" : "System.Single",
-                "additionalRules" : "NotSet",
-                "targetCollection": "Weapon",
-				"targetWeaponCategory": "Missile",
-                "targetWeaponType" : "NotSet",
-                "targetAmmoCategory" : "NotSet",
-                "targetWeaponSubType" : "NotSet"
+                "modType" : "System.Single"
             }
         }
 	],

@@ -1,0 +1,20 @@
+{
+    "Name": "Ranged Push Back",
+    "Version": "0.4.0",
+    "Enabled": true,
+    "Author": "Kregano",
+    "Website": "https://github.com/korgano/SkillTreeRebuild",
+    "Description": "Add-on to Skill Tree Rebuild that enables abilities to alter enemy initiative.",
+
+    "DLL": "RangedPushBack.dll",
+
+    "Settings": {
+		"PushBackOneAbilities": ["AbilityDef_Suppression", "AbilityDef_Mortar_Thumper2"],
+        "PushBackOneAbilities_Probe": ["AbilityDef_ActiveProbe_Ping"],
+        "PushBackLastAbilities": [],
+        "PushBackLastAbilities_Probe": ["AbilityDef_ScoutStomp"],
+        "ThumperIDs": ["Weapon_Mortar_Thumper","Weapon_Mortar_Thumper2"]
+		},
+		"CustomResourceTypes": [],    
+        "Manifest": []
+}

@@ -1,0 +1,159 @@
+{
+    "TargetID": "Weapon_TAG_Standard_1-Mendham",
+    "Instructions": [
+        {
+            "JSONPath": "statusEffects",
+            "Action": "Replace",
+            "Value": [
+                {
+                    "durationData" : {
+                        "duration" : 2,
+                        "ticksOnActivations" : true,
+                        "useActivationsOfTarget" : false,
+                        "ticksOnEndOfRound" : false,
+                        "ticksOnMovements" : false,
+                        "stackLimit" : 1,
+                        "clearedWhenAttacked" : false,
+                        "activeTrackedEffect" : true
+                    },
+                    "targetingData" : {
+                        "effectTriggerType" : "OnHit",
+                        "triggerLimit" : 0,
+                        "extendDurationOnTrigger" : 0,
+                        "specialRules" : "NotSet",
+                        "effectTargetType" : "NotSet",
+                        "range" : 0,
+                        "forcePathRebuild" : false,
+                        "forceVisRebuild" : false,
+                        "showInTargetPreview" : true,
+                        "showInStatusPanel" : false,
+                        "hideApplicationFloatie" : false
+                    },
+                    "effectType" : "StatisticEffect",
+                    "Description" : {
+                        "Id" : "StatusEffect-TAG-Mult",
+                        "Name" : "TAG MARKED",
+                        "Details" : "This unit will take [AMT] more damage from all attacks.",
+                        "Icon" : "uixSvgIcon_statusMarked"
+                    },
+                    "statisticData" : {
+                        "appliesEachTick" : false,
+                        "effectsPersistAfterDestruction" : false,
+                        "statName" : "DamageReductionMultiplierAll",
+                        "operation" : "Float_Multiply",
+                        "modValue" : "1.15",
+                        "modType" : "System.Single",
+                        "additionalRules" : "NotSet",
+                        "targetCollection" : "Weapon",
+                        "targetWeaponCategory" : "NotSet",
+                        "targetWeaponType" : "NotSet",
+                        "targetAmmoCategory" : "NotSet",
+                        "targetWeaponSubType" : "NotSet"
+                    },
+                    "nature" : "Debuff"
+                },
+                {
+                    "durationData" : {
+                        "duration" : 2,
+                        "ticksOnActivations" : true,
+                        "useActivationsOfTarget" : false,
+                        "ticksOnEndOfRound" : false,
+                        "ticksOnMovements" : false,
+                        "stackLimit" : 1,
+                        "clearedWhenAttacked" : false,
+                        "activeTrackedEffect" : true
+                    },
+                    "targetingData" : {
+                        "effectTriggerType" : "OnHit",
+                        "effectTargetType" : "SingleTarget",
+                        "triggerLimit" : 0,
+                        "extendDurationOnTrigger" : 0,
+                        "specialRules" : "NotSet",
+                        "range" : 0,
+                        "forcePathRebuild" : false,
+                        "forceVisRebuild" : false,
+                        "showInTargetPreview" : true,
+                        "showInStatusPanel" : false,
+                        "hideApplicationFloatie" : false
+                    },
+                    "effectType" : "StatisticEffect",
+                    "Description" : {
+                        "Id" : "StatusEffect-TAG-ToHit",
+                        "Name" : "EASIER TO HIT",
+                        "Details" : "Provides a [AMT] to hit multiplier to the target.",
+                        "Icon" : "uixSvgIcon_statusMarked"
+                    },
+                    "statisticData" : {
+                        "appliesEachTick" : false,
+                        "effectsPersistAfterDestruction" : false,
+                        "statName" : "ToHitThisActor",
+                        "operation" : "Float_Multiply",
+                        "modValue" : "0.5",
+                        "modType" : "System.Single",
+                        "additionalRules" : "NotSet",
+                        "targetCollection" : "Weapon",
+                        "targetWeaponCategory" : "NotSet",
+                        "targetWeaponType" : "NotSet",
+                        "targetAmmoCategory" : "NotSet",
+                        "targetWeaponSubType" : "NotSet"
+                    },
+                    "nature" : "Debuff"
+                },
+                {
+                    "durationData" : {
+                        "duration" : 2,
+                        "ticksOnActivations" : true,
+                        "useActivationsOfTarget" : false,
+                        "ticksOnEndOfRound" : false,
+                        "ticksOnMovements" : false,
+                        "stackLimit" : 1,
+                        "clearedWhenAttacked" : false,
+                        "activeTrackedEffect" : true
+                    },
+                    "targetingData" : {
+                        "effectTriggerType" : "OnHit",
+                        "triggerLimit" : 0,
+                        "extendDurationOnTrigger" : 0,
+                        "specialRules" : "NotSet",
+                        "effectTargetType" : "NotSet",
+                        "range" : 0,
+                        "forcePathRebuild" : false,
+                        "forceVisRebuild" : false,
+                        "showInTargetPreview" : false,
+                        "showInStatusPanel" : false,
+                        "hideApplicationFloatie" : true
+                    },
+                    "effectType" : "VFXEffect",
+                    "Description" : {
+                        "Id" : "StatusEffect-TAG-IndicatorVFX",
+                        "Name" : "TAG MARKED",
+                        "Details" : "Visual indicator of the TAG effect",
+                        "Icon" : "uixSvgIcon_status_sensorsImpaired"
+                    },
+                    "nature" : "Debuff",
+                    "vfxData" : {
+                        "vfxName" : "vfxPrfPrtl_TAGmarker_loop",
+                        "attachToImpactPoint" : true,
+                        "location" : -1,
+                        "isAttached" : true,
+                        "facesAttacker" : false,
+                        "isOneShot" : false,
+                        "duration" : -1.0		
+                    }
+                }
+            ]
+        },
+        {
+            "JSONPath": "ComponentTags.items",
+            "Action": "Replace",
+            "Value": [
+                "component_type_variant",
+                "component_type_variant1",
+                "range_standard",
+                "component_type_lostech",
+                "BLACKLISTED",
+                "target_designator"
+            ]
+        }
+    ]
+}

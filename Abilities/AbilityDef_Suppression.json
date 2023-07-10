@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "AbilityDef_Suppression",
 		"Name": "SUPPRESSION",
-		"Details": "PASSIVE: Direct Fire attacks inflict a -1 accuracy penalty on enemy units for 2 turns.",
+		"Details": "PASSIVE: Attacks inflict a -1 accuracy penalty & disable missile launchers on enemy units for 2 turns. 10% Weapon Damage Boost.",
 		"Icon": "uixSvgIcon_ability_suppression"
 	},
 	"DisplayParams": "ShowInMWTRay",
@@ -26,7 +26,6 @@
                 "showInStatusPanel": false
             },
             "effectType": "StatisticEffect",
-            
             "nature": "Debuff",
             "statisticData": {
                 "statName": "AccuracyModifier",
@@ -35,10 +34,9 @@
                 "modType": "System.Single",
                 "additionalRules": "NotSet",
                 "targetCollection": "Weapon",
-                "targetWeaponCategory": "Missile",
-                "targetWeaponType": "SRM",
-                "targetAmmoCategory": "SRM",
-                "targetWeaponSubType": "NotSet"
+				"targetWeaponCategory": "Missile",
+				"targetWeaponSubType": "NotSet",
+				"targetWeaponType": "NotSet"
             }
         },
         {
@@ -88,7 +86,6 @@
                 "showInStatusPanel": false
             },
             "effectType": "StatisticEffect",
-            
             "nature": "Debuff",
             "statisticData": {
                 "statName": "AccuracyModifier",
@@ -102,6 +99,36 @@
                 "targetAmmoCategory": "NotSet",
                 "targetWeaponSubType": "NotSet"
             }
+        },
+        {
+            "Description": {
+                "Id": "StatusEffect-WeaponBoost",
+                "Name": "Universal Weapon Damage Boost - 10%",
+                "Details": "10% Damage Boost"
+            },
+			"durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",            
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "DamagePerShot",
+                "operation": "Float_Multiply",
+                "modValue": "1.1",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "Weapon",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+              }
         }
 	],
 	"IsPrimaryAbility": true

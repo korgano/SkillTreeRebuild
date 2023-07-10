@@ -1,0 +1,15 @@
+{
+    "TargetID": "pilot_d10_scout",
+    "Instructions": [
+        {
+            "JSONPath": "PilotTags.items",
+            "Action": "Replace",
+            "Value": [
+                "pilot_npc_scout",
+                "pilot_npc_dynamic",
+                "pilot_npc_d10",
+                "base_skills_only"
+            ]
+        }
+    ]
+}

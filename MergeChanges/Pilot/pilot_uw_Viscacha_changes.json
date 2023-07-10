@@ -1,0 +1,25 @@
+{
+    "TargetID": "pilot_uw_Viscacha",
+    "Instructions": [
+        {
+            "JSONPath": "abilityDefNames",
+            "Action": "Replace",
+            "Value": [
+                "AbilityDef_MultiTarget",
+                "AbilityDefT5A",
+                "AbilityDef_Missileer",
+                "AbilityDef_JackAll",
+                "AbilityDef_RunGun",
+                "AbilityDef_JumpMaven",
+                "TraitDefBerserkHitDefense",
+                "TraitDefBulwark",
+                "TraitDefEvasiveChargeAddOne",
+                "TraitDefEvasionBoost",
+		        "TraitDefRefireReduceOne",
+		        "TraitDefOverheatAddFifteen",
+                "TraitDefWeaponHit7",
+		        "TraitDefMinRangeReduce45"
+            ]
+        }
+    ]
+}

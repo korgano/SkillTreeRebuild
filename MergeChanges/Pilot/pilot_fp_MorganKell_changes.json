@@ -1,0 +1,29 @@
+{
+    "TargetID": "pilot_fp_MorganKell",
+    "Instructions": [
+        {
+            "JSONPath": "abilityDefNames",
+            "Action": "Replace",
+            "Value": [
+                "AbilityDef_MultiTarget",
+                "AbilityDef_Missileer",
+                "AbilityDef_TargetFiring",
+                "AbilityDefT5A",
+                "AbilityDef_RunGun",
+                "AbilityDef_JumpMaven",
+                "TraitDefBerserkHitDefense",
+                "TraitDefBulwark",
+                "TraitDefHealthAddOne",
+		        "TraitDefRefireReduceOne",
+		        "TraitDefOverheatAddFifteen",
+                "TraitDefWeaponHit3",
+		        "TraitDefSprintIncrease20",
+		        "TraitDefIndirectReduceOne",
+                "TraitDefIndirectReduceTwo",
+                "TraitDefSprintIncrease10",
+		        "TraitDefSprintIncrease20",
+		        "TraitDefMinRangeReduce45"
+            ]
+        }
+    ]
+}

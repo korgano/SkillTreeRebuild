@@ -1,0 +1,31 @@
+{
+   "TargetID": "pilot_story_mastiff",
+   "Instructions": [
+       {
+           "JSONPath": "abilityDefNames",
+           "Action": "Replace",
+           "Value": [
+               "AbilityDef_MultiTarget",
+               "AbilityDef_Missileer",
+               "AbilityDef_JackAll",
+               "AbilityDef_TargetFiring",
+               "AbilityDefT5A",
+               "AbilityDef_RunGun",
+               "AbilityDef_JumpMaven",
+               "AbilityDef_MechMeister",
+               "TraitDefWeaponHit5",
+               "TraitDefWeaponHit7",
+               "TraitDefBulwark",
+               "TraitDefBerserkHitDefense",
+                "TraitDefUnsteadySet60",
+                "TraitDefHealthAddOne",
+	            "TraitDefRefireReduceOne",
+	            "TraitDefOverheatAddFifteen",
+          	  "TraitDefHealthAddTwo",
+                "TraitDefIndirectReduceOne",
+                "TraitDefMinRangeReduce45",
+                "TraitDefCalledShotImprove"
+           ]
+       }
+   ]
+}

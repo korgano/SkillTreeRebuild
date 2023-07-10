@@ -1,0 +1,23 @@
+{
+   "TargetID": "pilot_story_kamea",
+   "Instructions": [
+       {
+           "JSONPath": "abilityDefNames",
+           "Action": "Replace",
+           "Value": [
+               "AbilityDef_MultiTarget",
+               "AbilityDef_Missileer",
+               "AbilityDef_JackAll",
+               "AbilityDef_TargetFiring",
+               "AbilityDefT5A",
+               "TraitDefWeaponHit5",
+               "TraitDefWeaponHit8",
+               "TraitDefBulwark",
+               "TraitDefBerserkHitDefense",
+               "TraitDefHealthAddOne",
+               "TraitDefRefireReduceOne",
+               "TraitDefIndirectReduceOne"
+           ]
+       }
+   ]
+}

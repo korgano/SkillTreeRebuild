@@ -1,0 +1,56 @@
+{
+	"Description" : {
+		"Id" : "TraitDefSpotterProficiency",
+		"Name" : "Target Designator Accuracy Boost",
+		"Details" : "Provides +4 accuracy to TAG/NARC.",
+		"Icon" : "uixSvgIcon_ability_targetpro"
+	},
+	"Type" : "WeaponHit",
+	"ShortDesc" : "+4 TAG/NARC Acc.",
+    "DisplayParams" : "ShowInPilotToolTip",
+	"ActivationTime" : "Passive",
+	"EffectData" :
+	[
+		{
+            "durationData" : {
+                "duration" : -1,
+                "ticksOnActivations" : false,
+                "useActivationsOfTarget" : false,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : -1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-TargetDesignator-Acc",
+                "Name" : "TARGET DESIGNATOR ACCURACY BOOST",
+                "Details" : "Provides a [AMT] aim bonus to TAG/NARC.",
+                "Icon" : "uixSvgIcon_ability_targetpro"
+            },
+            "nature" : "Buff",
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "ToHitThisActor",
+                "operation" : "Float_Add",
+                "modValue" : "-4",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "Weapon"
+            }
+		}
+	]
+}

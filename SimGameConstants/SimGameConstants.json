@@ -18,7 +18,8 @@
             "TraitDefWeaponHit4"
         ],
         [
-            "TraitDefWeaponHit5"				
+            "TraitDefWeaponHit5",
+            "TraitDefWeaponHit5b"				
         ],
         [
             "AbilityDef_ClosePersonal",
@@ -38,7 +39,8 @@
             "TraitDefWeaponHit9"
         ],
         [
-            "TraitDefWeaponHit10"            
+            "TraitDefWeaponHit10",
+            "TraitDefWeaponHit10b"            
         ]
     ],
     "PilotingSkills" :[
@@ -99,7 +101,8 @@
         [
             "AbilityDef_ColdBlooded",
             "AbilityDef_HunkerDown",
-            "TraitDefRefireReduceOne"
+            "TraitDefRefireReduceOne",
+            "TraitDefBerserkHitDefense"
         ],
         [		],
         [
@@ -136,7 +139,8 @@
             "AbilityDef_BlindShot",
             "AbilityDef_BreakLock",
             "AbilityDef_MissileCounter",
-            "TraitDefMinRangeReduce45"
+            "TraitDefMinRangeReduce45",
+            "TraitDefSpotterProficiency"
         ],
         [
             "TraitDefCalledShotImprove"	
@@ -144,14 +148,16 @@
         [
             "AbilityDef_ScoutStomp",
             "AbilityDef_GimpThem",
-            "TraitDefIndirectReduceTwo"
+            "TraitDefIndirectReduceTwo",
+            "TraitDefSpotterExpert"
         ],
         [
             "TraitDefMinRangeReduce90"
         ],
         [
             "AbilityDef_MasterTac",
-            "AbilityDef_NetAttack"
+            "AbilityDef_NetAttack",
+            "TraitDefLowProfile"
         ],
         [
             "TraitDefCalledShotMaster"
