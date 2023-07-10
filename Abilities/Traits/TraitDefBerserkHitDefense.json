@@ -1,0 +1,54 @@
+{
+	"Description" : {
+		"Id" : "TraitDefBerserkHitDefense",
+		"Name" : "Berserk - Hit Defense",
+		"Details" : "Provides a [AMT] penalty to all attacks against this unit.",
+		"Icon" : "uixSvgIcon_ability_berserk"
+	},
+	"Type" : "ToHitThisActor",
+	"ShortDesc" : "+6 Difficulty to Hit",
+    "DisplayParams" : "ShowInPilotToolTip",
+	"ActivationTime" : "Passive",
+	"EffectData" :
+	[
+		{
+            "durationData" : {
+                "duration" : -1,
+                "ticksOnActivations" : false,
+                "useActivationsOfTarget" : false,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : -1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-Berserk-HitDefense",
+                "Name" : "HARDER TO HIT",
+                "Details" : "Provides a [AMT] penalty to all attacks against this unit.",
+                "Icon" : "uixSvgIcon_ability_berserk"
+            },
+            "nature" : "Buff",
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "ToHitThisActor",
+                "operation" : "Float_Add",
+                "modValue" : "6.0",
+                "modType" : "System.Single"
+            }
+		}
+	]
+}

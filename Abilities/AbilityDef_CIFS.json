@@ -2,7 +2,7 @@
 	"Description" : {
 		"Id" : "AbilityDef_CIFS",
 		"Name" : "CLOSE-IN FIRE SUPPORT",
-		"Details" : "PASSIVE: Gain a +50% boost to all support weapon range brackets, as well as -20% heat from support weapons and +1 Stability damage.",
+		"Details" : "PASSIVE: Gain a +50% boost to all support weapon range brackets, as well as -20% heat from support weapons and +1 Stability damage. 10% Weapon Damage Boost.",
 		"Icon" : "uixSvgIcon_ability_CIFS2"
 	},
     "DisplayParams" : "ShowInMWTRay",
@@ -163,6 +163,36 @@
 				"targetWeaponSubType": "NotSet",
 				"targetWeaponType": "NotSet"
 			}
+        },
+        {
+            "Description": {
+                "Id": "StatusEffect-WeaponBoost",
+                "Name": "Universal Weapon Damage Boost - 10%",
+                "Details": "10% Damage Boost"
+            },
+			"durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",            
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "DamagePerShot",
+                "operation": "Float_Multiply",
+                "modValue": "1.1",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "Weapon",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+              }
         }
 	],
 	"IsPrimaryAbility": true

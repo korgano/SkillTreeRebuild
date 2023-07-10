@@ -1,0 +1,11 @@
+C:\Users\Xavier Santana\Documents\RangedPushBack\bin\Debug\RangedPushBack.dll
+C:\Users\Xavier Santana\Documents\RangedPushBack\bin\Debug\RangedPushBack.pdb
+C:\Users\Xavier Santana\Documents\RangedPushBack\bin\Debug\0Harmony.dll
+C:\Users\Xavier Santana\Documents\RangedPushBack\bin\Debug\Assembly-CSharp.dll
+C:\Users\Xavier Santana\Documents\RangedPushBack\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Xavier Santana\Documents\RangedPushBack\obj\Debug\RangedPushBack.csproj.AssemblyReference.cache
+C:\Users\Xavier Santana\Documents\RangedPushBack\obj\Debug\RangedPushBack.csproj.CoreCompileInputs.cache
+C:\Users\Xavier Santana\Documents\RangedPushBack\obj\Debug\RangedPushBack.csproj.CopyComplete
+C:\Users\Xavier Santana\Documents\RangedPushBack\obj\Debug\RangedPushBack.dll
+C:\Users\Xavier Santana\Documents\RangedPushBack\obj\Debug\RangedPushBack.pdb
+C:\Users\Xavier Santana\Documents\RangedPushBack\bin\Debug\UnityEngine.CoreModule.dll

@@ -1,0 +1,54 @@
+{
+	"Description" : {
+		"Id" : "TraitDefLowProfile",
+		"Name" : "Low Profile",
+		"Details" : "Provides a 50% reduction to 'Mech signature.",
+		"Icon" : "uixSvgIcon_ability_berserk"
+	},
+	"Type" : "Visibility",
+	"ShortDesc" : "[AMT] 'Mech Visibility",
+    "DisplayParams" : "ShowInPilotToolTip",
+	"ActivationTime" : "Passive",
+	"EffectData" :
+	[
+		{
+            "durationData" : {
+                "duration" : -1,
+                "ticksOnActivations" : false,
+                "useActivationsOfTarget" : false,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : -1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-LowProfile",
+                "Name" : "LOW PROFILE",
+                "Details" : "Provides a [AMT] reduction to 'Mech signature.",
+                "Icon" : "uixSvgIcon_ability_berserk"
+            },
+            "nature" : "Buff",
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "VisibilityMultiplier",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.5",
+                "modType" : "System.Single"
+            }
+		}
+	]
+}

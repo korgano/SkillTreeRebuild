@@ -1,0 +1,13 @@
+{
+    "TargetID": "pilot_contract_TrainingDay_2",
+    "Instructions": [
+        {
+            "JSONPath": "abilityDefNames",
+            "Action": "Replace",
+            "Value": [
+                "AbilityDef_MultiTarget",
+                "AbilityDefT5A"
+            ]
+        }
+    ]
+}

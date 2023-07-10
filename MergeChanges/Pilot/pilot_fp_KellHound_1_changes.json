@@ -1,0 +1,29 @@
+{
+    "TargetID": "pilot_fp_KellHound_1",
+    "Instructions": [
+        {
+            "JSONPath": "abilityDefNames",
+            "Action": "Replace",
+            "Value": [
+                "AbilityDef_MultiTarget",
+                "AbilityDef_Suppression",
+                "AbilityDef_JackAll",
+                "AbilityDef_Overclock",
+                "AbilityDefT5A",
+                "AbilityDef_MissileCounter",
+                "AbilityDef_GimpThem",
+                "TraitDefBerserkHitDefense",
+                "TraitDefBulwark",
+                "TraitDefHealthAddOne",
+		        "TraitDefRefireReduceOne",
+		        "TraitDefOverheatAddFifteen",
+                "TraitDefWeaponHit5",
+		        "TraitDefWeaponHit8",
+		        "TraitDefSprintIncrease20",
+		        "TraitDefIndirectReduceOne",
+                "TraitDefCalledShotImprove",
+		        "TraitDefMinRangeReduce45"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+   "Description": {
+        "Id": "pilot_skirmish_KellHound_1",
+        "Name": "Rox",
+        "FirstName": "Rox",
+        "LastName": "NONE",
+        "Callsign": "Rox",
+        "Gender": "Female",
+        "factionID": "KellHounds",
+        "Age": 30,
+        "Details": "NONE",
+        "Icon": "guiTxrPort_GenericMW_default_utr"
+    },
+    "BaseGunnery": "8",
+    "BonusGunnery": 0,
+    "BasePiloting": "5",
+    "BonusPiloting": 0,
+    "BaseGuts": "5",
+    "BonusGuts": 0,
+    "BaseTactics": "6",
+    "BonusTactics": 0,
+    "ExperienceUnspent": 0,
+    "ExperienceSpent": 0,
+    "Injuries": 0,
+    "Health": 3,
+    "LethalInjury": false,
+    "Incapacitated": false,
+    "Morale": 0,
+    "Voice": "f_overload01",
+    "abilityDefNames": [
+                "AbilityDef_MultiTarget",
+                "AbilityDef_Suppression",
+                "AbilityDef_JackAll",
+                "AbilityDef_Overclock",
+                "AbilityDefT5A",
+                "AbilityDef_MissileCounter",
+                "AbilityDef_GimpThem",
+                "TraitDefBerserkHitDefense",
+                "TraitDefBulwark",
+                "TraitDefHealthAddOne",
+		        "TraitDefRefireReduceOne",
+		        "TraitDefOverheatAddFifteen",
+                "TraitDefWeaponHit5",
+		        "TraitDefWeaponHit8",
+		        "TraitDefSprintIncrease20",
+		        "TraitDefIndirectReduceOne",
+                "TraitDefCalledShotImprove",
+		        "TraitDefMinRangeReduce45"
+    ],
+    "AIPersonality": "Undefined",
+    "PilotTags": {
+        "items": [
+            "pilot_npc_sharpshooter",
+            "pilot_npc_dynamic",
+            "pilot_npc_d8",
+			"BLACKLISTED",
+            "pilot_release_skirmish"
+        ],
+        "tagSetSourceFile": ""
+    },
+    "PilotCost": 0
+}

@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Xavier Santana\\Documents\\RangedPushBack\\RangedPushBack.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Xavier Santana\\Documents\\RangedPushBack\\RangedPushBack.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Xavier Santana\\Documents\\RangedPushBack\\RangedPushBack.csproj",
+        "projectName": "RangedPushBack",
+        "projectPath": "C:\\Users\\Xavier Santana\\Documents\\RangedPushBack\\RangedPushBack.csproj",
+        "packagesPath": "C:\\Users\\Xavier Santana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Xavier Santana\\Documents\\RangedPushBack\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Xavier Santana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Krafs.Publicizer": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "Krafs.Publicizer": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

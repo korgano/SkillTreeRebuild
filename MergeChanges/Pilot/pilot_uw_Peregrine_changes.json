@@ -1,0 +1,25 @@
+{
+    "TargetID": "pilot_uw_Ombra",
+    "Instructions": [
+        {
+            "JSONPath": "abilityDefNames",
+            "Action": "Replace",
+            "Value": [
+                "AbilityDef_MultiTarget",
+                "AbilityDefT5A",
+                "AbilityDef_Suppression",
+                "AbilityDef_JackAll",
+                "AbilityDef_RunGun",
+                "AbilityDef_JumpMaven",
+                "TraitDefBerserkHitDefense",
+                "TraitDefBulwark",
+                "TraitDefEvasiveChargeAddOne",
+                "TraitDefEvasionBoost",
+		        "TraitDefRefireReduceOne",
+		        "TraitDefOverheatAddFifteen",
+                "TraitDefWeaponHit7",
+		        "TraitDefMinRangeReduce45"
+            ]
+        }
+    ]
+}

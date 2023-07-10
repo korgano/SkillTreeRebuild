@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NebyYrJx4/iylKG4LhFpz0FuZXV+vXUyVdeiDAKsWjr0ykYebBlHdgebHgR63be+o1QjcrirBVuBPx+HGEdMPQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Xavier Santana\\Documents\\RangedPushBack\\RangedPushBack.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Xavier Santana\\.nuget\\packages\\krafs.publicizer\\2.2.1\\krafs.publicizer.2.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}

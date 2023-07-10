@@ -1,0 +1,19 @@
+{
+	"DumpAbilityDefNamesAtAddToTeam": true,
+	"AddTreeAbilities": false,
+	"RemoveNonTreeAbilities": false,
+	"IgnoreAbilities": [],
+	"IgnorePilotsWithTags": [
+		"base_skills_only"
+	],
+	"FactionAbilities": {
+		"ClanWolf": [
+			"AbilityDefClanTrait"
+		]
+	},
+	"TagAbilities": {
+		"pilot_lucky": [],
+		"pilot_military": []
+	},
+	"SwapAIAbilities": {}
+}
