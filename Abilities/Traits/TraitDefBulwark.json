@@ -5,7 +5,8 @@
 		"Details" : "PASSIVE: COVER and GUARDED states both provide 40% damage reduction rather than 20% damage reduction. COVER and GUARDED together provide 60% damage reduction.",
 		"Icon" : "uixSvgIcon_ability_fortify"
 	},
-	"ShortDesc" : "40% COVER/GUARDED DR, 60% COVER + GUARDED DR",
+	"Type" : "Bulwark",
+	"ShortDesc" : "Bulwark",
     "DisplayParams" : "ShowInPilotToolTip",
 	"ActivationTime" : "Passive",
 	"EffectData" :

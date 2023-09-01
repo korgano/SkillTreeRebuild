@@ -33,9 +33,15 @@
         "AbilityDef_JackAll",
         "AbilityDef_TargetFiring",
         "AbilityDefT5A",
+        "TraitDefWeaponHit5", "TraitDefWeaponHeatDMG",
+        "TraitDefWeaponHit8",
+        "TraitDefUnsteadySet60",
+        "TraitDefMeleeHit4",
         "TraitDefHealthAddOne",
-        "TraitDefRefireReduceOne",
-        "TraitDefOverheatAddFifteen"
+        "TraitDefRefireReduceOne", "TraitDefBerserkHitDefense",
+        "TraitDefBulwark", "TraitDefHealthAddTwo",
+        "TraitDefIndirectReduceOne",
+        "TraitDefMinRangeReduce45", "TraitDefSpotterProficiency"
     ],
     "AIPersonality": "Undefined",
     "PilotTags": {

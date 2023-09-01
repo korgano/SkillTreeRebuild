@@ -34,14 +34,15 @@
         "AbilityDef_RunGun",
         "AbilityDef_JumpMaven",
         "AbilityDef_MechMeister",
-        "TraitDefBerserkHitDefense",
-        "TraitDefBulwark",
-        "TraitDefEvasiveChargeAddOne",
-        "TraitDefRefireReduceOne",
-        "TraitDefOverheatAddFifteen",
         "TraitDefWeaponHit4",
+        "TraitDefUnsteadySet60",
+        "TraitDefEvasionBoost", "TraitDefEvasiveChargeAddOne",
+        "TraitDefSprintIncrease20", "TraitDefEvasiveChargeAddTwo",
+        "TraitDefMeleeHit8", "TraitDefUnsteadySet80",
+        "TraitDefHealthAddOne",
         "TraitDefIndirectReduceOne",
-        "TraitDefMinRangeReduce45"			
+        "TraitDefMinRangeReduce45", "TraitDefSpotterProficiency",
+        "TraitDefCalledShotImprove"
     ],
     "AIPersonality": "Undefined",
     "PilotTags": {

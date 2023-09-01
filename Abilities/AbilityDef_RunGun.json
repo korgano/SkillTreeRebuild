@@ -42,7 +42,7 @@
             "Description" : {
                 "Id" : "StatusEffect-RunGun-Crit",
                 "Name" : "CRIT CHANCE REDUCTION",
-                "Details" : "Critical Hit Chance reduced by [AMT]%."
+                "Details" : "Critical Hit Chance reduced by 50%."
             },
             "effectType" : "StatisticEffect",
             "nature" : "Buff",

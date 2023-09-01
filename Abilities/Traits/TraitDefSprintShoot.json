@@ -1,11 +1,11 @@
 {
 	"Description" : {
-		"Id" : "TraitDefWeaponHit10b",
+		"Id" : "TraitDefSprintShoot",
 		"Name" : "",
 		"Details" : "",
 		"Icon" : ""
 	},
-	"Type" : "WeaponHit",
+	"Type" : "SpintShoot",
 	"ShortDesc" : "Fire after sprinting",
     "DisplayParams" : "ShowInPilotToolTip",
 	"ActivationTime" : "Passive",

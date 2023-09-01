@@ -33,14 +33,15 @@
         "AbilityDef_HunkerDown",
         "AbilityDef_MaxArmor",
         "AbilityDef_CoolantVent",
-        "TraitDefBerserkHitDefense",
-        "TraitDefBulwark",
-        "TraitDefHealthAddTwo",
-        "TraitDefRefireReduceOne",
+        "TraitDefWeaponHit5", "TraitDefWeaponHeatDMG",
+        "TraitDefUnsteadySet60", "TraitDefMeleeHit3",
+        "TraitDefHealthAddOne",
+        "TraitDefRefireReduceOne", "TraitDefBerserkHitDefense",
+        "TraitDefBulwark", "TraitDefHealthAddTwo",
         "TraitDefOverheatAddFifteen",
-        "TraitDefWeaponHit5",
+        "TraitDefRefireReduceTwo",
         "TraitDefIndirectReduceOne",
-        "TraitDefMinRangeReduce45"
+        "TraitDefMinRangeReduce45", "TraitDefSpotterProficiency"
     ],
     "AIPersonality": "Undefined",
     "PilotTags": {

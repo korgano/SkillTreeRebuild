@@ -37,13 +37,12 @@
             "Description" : {
                 "Id" : "StatusEffect-JumpMaven-DistanceBoost",
                 "Name" : "JUMP BOOSTER",
-                "Details" : "Increases the distance this unit can travel when jumping by [AMT].",
-                "Icon" : "uixSvgIcon_action_jump"
+                "Details" : "Increases the distance this unit can travel when jumping by [AMT]."
             },
             "nature" : "Buff",
             "statisticData" : {
                 "statName" : "JumpDistanceMultiplier",
-                "operation" : "Float_Add",
+                "operation" : "Float_Multiply",
                 "modValue" : "0.2",
                 "modType" : "System.Single"
             }

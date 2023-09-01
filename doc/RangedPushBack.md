@@ -15,6 +15,8 @@ Adds +1 initiative to targets (4 => 3) or pushes enemies from the current phase 
 `"ThumperIDs": ["Weapon_Mortar_Thumper"]` : Controls whether a mortar weapon receives Thumper cannon animations/processing. Default Thumper is `Weapon_Mortar_Thumper`.
 
 ## Known Issues
-- Multi-Targeting attacks can cause multiple applications of pushback.
+~~- Multi-Targeting attacks can cause multiple applications of pushback.~~
+
+- Multi-Targeting attacks no longer cause multiple pushback applications, but only one attack can apply pushback to a target per initiative phase. Once a phase ends, another attack can apply pushback to the same target.
 
 - Has not been tested with pilots with multiple pushback skills.

@@ -34,14 +34,14 @@
         "AbilityDef_JackAll",
         "AbilityDef_RunGun",
         "AbilityDef_JumpMaven",
-        "TraitDefBerserkHitDefense",
-        "TraitDefBulwark",
-        "TraitDefEvasiveChargeAddOne",
-        "TraitDefEvasionBoost",
-        "TraitDefRefireReduceOne",
-        "TraitDefOverheatAddFifteen",
+        "TraitDefWeaponHit5", "TraitDefWeaponHeatDMG",
         "TraitDefWeaponHit7",
-        "TraitDefMinRangeReduce45"
+        "TraitDefUnsteadySet60",
+        "TraitDefMeleeHit5", "TraitDefEvasionBoost", "TraitDefEvasiveChargeAddOne",
+        "TraitDefHealthAddOne",
+        "TraitDefRefireReduceOne", "TraitDefBerserkHitDefense",
+        "TraitDefIndirectReduceOne",
+        "TraitDefMinRangeReduce45", "TraitDefSpotterProficiency"
     ],
     "AIPersonality": "Undefined",
     "PilotTags": {

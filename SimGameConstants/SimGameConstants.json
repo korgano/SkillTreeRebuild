@@ -19,7 +19,7 @@
         ],
         [
             "TraitDefWeaponHit5",
-            "TraitDefWeaponHit5b"				
+            "TraitDefWeaponHeatDMG"				
         ],
         [
             "AbilityDef_ClosePersonal",
@@ -40,7 +40,7 @@
         ],
         [
             "TraitDefWeaponHit10",
-            "TraitDefWeaponHit10b"            
+            "TraitDefSprintShoot"            
         ]
     ],
     "PilotingSkills" :[
@@ -88,7 +88,7 @@
         ],
         [
             "TraitDefMeleeHit10",
-            "TraitDefMeleeHit10b",
+            "TraitDefEvasionImmunity",
             "TraitDefDFASelfDmgReduction"
         ]
     ],
@@ -128,8 +128,7 @@
         ]
     ],
     "TacticsSkills" :[
-        [
-        ],
+        [        ],
         [
             "AbilityDefT5A",
             "TraitDefIndirectReduceOne"

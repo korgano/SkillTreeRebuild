@@ -16,8 +16,7 @@
             "Description": {
                 "Id": "StatusEffect-StandardRange-DMG",
                 "Name": "Damage Boost (Standard Range)",
-                "Details": "+25% damage on all standard range weapons.",
-                "Icon": "uixSvgIcon_ability_jack"
+                "Details": "+25% damage on all standard range weapons."
             },
 		"durationData": {
                 "duration": -1,
@@ -47,8 +46,7 @@
             "Description" : {
                 "Id" : "StatusEffect-StandardRange-CRIT",
                 "Name" : "Crit Boost (Standard Range)",
-                "Details" : "+10% Critical Hit chance.",
-                "Icon" : "uixSvgIcon_statusCrit"
+                "Details" : "+10% Critical Hit chance."
             },
             "durationData" : {
                 "duration" : -1,

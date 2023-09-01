@@ -16,8 +16,7 @@
             "Description": {
                 "Id": "StatusEffect-CloseRange-DMG",
                 "Name": "DAMAGE BOOST - CLOSE RANGE",
-                "Details": "+25% Close Range Weapon Damage.",
-                "Icon": "uixSvgIcon_ability_closepersonal"
+                "Details": "+25% Close Range Weapon Damage."
             },
 		"durationData": {
                 "duration": -1,
@@ -48,8 +47,7 @@
             "Description" : {
                 "Id" : "StatusEffect-CloseRange-CRIT",
                 "Name" : "CRIT BOOST  - CLOSE RANGE",
-                "Details" : "+10% Close Range Weapon Crit Chance.",
-                "Icon" : "uixSvgIcon_statusCrit"
+                "Details" : "+10% Close Range Weapon Crit Chance."
             },
             "durationData" : {
                 "duration" : -1,

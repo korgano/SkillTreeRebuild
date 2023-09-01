@@ -1,0 +1,42 @@
+{
+	"Description" : {
+		"Id" : "TraitDefWeaponHeatDMG",
+		"Name" : "",
+		"Details" : "",
+		"Icon" : ""
+	},
+	"Type" : "WeaponHeatDamage",
+	"ShortDesc" : "+ 25% DMG when target overheated.",
+    "DisplayParams" : "ShowInPilotToolTip",
+	"ActivationTime" : "Passive",
+	"EffectData" : [
+		{
+            "Description" : {
+                "Id" : "StatusEffect-OverheatedDamageMultiplier",
+                "Name" : "Bonus Overheat Damage",
+                "Details" : "Do 25% more damage if enemy is overheated.",
+                "Icon" : "uixSvgIcon_ability_overheatmultsvg"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Buff",
+            "durationData" : {
+                "duration" : -1,
+                "stackLimit": 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : false
+            },
+            "statisticData" : {
+                "statName" : "OverheatedDamageMultiplier",
+                "operation" : "Float_Add",
+                "modValue" : "1.25",
+                "modType" : "System.Single",
+                "targetCollection" : "Weapon"
+            }
+        }
+	]
+}

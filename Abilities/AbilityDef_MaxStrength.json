@@ -115,7 +115,7 @@
                 "Id" : "StatusEffect-Attack_DamageMelee-MS",
                 "Name" : "MAXIMUM STRENGTH - MELEE DAMAGE INCREASED",
                 "Details" : "Melee attacks deal [AMT] more damage.",
-                "Icon" : "uixSvgIcon_equipment_ActuatorArm"
+                "Icon" : "uixSvgIcon_ability_maxstrength"
             },
             "nature" : "Buff",
             "statisticData" : {

@@ -34,7 +34,9 @@ namespace RangedPushBack
     {
         //These settings need to be in mod.json
         public List<string> PushBackOneAbilities = new List<string>();
+        public List<string> PushBackOneAbilities_Probe = new List<string>();
         public List<string> PushBackLastAbilities = new List<string>();
+        public List<string> PushBackLastAbilities_Probe = new List<string>();
         public List<string> ThumperIDs = new List<string>();
     }
 }

@@ -33,6 +33,22 @@
         }
       }
     },
+    ".NETFramework,Version=v4.7.2/win-arm64": {
+      "Krafs.Publicizer/2.2.1": {
+        "type": "package",
+        "contentFiles": {
+          "contentfiles/cs/any/Publicizer/IgnoresAccessChecksToAttribute.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "build/Krafs.Publicizer.props": {},
+          "build/Krafs.Publicizer.targets": {}
+        }
+      }
+    },
     ".NETFramework,Version=v4.7.2/win-x64": {
       "Krafs.Publicizer/2.2.1": {
         "type": "package",
@@ -137,6 +153,9 @@
     },
     "runtimes": {
       "win": {
+        "#import": []
+      },
+      "win-arm64": {
         "#import": []
       },
       "win-x64": {

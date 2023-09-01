@@ -16,8 +16,7 @@
             "Description": {
                 "Id": "StatusEffect-LongRange-DMG",
                 "Name": "Damage Boost (Long Range)",
-                "Details": "+25% damage on all long range weapons.",
-                "Icon": "uixSvgIcon_ability_longshot"
+                "Details": "+25% damage on all long range weapons."
             },
 		"durationData": {
                 "duration": -1,
@@ -48,8 +47,7 @@
             "Description" : {
                 "Id" : "StatusEffect-LongRange-CRIT",
                 "Name" : "Crit Boost (Long Range)",
-                "Details" : "+10% boost to critical hit chance.",
-                "Icon" : "uixSvgIcon_statusCrit"
+                "Details" : "+10% boost to critical hit chance."
             },
             "durationData" : {
                 "duration" : -1,

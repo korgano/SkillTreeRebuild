@@ -1,12 +1,12 @@
 {
 	"Description" : {
-		"Id" : "TraitDefMeleeHit10b",
+		"Id" : "TraitDefEvasionImmunity",
 		"Name" : "",
 		"Details" : "",
 		"Icon" : ""
 	},
-	"Type" : "EvasionCap",
-	"ShortDesc" : "Sensor Lock No Longer Strips Evasion",
+	"Type" : "EvasionSave",
+	"ShortDesc" : "Evasion Immunity",
     "DisplayParams" : "ShowInPilotToolTip",
 	"ActivationTime" : "Passive",
 	"EffectData" : [

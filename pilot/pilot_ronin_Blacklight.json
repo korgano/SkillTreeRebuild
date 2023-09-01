@@ -33,13 +33,20 @@
         "AbilityDef_BlindShot",
         "AbilityDef_GimpThem",
         "AbilityDef_MasterTac",
+        "TraitDefWeaponHit4",
         "TraitDefUnsteadySet60",
+        "TraitDefEvasionBoost",
         "TraitDefEvasiveChargeAddOne",
+        "TraitDefMeleeHit6",
+        "TraitDefHealthAddOne",
+        "TraitDefRefireReduceOne",
+        "TraitDefBerserkHitDefense",
         "TraitDefIndirectReduceOne",
-        "TraitDefMinRangeReduce45",
+        "TraitDefMinRangeReduce45", "TraitDefSpotterProficiency",
         "TraitDefCalledShotImprove",
-        "TraitDefIndirectReduceTwo",
-        "TraitDefMinRangeReduce90"
+        "TraitDefIndirectReduceTwo", "TraitDefSpotterExpert",
+        "TraitDefMinRangeReduce90",
+        "TraitDefLowProfile"
     ],
     "AIPersonality": "Undefined",
     "PilotTags": {

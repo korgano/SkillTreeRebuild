@@ -6,7 +6,7 @@
 		"Icon" : "uixSvgIcon_ability_berserk"
 	},
 	"Type" : "Visibility",
-	"ShortDesc" : "[AMT] 'Mech Visibility",
+	"ShortDesc" : "50% 'Mech Visibility",
     "DisplayParams" : "ShowInPilotToolTip",
 	"ActivationTime" : "Passive",
 	"EffectData" :

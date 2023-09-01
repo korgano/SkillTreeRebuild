@@ -10,6 +10,42 @@ namespace RangedPushBack.Extensions
 {
     public static class ComponentExtensions
     {
+
+        //==================================Mech Active Probe Check======================================================
+        public static bool CheckActiveProbeComponent(this Mech mech)
+        {
+            var logger = Logger.GetLogger("RangedPushBack");
+            for (int i = 0; i < mech.allComponents.Count; i++)
+            {
+                if (mech.allComponents[i].componentDef.AbilityDefs != null)
+                {
+                    logger.LogAtLevel(LogLevel.Debug, "Running through component abilities - CheckActiveProbeComponent");
+                    for (int j = 0; j < mech.allComponents[i].componentDef.AbilityDefs.Count; j++)
+                    {
+                        AbilityDef abilityDef = mech.allComponents[i].componentDef.AbilityDefs[j];
+                        logger.LogAtLevel(LogLevel.Debug, "Running check on Active Probe Components");
+                        if (abilityDef.Targeting == AbilityDef.TargetingType.ActiveProbe)
+                        {
+                            logger.LogAtLevel(LogLevel.Debug, "Mech component abilities include Active Probe Targeting");
+                            return true;
+                        }
+                    }
+                }
+            }
+            logger.LogAtLevel(LogLevel.Debug, "Mech component abilities DO NOT include Active Probe Targeting");
+            return false;
+        }
+
+        public static bool HasActiveProbeGear(this Mech mech)
+        {
+            var logger = Logger.GetLogger("RangedPushBack");
+            logger.LogAtLevel(LogLevel.Debug, $"Running check to see if {mech.MechDef.Name} has ActiveProbe");
+            return CheckActiveProbeComponent(mech);
+        }
+
+
+
+        //====================================Mortar Ability Def Check=============================================
         public static bool CheckPushBackOneComponent(this Mech mech, List<string> PushBackOneAbilities)
         {
             var logger = Logger.GetLogger("RangedPushBack");
@@ -17,11 +53,11 @@ namespace RangedPushBack.Extensions
             {
                 if (mech.allComponents[i].componentDef.AbilityDefs != null)
                 {
-                    logger.LogAtLevel(LogLevel.Debug, "Running throught component abilities");
+                    logger.LogAtLevel(LogLevel.Debug, "Running through component abilities - CheckPushBackOneComponent");
                     for (int j = 0; j < mech.allComponents[i].componentDef.AbilityDefs.Count; j++)
                     {
                         AbilityDef abilityDef = mech.allComponents[i].componentDef.AbilityDefs[j];
-                        logger.LogAtLevel(LogLevel.Debug, "Running check on PushBackOneAbilities");
+                        logger.LogAtLevel(LogLevel.Debug, "Running check on component PushBackOneAbilities");
                         if (PushBackOneAbilities.Contains(abilityDef.Id))
                         {
                             logger.LogAtLevel(LogLevel.Debug, "Mech component abilities include items on PushBackOneAbilities list");
@@ -37,8 +73,7 @@ namespace RangedPushBack.Extensions
         public static bool HasPushBackOne(this Mech mech)
         {
             var logger = Logger.GetLogger("RangedPushBack");
-            logger.LogAtLevel(LogLevel.Debug, mech.MechDef.Name);
-            logger.LogAtLevel(LogLevel.Debug, "Running check to see if MECH has PushBackOne");
+            logger.LogAtLevel(LogLevel.Debug, $"Running check to see if {mech.MechDef.Name} has PushBackOne");
             return CheckPushBackOneComponent(mech, ModInit.Settings.PushBackOneAbilities);
         }
 
@@ -49,11 +84,11 @@ namespace RangedPushBack.Extensions
             {
                 if (mech.allComponents[i].componentDef.AbilityDefs != null)
                 {
-                    logger.LogAtLevel(LogLevel.Debug, "Running throught component abilities");
+                    logger.LogAtLevel(LogLevel.Debug, "Running through component abilities - CheckPushBackLastComponent");
                     for (int j = 0; j < mech.allComponents[i].componentDef.AbilityDefs.Count; j++)
                     {
                         AbilityDef abilityDef = mech.allComponents[i].componentDef.AbilityDefs[j];
-                        logger.LogAtLevel(LogLevel.Debug, "Running check on PushBackLastAbilities");
+                        logger.LogAtLevel(LogLevel.Debug, "Running check on component PushBackLastAbilities");
                         if (PushBackLastAbilities.Contains(abilityDef.Id))
                         {
                             logger.LogAtLevel(LogLevel.Debug, "Mech component abilities include items on PushBackLastAbilities list");
@@ -69,8 +104,7 @@ namespace RangedPushBack.Extensions
         public static bool HasPushBackLast(this Mech mech)
         {
             var logger = Logger.GetLogger("RangedPushBack");
-            logger.LogAtLevel(LogLevel.Debug, mech.MechDef.Name);
-            logger.LogAtLevel(LogLevel.Debug, "Running check to see if MECH has PushBackLast");
+            logger.LogAtLevel(LogLevel.Debug, $"Running check to see if {mech.MechDef.Name} has PushBackLast");
             return CheckPushBackLastComponent(mech, ModInit.Settings.PushBackLastAbilities);
         }
     }

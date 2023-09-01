@@ -28,12 +28,24 @@
     "Morale": 0,
     "Voice": "f_glum01_russian",
     "abilityDefNames": [
-        
-        "TraitDefIndirectReduceOne",
+        "AbilityDef_MultiTarget",
+        "AbilityDefT5A",
+        "AbilityDef_CIFS",
+        "AbilityDef_ClosePersonal",
+        "AbilityDef_HunkerDown", 
+        "AbilityDef_MaxStrength",
+        "AbilityDef_CoolantVent",
+        "TraitDefWeaponHit5", "TraitDefWeaponHeatDMG",
+        "TraitDefWeaponHit6",
+        "TraitDefUnsteadySet60", "TraitDefMeleeHit3",
+        "TraitDefMeleeHit4",
         "TraitDefHealthAddOne",
-        "TraitDefRefireReduceOne",
+        "TraitDefRefireReduceOne", "TraitDefBerserkHitDefense",
+        "TraitDefBulwark", "TraitDefHealthAddTwo",
         "TraitDefOverheatAddFifteen",
-        "TraitDefHealthAddTwo"
+        "TraitDefRefireReduceTwo",
+        "TraitDefIndirectReduceOne",
+        "TraitDefMinRangeReduce45", "TraitDefSpotterProficiency"
     ],
     "AIPersonality": "Undefined",
     "PilotTags": {
@@ -43,7 +55,7 @@
             "pilot_mechwarrior",
             "pilot_cautious",
             "pilot_dependable",
-            "name_Buckshot",
+            "name_PumpAction",
             "pilot_periphery",
             "pilot_release_skirmish"
         ],

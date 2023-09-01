@@ -15,8 +15,7 @@
             "Description" : {
                 "Id" : "StatusEffect-CQCSuite-Defense_ToHitMelee",
                 "Name" : "DODGE MASTER",
-                "Details" : "Provides a [AMT] penalty to all melee attacks against this unit.",
-                "Icon" : "UixSvgIcon_specialEquip_System"
+                "Details" : "Provides a [AMT] penalty to all melee attacks against this unit."
             },
             "effectType" : "StatisticEffect",
             "nature" : "Buff",
