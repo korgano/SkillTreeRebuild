@@ -1,12 +1,12 @@
 {
 	"Description" : {
 		"Id" : "TraitDefEvasionBoost",
-		"Name" : "",
-		"Details" : "",
+		"Name" : "EVASION BOOST",
+		"Details" : "+2 Evasion, +2 Hit Defense per Mech Weight Class.",
 		"Icon" : ""
 	},
 	"Type" : "EvasionCap",
-	"ShortDesc" : "+2 Hit Defense, +2 Evasion",
+	"ShortDesc" : "+2 Hit Defense/Class, +2 Evasion",
     "DisplayParams" : "ShowInPilotToolTip",
 	"ActivationTime" : "Passive",
 	"EffectData" : [
@@ -23,8 +23,89 @@
             },
             "effectType": "StatisticEffect",
             "Description": {
-                "Id": "StatusEffect_DefenseBonus",
-                "Name": "Ghost Defense",
+                "Id": "StatusEffect-HitDefense-Light",
+                "Name": "Light Mech Defense Bonus",
+                "Details": "This pilot has a +2 defense against being hit by any attack.",
+                "Icon": "uixSvgIcon_ability_invistarget"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "ToHitThisActor",
+                "operation": "Float_Add",
+                "modValue": "8.0",
+                "modType": "System.Single",
+				"targetCollection": "Weapon"
+            }
+        },
+		{
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": true
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-HitDefense-Medium",
+                "Name": "Medium Mech Defense Bonus",
+                "Details": "This pilot has a +2 defense against being hit by any attack.",
+                "Icon": "uixSvgIcon_ability_invistarget"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "ToHitThisActor",
+                "operation": "Float_Add",
+                "modValue": "6.0",
+                "modType": "System.Single",
+				"targetCollection": "Weapon"
+            }
+        },
+		{
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": true
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-HitDefense-Heavy",
+                "Name": "Heavy Mech Defense Bonus",
+                "Details": "This pilot has a +2 defense against being hit by any attack.",
+                "Icon": "uixSvgIcon_ability_invistarget"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "ToHitThisActor",
+                "operation": "Float_Add",
+                "modValue": "4.0",
+                "modType": "System.Single",
+				"targetCollection": "Weapon"
+            }
+        },
+		{
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": true
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-HitDefense-Assault",
+                "Name": "Assault Mech Defense Bonus",
                 "Details": "This pilot has a +2 defense against being hit by any attack.",
                 "Icon": "uixSvgIcon_ability_invistarget"
             },

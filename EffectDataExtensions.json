@@ -278,5 +278,93 @@
 				]
 			}
 		}
+	},
+	"StatusEffect-HitDefense-Light": {
+		"TargetCollectionsForSearch": {
+			"Unit": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [
+					"unit_mech",
+					"unit_light"
+				],
+				"TargetCollectionNotMatch": []
+			},
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"StatusEffect-HitDefense-Medium": {
+		"TargetCollectionsForSearch": {
+			"Unit": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [
+					"unit_mech",
+					"unit_medium"
+				],
+				"TargetCollectionNotMatch": []
+			},
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"StatusEffect-HitDefense-Heavy": {
+		"TargetCollectionsForSearch": {
+			"Unit": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [
+					"unit_mech",
+					"unit_heavy"
+				],
+				"TargetCollectionNotMatch": []
+			},
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"StatusEffect-HitDefense-Assault": {
+		"TargetCollectionsForSearch": {
+			"Unit": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [
+					"unit_mech",
+					"unit_assault"
+				],
+				"TargetCollectionNotMatch": []
+			},
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
 	}
 }

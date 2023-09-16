@@ -4,6 +4,8 @@ A revamped skill tree for HBS BattleTech.
 
 Based on Abifilier by gnivler & ajkroeg/tbone, abilities inspired by bloodydoves' BTA3062, and with special thanks to yimjeric (Multi-Target on all Mechs) for demonstrating a better way to do skill tree changes.
 
+Features Mortar/Thumper AbilityDef tweaks from Mechfanatic.
+
 Does **NOT** include any Resolverator code. Uses only Abilifier (NO CAE), which currently lacks that feature.
 
 Now dependent on [IRModUtils](https://github.com/BattletechModders/IRBTModUtils) due to Abilifier updates.

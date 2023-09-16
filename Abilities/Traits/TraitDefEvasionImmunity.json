@@ -1,9 +1,9 @@
 {
 	"Description" : {
 		"Id" : "TraitDefEvasionImmunity",
-		"Name" : "",
-		"Details" : "",
-		"Icon" : ""
+		"Name" : "EVASION IMMUNITY",
+		"Details" : "This unit is immune to sensor lock.",
+		"Icon" : "uixSvgIcon_ability_invistarget"
 	},
 	"Type" : "EvasionSave",
 	"ShortDesc" : "Evasion Immunity",

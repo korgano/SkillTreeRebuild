@@ -1,9 +1,9 @@
 {
 	"Description" : {
 		"Id" : "TraitDefWeaponHeatDMG",
-		"Name" : "",
-		"Details" : "",
-		"Icon" : ""
+		"Name" : "OVERHEAT DAMAGE BOOST",
+		"Details" : "Do 25% more damage if enemy is overheated.",
+		"Icon" : "uixSvgIcon_ability_overheatmultsvg"
 	},
 	"Type" : "WeaponHeatDamage",
 	"ShortDesc" : "+ 25% DMG when target overheated.",

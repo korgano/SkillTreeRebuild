@@ -1,9 +1,9 @@
 {
 	"Description" : {
 		"Id" : "TraitDefSprintShoot",
-		"Name" : "",
-		"Details" : "",
-		"Icon" : ""
+		"Name" : "SPRINT + SHOOT",
+		"Details" : "Elite MechWarriors can fire their weapons after sprinting.",
+		"Icon" : "uixSvgIcon_ability_Sprint_Shoot"
 	},
 	"Type" : "SpintShoot",
 	"ShortDesc" : "Fire after sprinting",

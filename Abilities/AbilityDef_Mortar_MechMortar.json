@@ -1,13 +1,24 @@
-# Artillery Status Effects
-
-## What it does:
-The base game has no ability to apply `EffectData` included in any `AbilityDef_Mortar_[Name]` file to mortar/Thumper attacks. Through Postfix Harmony Patching, any status effect in the `EffectData` array will be applied to the targets.
-
-## How it works:
-Add `EffectData` code to the `AbilityDef` file like so:
-
-```
-"EffectData" :
+{
+	"Description" : {
+		"Id" : "AbilityDef_Mortar_MechMortar",
+		"Name" : "MORTAR",
+		"Details" : "ACTION: Fire an artillery attack at the target area for 10-50 damage per location on units within the blast radius. Has [NumberOfUses] uses per mission.",
+		"Icon" : "uixSvgIcon_artillery"
+	},
+	"ActivationTime" : "ConsumedByFiring",
+	"Resource" : "ConsumesFiring",
+	"ActivationCooldown" : 2,
+	"ActivationETA" : 0,
+	"NumberOfUses" : 2,
+	"specialRules" : "Artillery",
+	"Targeting" : "CommandTargetSinglePoint",
+	"WeaponResource" : "Weapon_Mortar_MechMortar",
+	"FloatParam1" : 60.0,
+    "IntParam1" : 0,
+	"IntParam2" : 360,
+	"ShowIntParam1" : false,
+	"ShowIntParam2" : false,
+    "EffectData" :
 	[
 		{
             "Description" : {
@@ -37,7 +48,7 @@ Add `EffectData` code to the `AbilityDef` file like so:
             "statisticData" : {
                 "statName" : "WalkSpeed",
                 "operation" : "Float_Multiply",
-                "modValue" : "0.5",
+                "modValue" : "0.75",
                 "modType" : "System.Single",
                 "additionalRules" : "NotSet",
                 "targetCollection" : "NotSet",
@@ -75,7 +86,7 @@ Add `EffectData` code to the `AbilityDef` file like so:
             "statisticData" : {
                 "statName" : "RunSpeed",
                 "operation" : "Float_Multiply",
-                "modValue" : "0.5",
+                "modValue" : "0.75",
                 "modType" : "System.Single",
                 "additionalRules" : "NotSet",
                 "targetCollection" : "NotSet",
@@ -125,20 +136,4 @@ Add `EffectData` code to the `AbilityDef` file like so:
             }
         }
 	]
-```
-
-## Pre-existing Artillery Abilities
-
-Artillery AbilityDef files from Heavy Metal DLC and other mods **do not** have `EffectData` arrays by default. To avoid issues with JSON Merging, Skill Tree Rebuild incorporates replacement JSONs with balance changes from [BetterMortars](https://www.nexusmods.com/battletech/mods/540) by Mechfanatic.
-
-**Mortar**
-
-- +20% radius effect
-
-- +1 ammo (with 1 turn cooldown for reload)
-
-**Thumper**
-
-- +50% radius effect
-
-- +1 ammo (with 1 turn cooldown for reload)
+}
