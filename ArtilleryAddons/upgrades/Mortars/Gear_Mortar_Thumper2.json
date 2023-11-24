@@ -1,0 +1,33 @@
+{
+    "Description" : {
+        "Cost" : 0,
+        "Rarity" : 99,
+        "Purchasable" : false,
+        "Manufacturer" : "Blackwell Industries",
+        "Model" : "Assault Artillery",
+        "UIName" : "Thumper Cannon Mk. 2",
+        "Id" : "Gear_Mortar_Thumper2",
+        "Name" : "Thumper Cannon Mk. 2",
+        "Details" : "The Thumper Cannon Mk. 2 is Blackwell Industries attempt to improve on the Bull Shark's Thumper Cannon. It shaves off 2 tons of weight by using advanced FT design tech to optimize the design and construction.\n\nWhen fired, it deals devastating damage to all units within the targeted area - often destroying lighter 'Mechs and vehicles entirely.\n\nOnly a single artillery piece may be mounted on any 'Mech.",
+        "Icon" : "uixSvgIcon_artillery"
+    },
+    "BonusValueA" : "* Artillery",
+    "BonusValueB" : null,
+    "ComponentType" : "Upgrade",
+    "ComponentSubType" : "Prototype_Weapon",
+    "PrefabIdentifier" : "",
+    "InventorySize" : 8,
+    "Tonnage" : 8,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "BLACKLISTED",
+			"BUILT-IN"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

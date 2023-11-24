@@ -73,7 +73,7 @@
             "statisticData" : {
                 "statName" : "DamageReductionMultiplierAll",
                 "operation" : "Float_Multiply",
-                "modValue" : "0.75",
+                "modValue" : "0.25",
                 "modType" : "System.Single",
                 "additionalRules" : "NotSet",
                 "targetCollection" : "NotSet",

@@ -149,7 +149,7 @@
 				"Id": "StatusEffect-OffworldSmuggler",
 				"Name": "Sensor Range Increased",
 				"Details": "Increases sensor range by 50%",
-				"Icon": "offworld-smuggler"
+				"Icon": "uixSvgIcon_ability_targetexpert"
 			},
 			"nature": "Buff",
 			"statisticData": {

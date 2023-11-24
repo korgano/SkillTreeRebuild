@@ -1,0 +1,139 @@
+{
+	"Description" : {
+		"Id" : "AbilityDef_Mortar_Thumper2",
+		"Name" : "THUMPER 2 CANNON",
+		"Details" : "ACTION: Fire an artillery attack at the target area for 10-50 damage per location on units within the blast radius. Has [NumberOfUses] uses per mission. Cuts opponent movement speed in half for 2 turns, and disables weapons on targets with 50% armor or less for 2 turns.",
+		"Icon" : "uixSvgIcon_artillery"
+	},
+	"ActivationTime" : "ConsumedByFiring",
+	"Resource" : "ConsumesFiring",
+	"ActivationCooldown" : 2,
+	"ActivationETA" : 0,
+	"NumberOfUses" : 4,
+	"specialRules" : "Artillery",
+	"Targeting" : "CommandTargetSinglePoint",
+	"WeaponResource" : "Weapon_Mortar_Thumper",
+	"FloatParam1" : 90.0,
+    "IntParam1" : 0,
+	"IntParam2" : 400,
+	"ShowIntParam1" : false,
+	"ShowIntParam2" : false,
+    "EffectData" :
+	[
+		{
+            "Description" : {
+                "Id" : "StatusEffect-BWCL-WidowsKissWalkSpeed",
+                "Name" : "ACTUATOR WRENCHED",
+                "Details" : "Thumper blasts damage opponent's Actuators, slowing their movement speed.",
+                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Debuff",
+            "durationData" : {
+                "duration" : 2,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnHit",
+                "effectTargetType" : "SingleTarget",
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true,
+                "hideApplicationFloatie" : false
+            },
+            "statisticData" : {
+                "statName" : "WalkSpeed",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.5",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "StatusEffect-BWCL-WidowsKissRunSpeed",
+                "Name" : "MOVEMENT SLOWED",
+                "Details" : "Thumper blasts damage opponent's Actuators, slowing their movement speed.",
+                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Debuff",
+            "durationData" : {
+                "duration" : 2,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnHit",
+                "effectTargetType" : "SingleTarget",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : false
+            },
+            "statisticData" : {
+                "statName" : "RunSpeed",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.5",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "StatusEffect-BWCL-WidowsKissGuns",
+                "Name" : "WEAPONS DISABLED",
+                "Details" : "Thumper blasts damage opponent's weapons for 2 turns.",
+                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Debuff",
+            "durationData" : {
+                "duration" : 2,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnHit",
+                "effectTargetType" : "SingleTarget",
+                "specialRules" : "HalfArmorOrLess",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : false
+            },
+            "statisticData" : {
+                "statName" : "TemporarilyDisabled",
+                "operation" : "Set",
+                "modValue" : true,
+                "modType" : "System.Boolean",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "Weapon",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        }
+	]
+}

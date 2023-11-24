@@ -1,0 +1,16 @@
+{
+    "Name": "Artillery Add-ons (Skill Tree Rebuild)",
+    "Version": "0.1.0",
+    "Enabled": true,
+    "Author": "Kregano",
+    "Website": "https://github.com/korgano/SkillTreeRebuild",
+    "Description": "Add-on to Skill Tree Rebuild to add new artillery with status effects to the game.",
+
+    "DependsOn": [],
+
+    "Manifest": [
+        { "Type": "UpgradeDef", "Path": "upgrades" },
+        { "Type": "WeaponDef", "Path": "weapons"},
+        { "Type": "AbilityDef", "Path": "Abilities", "AddtoDB": true }
+    ]
+}

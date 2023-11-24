@@ -1,0 +1,224 @@
+{
+	"Description" : {
+		"Id" : "AbilityDef_Mortar_MechMortar_Inferno",
+		"Name" : "INFERNO MORTAR",
+		"Details" : "ACTION: Fire an artillery attack at the target area for 10-50 damage per location on units within the blast radius. Has [NumberOfUses] uses per mission. Cuts opponent movement speed by 25% for 2 turns, applies 60 heat damage, applies an additional 10 heat damage on turn end, and disables weapons on targets with 50% armor or less for 2 turns.",
+		"Icon" : "uixSvgIcon_artillery"
+	},
+	"ActivationTime" : "ConsumedByFiring",
+	"Resource" : "ConsumesFiring",
+	"ActivationCooldown" : 2,
+	"ActivationETA" : 0,
+	"NumberOfUses" : 2,
+	"specialRules" : "Artillery",
+	"Targeting" : "CommandTargetSinglePoint",
+	"WeaponResource" : "Weapon_Mortar_MechMortar",
+	"FloatParam1" : 60.0,
+    "IntParam1" : 0,
+	"IntParam2" : 360,
+	"ShowIntParam1" : false,
+	"ShowIntParam2" : false,
+    "EffectData" :
+	[
+		{
+            "Description" : {
+                "Id" : "StatusEffect-Artillery-GimpWalkSpeed",
+                "Name" : "ACTUATOR WRENCHED",
+                "Details" : "Thumper blasts damage opponent's Actuators, slowing their movement speed.",
+                "Icon" : "uixSvgIcon_ability_gimpthem"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Debuff",
+            "durationData" : {
+                "duration" : 2,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnHit",
+                "effectTargetType" : "SingleTarget",
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true,
+                "hideApplicationFloatie" : false
+            },
+            "statisticData" : {
+                "statName" : "WalkSpeed",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.75",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "StatusEffect-Artillery-GimpRunSpeed",
+                "Name" : "MOVEMENT SLOWED",
+                "Details" : "Thumper blasts damage opponent's Actuators, slowing their movement speed.",
+                "Icon" : "uixSvgIcon_ability_gimpthem"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Debuff",
+            "durationData" : {
+                "duration" : 2,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnHit",
+                "effectTargetType" : "SingleTarget",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : false
+            },
+            "statisticData" : {
+                "statName" : "RunSpeed",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.75",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "StatusEffect-Artillery-GimpGuns",
+                "Name" : "WEAPONS DISABLED",
+                "Details" : "Thumper blasts damage opponent's weapons for 2 turns.",
+                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Debuff",
+            "durationData" : {
+                "duration" : 2,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnHit",
+                "effectTargetType" : "SingleTarget",
+                "specialRules" : "HalfArmorOrLess",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : false
+            },
+            "statisticData" : {
+                "statName" : "TemporarilyDisabled",
+                "operation" : "Set",
+                "modValue" : true,
+                "modType" : "System.Boolean",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "Weapon",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        },
+        {
+            "durationData" : {
+                "duration" : 1,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : -1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnHit",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "NotSet",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-Inferno-Burn5",
+                "Name" : "BURNING GEL",
+                "Details" : "This unit gains [AMT] Heat on its next activation (this effect stacks).",
+                "Icon" : "uixSvgIcon_statusOnFire"
+            },
+            "nature" : "Debuff",
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "statName": "EndMoveHeat",
+                "operation": "Int_Add",
+                "modValue": "10",
+                "modType": "System.Int32"
+            },
+            "tagData" : null,
+            "floatieData" : null,
+            "actorBurningData" : null,
+            "vfxData" : null,
+            "instantModData" : null,
+            "poorlyMaintainedEffectData" : null
+        },
+		{
+			"durationData" : {
+                "duration" : 1,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : -1,
+                "clearedWhenAttacked" : false
+            },
+			"targetingData" : {
+                "effectTriggerType" : "OnHit",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "NotSet",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : true
+            },
+			"effectType" : "VFXEffect",
+            "Description" : {
+                "Id" : "StatusEffect-Inferno-VFX",
+                "Name" : "Inferno VFX",
+                "Details" : "Visual indicator of the Inferno effect",
+                "Icon" : "uixSvgIcon_status_sensorsImpaired"
+            },
+            "nature" : "Debuff",
+			"vfxData" : {
+				"vfxName" : "vfxPrfPrtl_weaponLRM_napalmStatus_B",
+				"attachToImpactPoint" : true,
+				"location" : -1,
+				"isAttached" : true,
+				"facesAttacker" : false,
+				"isOneShot" : false,
+				"duration" : -1.0		
+			}
+		}
+	]
+}

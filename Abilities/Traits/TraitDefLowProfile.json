@@ -3,7 +3,7 @@
 		"Id" : "TraitDefLowProfile",
 		"Name" : "Low Profile",
 		"Details" : "Provides a 50% reduction to 'Mech signature.",
-		"Icon" : "uixSvgIcon_ability_berserk"
+		"Icon" : "uixSvgIcon_ability_phantom"
 	},
 	"Type" : "Visibility",
 	"ShortDesc" : "[AMT] 'Mech Visibility",
@@ -38,7 +38,7 @@
                 "Id" : "StatusEffect-LowProfile",
                 "Name" : "LOW PROFILE",
                 "Details" : "Provides a [AMT] reduction to 'Mech signature.",
-                "Icon" : "uixSvgIcon_ability_berserk"
+                "Icon" : "uixSvgIcon_ability_phantom"
             },
             "nature" : "Buff",
             "statisticData" : {

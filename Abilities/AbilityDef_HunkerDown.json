@@ -35,7 +35,7 @@
 			"statisticData": {
 				"statName": "DamageReductionMultiplierAll",
 				"operation": "Float_Multiply",
-				"modValue": "0.25",
+				"modValue": "0.75",
 				"modType": "System.Single"
 			}
 		},
