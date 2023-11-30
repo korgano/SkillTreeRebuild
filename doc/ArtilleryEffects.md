@@ -1,52 +1,25 @@
-{
-	"Description" : {
-		"Id" : "AbilityDefT8B",
-		"Name" : "GIMP THEM",
-		"Details" : "PASSIVE: Attacks target and wrench opponent's Actuators, slowing their movement speed.",
-		"Icon" : "UixSvgIcon_specialAbility_BWCL"
-	},
-	"Type" : "Command",
-	"ShortDesc" : "Hits Slow Movement",
-    "DisplayParams" : "NeverShow",
-	"ActivationTime" : "Passive",
-	"EffectData" :
+# Artillery Status Effects
+
+## What it does:
+The base game has no ability to apply `EffectData` included in any `AbilityDef_Mortar_[Name]` file to mortar/Thumper attacks. Through Postfix Harmony Patching, any status effect in the `EffectData` array will be applied to the targets.
+
+## How it works:
+Add `EffectData` code to the `AbilityDef` file like so:
+
+```
+"EffectData" :
 	[
 		{
             "Description" : {
-                "Id" : "StatusEffect-BWCL-WidowsKissFloatie",
-                "Name" : "GIMP THEM",
-                "Details" : "GIMP THEM",
-                "Icon" : "UixSvgIcon_specialAbility_BWCL"
-            },
-            "effectType" : "FloatieEffect",
-            "nature" : "Buff",
-            "durationData" : {
-                "duration" : 1,
-                "stackLimit" : 0,
-                "triggerLimit" : 1
-            },
-            "targetingData" : {
-                "effectTriggerType" : "OnWeaponFire",
-                "effectTargetType" : "Creator",
-                "showInTargetPreview" : false,
-                "showInStatusPanel" : false,
-                "hideApplicationFloatie" : true
-            },
-            "floatieData" : {
-                "targetCollection" : "NotSet"
-            }
-        },
-        {
-            "Description" : {
-                "Id" : "StatusEffect-BWCL-WidowsKissWalkSpeed",
+                "Id" : "StatusEffect-Artillery-GimpWalkSpeed",
                 "Name" : "ACTUATOR WRENCHED",
-                "Details" : "Attacks target and wrench opponent's Actuators, slowing their movement speed.",
-                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+                "Details" : "Thumper blasts damage opponent's Actuators, slowing their movement speed.",
+                "Icon" : "uixSvgIcon_ability_gimpthem"
             },
             "effectType" : "StatisticEffect",
             "nature" : "Debuff",
             "durationData" : {
-                "duration" : 1,
+                "duration" : 2,
                 "ticksOnActivations" : true,
                 "useActivationsOfTarget" : true,
                 "ticksOnEndOfRound" : false,
@@ -64,7 +37,7 @@
             "statisticData" : {
                 "statName" : "WalkSpeed",
                 "operation" : "Float_Multiply",
-                "modValue" : "0.75",
+                "modValue" : "0.5",
                 "modType" : "System.Single",
                 "additionalRules" : "NotSet",
                 "targetCollection" : "NotSet",
@@ -76,15 +49,15 @@
         },
         {
             "Description" : {
-                "Id" : "StatusEffect-BWCL-WidowsKissRunSpeed",
+                "Id" : "StatusEffect-Artillery-GimpRunSpeed",
                 "Name" : "MOVEMENT SLOWED",
-                "Details" : "Attacks target and wrench opponent's Actuators, slowing their movement speed.",
-                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+                "Details" : "Thumper blasts damage opponent's Actuators, slowing their movement speed.",
+                "Icon" : "uixSvgIcon_ability_gimpthem"
             },
             "effectType" : "StatisticEffect",
             "nature" : "Debuff",
             "durationData" : {
-                "duration" : 1,
+                "duration" : 2,
                 "ticksOnActivations" : true,
                 "useActivationsOfTarget" : true,
                 "ticksOnEndOfRound" : false,
@@ -102,7 +75,7 @@
             "statisticData" : {
                 "statName" : "RunSpeed",
                 "operation" : "Float_Multiply",
-                "modValue" : "0.75",
+                "modValue" : "0.5",
                 "modType" : "System.Single",
                 "additionalRules" : "NotSet",
                 "targetCollection" : "NotSet",
@@ -111,12 +84,64 @@
                 "targetAmmoCategory" : "NotSet",
                 "targetWeaponSubType" : "NotSet"
             }
+        },
+        {
+            "Description" : {
+                "Id" : "StatusEffect-Artillery-GimpGuns",
+                "Name" : "WEAPONS DISABLED",
+                "Details" : "Thumper blasts damage opponent's weapons for 2 turns.",
+                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Debuff",
+            "durationData" : {
+                "duration" : 2,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnHit",
+                "effectTargetType" : "SingleTarget",
+                "specialRules" : "HalfArmorOrLess",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : false
+            },
+            "statisticData" : {
+                "statName" : "TemporarilyDisabled",
+                "operation" : "Set",
+                "modValue" : true,
+                "modType" : "System.Boolean",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "Weapon",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
         }
 	]
-<<<<<<< Updated upstream:Abilities/AbilityDefT8B.json
-}
-=======
 ```
+
+## Pre-existing Artillery Abilities
+
+Artillery AbilityDef files from Heavy Metal DLC and other mods **do not** have `EffectData` arrays by default. To avoid issues with JSON Merging, Skill Tree Rebuild incorporates replacement JSONs with balance changes from [BetterMortars](https://www.nexusmods.com/battletech/mods/540) by Mechfanatic.
+
+**Mortar**
+
+- +20% radius effect
+
+- +1 ammo (with 1 turn cooldown for reload)
+
+**Thumper**
+
+- +50% radius effect
+
+- +1 ammo (with 1 turn cooldown for reload)
 
 ## Pre-existing Artillery Abilities
 
@@ -283,4 +308,3 @@ A real life example would something like this:
 **Note:** `"duration" : -1,` is necessary for damage to be permanent. Any value besides 0 (which disables the effect) or -1 (which applies permanently until the end of combat) will be the number of turns before the effect expires.
 
 Likewise, `"stackLimit" : -1,` allows for unlimited effect stacking. Any value besides 0 (which disables the effect) or -1 (which applies permanently until the end of combat) will be the number of times the target can receive the status effect.
->>>>>>> Stashed changes:doc/ArtilleryEffects.md

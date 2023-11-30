@@ -23,10 +23,6 @@
             },
             "effectType": "StatisticEffect",
             "Description": {
-<<<<<<< Updated upstream
-                "Id": "StatusEffect_DefenseBonus",
-                "Name": "Ghost Defense",
-=======
                 "Id": "StatusEffect-HitDefense-Light",
                 "Name": "Light Mech Defense Bonus",
                 "Details": "This pilot has a +8 defense against being hit by any attack.",
@@ -110,7 +106,6 @@
             "Description": {
                 "Id": "StatusEffect-HitDefense-Assault",
                 "Name": "Assault Mech Defense Bonus",
->>>>>>> Stashed changes
                 "Details": "This pilot has a +2 defense against being hit by any attack.",
                 "Icon": "uixSvgIcon_ability_EvasionBoost"
             },

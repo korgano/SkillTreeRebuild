@@ -278,5 +278,109 @@
 				]
 			}
 		}
+	},
+	"StatusEffect-HitDefense-Light": {
+		"TargetCollectionsForSearch": {
+			"Unit": {
+				"MustMatchAll": true,
+				"TargetCollectionTagMatch": [
+					"unit_mech",
+					"unit_light"
+				],
+				"TargetCollectionNotMatch": [
+					"unit_medium",
+					"unit_heavy",
+					"unit_assault"
+				]
+			},
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"StatusEffect-HitDefense-Medium": {
+		"TargetCollectionsForSearch": {
+			"Unit": {
+				"MustMatchAll": true,
+				"TargetCollectionTagMatch": [
+					"unit_mech",
+					"unit_medium"
+				],
+				"TargetCollectionNotMatch": [
+					"unit_light",
+					"unit_heavy",
+					"unit_assault"
+				]
+			},
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"StatusEffect-HitDefense-Heavy": {
+		"TargetCollectionsForSearch": {
+			"Unit": {
+				"MustMatchAll": true,
+				"TargetCollectionTagMatch": [
+					"unit_mech",
+					"unit_heavy"
+				],
+				"TargetCollectionNotMatch": [
+					"unit_light",
+					"unit_medium",
+					"unit_assault"
+				]
+			},
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"StatusEffect-HitDefense-Assault": {
+		"TargetCollectionsForSearch": {
+			"Unit": {
+				"MustMatchAll": true,
+				"TargetCollectionTagMatch": [
+					"unit_mech",
+					"unit_assault"
+				],
+				"TargetCollectionNotMatch": [
+					"unit_light",
+					"unit_medium",
+					"unit_heavy"
+				]
+			},
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
 	}
 }

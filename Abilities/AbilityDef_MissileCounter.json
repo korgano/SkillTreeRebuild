@@ -20,13 +20,14 @@
             "targetingData" : {
                 "effectTriggerType" : "Passive",
                 "specialRules" : "Aura",
-				"auraEffectType" : "ECM_GENERAL",
+				"auraEffectType" : "NotSet",
                 "effectTargetType" : "AlliesWithinRange",
                 "range" : 100.0,
                 "forcePathRebuild" : false,
                 "forceVisRebuild" : false,
                 "showInTargetPreview" : true,
-                "showInStatusPanel" : true
+                "showInStatusPanel" : true,
+                "ShowInPilotToolTip": true
             },
 			"effectType" : "StatisticEffect",
 			"Description" :
@@ -37,19 +38,19 @@
 				"Icon" : "uixSvgIcon_ability_AMS"
 			},
             "statisticData": {
-				"appliesEachTick": false,
-				"effectsPersistAfterDestruction": false,
-				"statName" : "ToHitThisActorMissile",
-				"operation" : "Float_Multiply",
-                "modValue" : "0.5",
-                "modType" : "System.Single",
-				"additionalRules": "NotSet",
-				"targetCollection": "Weapon",
-				"targetWeaponCategory": "Missile",
-				"targetWeaponType": "NotSet",
-				"targetAmmoCategory": "NotSet",
-				"targetWeaponSubType": "NotSet"
-			},
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "DamageReductionMultiplierMissile",
+                "operation": "Float_Multiply",
+                "modValue": "0.5",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "NotSet",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            },
 			"nature" : "Buff"
 		}
 	],
