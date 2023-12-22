@@ -10,11 +10,11 @@ Does **NOT** include any Resolverator code. Uses only Abilifier (NO CAE), which 
 
 Now dependent on [IRModUtils](https://github.com/BattletechModders/IRBTModUtils) due to Abilifier updates.
 
-[New Skill Tree](SkillTree_revamp.md)
+[New Skill Tree](doc/SkillTree_revamp.md)
 
-[Ranged Pushback Functionality](RangedPushBack.md)
+[Ranged Pushback Functionality](doc/RangedPushBack.md)
 
-[Artillery Status Effects](ArtilleryEffects.md)
+[Artillery Status Effects](doc/ArtilleryEffects.md)
 
 # How to Replace the Existing Skill Tree
 =======
