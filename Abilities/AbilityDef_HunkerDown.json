@@ -27,16 +27,15 @@
 			},
 			"effectType": "StatisticEffect",
 			"Description": {
-				"Id": "AbilityDefGu5a_DR",
+				"Id": "StatusEffect_HunkerDown_DR_Creator",
 				"Name": "HUNKER DOWN - CREATOR DAMAGE REDUCTION",
-				"Details": "All incoming damage reduced by 25% for 2 turns.",
-				"Icon": "layeredarmor"
+				"Details": "All incoming damage reduced by 25% for 2 turns."
 			},
 			"nature": "Buff",
 			"statisticData": {
 				"statName": "DamageReductionMultiplierAll",
 				"operation": "Float_Multiply",
-				"modValue": "0.25",
+				"modValue": "0.75",
 				"modType": "System.Single"
 			}
 		},
@@ -50,14 +49,15 @@
 			"targetingData": {
 				"effectTriggerType": "OnActivation",
 				"effectTargetType": "AllLanceMates",
-				"showInStatusPanel": true
+				"showInStatusPanel": true,
+				"ShowInPilotToolTip": true
 			},
 			"effectType": "StatisticEffect",
 			"Description": {
-				"Id": "AbilityDefGu10a_DR",
+				"Id": "StatusEffect_HunkerDown_DR_Lance",
 				"Name": "HUNKER DOWN - LANCE DAMAGE REDUCTION",
 				"Details": "All incoming damage reduced by 25% for 2 turns.",
-				"Icon": "guards"
+				"Icon" : "uixSvgIcon_ability_defformation"
 			},
 			"nature": "Buff",
 			"statisticData": {

@@ -1,10 +1,13 @@
 ﻿using BattleTech;
 using HBS.Logging;
 using System.Collections.Generic;
+<<<<<<< HEAD
 using System;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+=======
+>>>>>>> test
 
 namespace RangedPushBack.Extensions
 {

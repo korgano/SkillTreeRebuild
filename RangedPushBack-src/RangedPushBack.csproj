@@ -66,6 +66,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\AbstractActor_ext.cs" />
     <Compile Include="Extensions\Component.cs" />
     <Compile Include="Extensions\Mech.cs" />
     <Compile Include="Extensions\Pilot.cs" />
@@ -79,8 +80,12 @@
     <Publicize Include="Assembly-CSharp:BattleTech.AttackStackSequence.targets" />
     <Publicize Include="Assembly-CSharp:BattleTech.ActiveProbeSequence.Targets" />
     <Publicize Include="Assembly-CSharp:BattleTech.SequenceBase.Combat" />
+<<<<<<< HEAD
     <Publicize Include="Assembly-Csharp:BattleTech.AttackDirector.OnAttackComplete" />
     <Publicize Include="Assembly-Csharp:BattleTech.AttackDirector.OnAttackComplete" />
+=======
+    <Publicize Include="Assembly-Csharp:BattleTech.AttackDirector.AttackSequence.Init" />
+>>>>>>> test
     <Publicize Include="Assembly-Csharp:BattleTech.MechMortarSequence.OnImpact" />
     <Publicize Include="Assembly-Csharp:BattleTech.MechMortarSequence.Targets" />
   </ItemGroup>

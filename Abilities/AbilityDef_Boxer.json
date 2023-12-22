@@ -62,8 +62,7 @@
 			"Description": {
 				"Id": "AbilityDefGu10a_DR",
 				"Name": "DAMAGE REDUCTION",
-				"Details": "All incoming damage reduced by 25% for 1 turn.",
-				"Icon": "guards"
+				"Details": "All incoming damage reduced by 25% for 1 turn."
 			},
 			"nature": "Buff",
 			"statisticData": {

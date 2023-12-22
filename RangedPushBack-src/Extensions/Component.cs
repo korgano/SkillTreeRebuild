@@ -2,9 +2,6 @@
 using HBS.Logging;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RangedPushBack.Extensions
 {
@@ -107,5 +104,38 @@ namespace RangedPushBack.Extensions
             logger.LogAtLevel(LogLevel.Debug, $"Running check to see if {mech.MechDef.Name} has PushBackLast");
             return CheckPushBackLastComponent(mech, ModInit.Settings.PushBackLastAbilities);
         }
+
+        public static bool CheckPushBackFirstComponent(this Mech mech, List<string> PushBackFirstAbilities)
+        {
+            var logger = Logger.GetLogger("RangedPushBack");
+            for (int i = 0; i < mech.allComponents.Count; i++)
+            {
+                if (mech.allComponents[i].componentDef.AbilityDefs != null)
+                {
+                    logger.LogAtLevel(LogLevel.Debug, "Running through component abilities - CheckPushBackFirstComponent");
+                    for (int j = 0; j < mech.allComponents[i].componentDef.AbilityDefs.Count; j++)
+                    {
+                        AbilityDef abilityDef = mech.allComponents[i].componentDef.AbilityDefs[j];
+                        logger.LogAtLevel(LogLevel.Debug, "Running check on component PushBackFirstAbilities");
+                        if (PushBackFirstAbilities.Contains(abilityDef.Id))
+                        {
+                            logger.LogAtLevel(LogLevel.Debug, "Mech component abilities include items on PushBackFirstAbilities list");
+                            return true;
+                        }
+                    }
+                }
+            }
+            logger.LogAtLevel(LogLevel.Debug, "Mech component abilities DO NOT include items on PushBackFirstAbilities list");
+            return false;
+        }
+
+        public static bool HasPushBackFirst(this Mech mech)
+        {
+            var logger = Logger.GetLogger("RangedPushBack");
+            logger.LogAtLevel(LogLevel.Debug, $"Running check to see if {mech.MechDef.Name} has PushBackFirst");
+            return CheckPushBackLastComponent(mech, ModInit.Settings.PushBackFirstAbilities);
+        }
+
+        //end of code
     }
 }

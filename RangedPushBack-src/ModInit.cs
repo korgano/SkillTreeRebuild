@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using RangedPushBack.Extensions;
 
 namespace RangedPushBack
 {
@@ -35,6 +36,11 @@ namespace RangedPushBack
         //These settings need to be in mod.json
         public List<string> PushBackOneAbilities = new List<string>();
         public List<string> PushBackOneAbilities_Probe = new List<string>();
+<<<<<<< HEAD
+=======
+        public List<string> PushBackFirstAbilities = new List<string>();
+        public List<string> PushBackFirstAbilities_Probe = new List<string>();
+>>>>>>> test
         public List<string> PushBackLastAbilities = new List<string>();
         public List<string> PushBackLastAbilities_Probe = new List<string>();
         public List<string> ThumperIDs = new List<string>();

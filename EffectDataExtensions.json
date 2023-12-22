@@ -282,12 +282,24 @@
 	"StatusEffect-HitDefense-Light": {
 		"TargetCollectionsForSearch": {
 			"Unit": {
+<<<<<<< HEAD
 				"MustMatchAll": false,
+=======
+				"MustMatchAll": true,
+>>>>>>> test
 				"TargetCollectionTagMatch": [
 					"unit_mech",
 					"unit_light"
 				],
+<<<<<<< HEAD
 				"TargetCollectionNotMatch": []
+=======
+				"TargetCollectionNotMatch": [
+					"unit_medium",
+					"unit_heavy",
+					"unit_assault"
+				]
+>>>>>>> test
 			},
 			"Pilot": {
 				"MustMatchAll": false,
@@ -304,12 +316,24 @@
 	"StatusEffect-HitDefense-Medium": {
 		"TargetCollectionsForSearch": {
 			"Unit": {
+<<<<<<< HEAD
 				"MustMatchAll": false,
+=======
+				"MustMatchAll": true,
+>>>>>>> test
 				"TargetCollectionTagMatch": [
 					"unit_mech",
 					"unit_medium"
 				],
+<<<<<<< HEAD
 				"TargetCollectionNotMatch": []
+=======
+				"TargetCollectionNotMatch": [
+					"unit_light",
+					"unit_heavy",
+					"unit_assault"
+				]
+>>>>>>> test
 			},
 			"Pilot": {
 				"MustMatchAll": false,
@@ -326,12 +350,24 @@
 	"StatusEffect-HitDefense-Heavy": {
 		"TargetCollectionsForSearch": {
 			"Unit": {
+<<<<<<< HEAD
 				"MustMatchAll": false,
+=======
+				"MustMatchAll": true,
+>>>>>>> test
 				"TargetCollectionTagMatch": [
 					"unit_mech",
 					"unit_heavy"
 				],
+<<<<<<< HEAD
 				"TargetCollectionNotMatch": []
+=======
+				"TargetCollectionNotMatch": [
+					"unit_light",
+					"unit_medium",
+					"unit_assault"
+				]
+>>>>>>> test
 			},
 			"Pilot": {
 				"MustMatchAll": false,
@@ -348,12 +384,24 @@
 	"StatusEffect-HitDefense-Assault": {
 		"TargetCollectionsForSearch": {
 			"Unit": {
+<<<<<<< HEAD
 				"MustMatchAll": false,
+=======
+				"MustMatchAll": true,
+>>>>>>> test
 				"TargetCollectionTagMatch": [
 					"unit_mech",
 					"unit_assault"
 				],
+<<<<<<< HEAD
 				"TargetCollectionNotMatch": []
+=======
+				"TargetCollectionNotMatch": [
+					"unit_light",
+					"unit_medium",
+					"unit_heavy"
+				]
+>>>>>>> test
 			},
 			"Pilot": {
 				"MustMatchAll": false,

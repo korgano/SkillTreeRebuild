@@ -1,0 +1,8 @@
+{
+    "Manifest": [
+        {
+            "Type": "AdvancedJSONMerge",
+            "Path": "Advanced"
+        }
+    ]
+}

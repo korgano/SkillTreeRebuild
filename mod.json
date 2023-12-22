@@ -52,6 +52,7 @@
 			{ "Type": "AdvancedJSONMerge", "Path": "MergeChanges"},
 			{ "Type": "PilotDef", "Path": "pilot" },
             { "Type": "SimGameConstants", "Path": "simGameConstants", "ShouldMergeJSON": true },
-		    { "Type": "AbilityDef", "Path": "Abilities", "AddtoDB": true }
+		    { "Type": "AbilityDef", "Path": "Abilities", "AddtoDB": true },
+			{ "Type": "WeaponDef", "Path": "weapons" }
         ]
 }

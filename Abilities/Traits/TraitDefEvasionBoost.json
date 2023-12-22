@@ -25,8 +25,13 @@
             "Description": {
                 "Id": "StatusEffect-HitDefense-Light",
                 "Name": "Light Mech Defense Bonus",
+<<<<<<< HEAD
                 "Details": "This pilot has a +2 defense against being hit by any attack.",
                 "Icon": "uixSvgIcon_ability_invistarget"
+=======
+                "Details": "This pilot has a +8 defense against being hit by any attack.",
+                "Icon": "uixSvgIcon_ability_EvasionBoost"
+>>>>>>> test
             },
             "nature": "Buff",
             "statisticData": {
@@ -52,8 +57,13 @@
             "Description": {
                 "Id": "StatusEffect-HitDefense-Medium",
                 "Name": "Medium Mech Defense Bonus",
+<<<<<<< HEAD
                 "Details": "This pilot has a +2 defense against being hit by any attack.",
                 "Icon": "uixSvgIcon_ability_invistarget"
+=======
+                "Details": "This pilot has a +6 defense against being hit by any attack.",
+                "Icon": "uixSvgIcon_ability_EvasionBoost"
+>>>>>>> test
             },
             "nature": "Buff",
             "statisticData": {
@@ -79,8 +89,13 @@
             "Description": {
                 "Id": "StatusEffect-HitDefense-Heavy",
                 "Name": "Heavy Mech Defense Bonus",
+<<<<<<< HEAD
                 "Details": "This pilot has a +2 defense against being hit by any attack.",
                 "Icon": "uixSvgIcon_ability_invistarget"
+=======
+                "Details": "This pilot has a +4 defense against being hit by any attack.",
+                "Icon": "uixSvgIcon_ability_EvasionBoost"
+>>>>>>> test
             },
             "nature": "Buff",
             "statisticData": {
@@ -107,7 +122,7 @@
                 "Id": "StatusEffect-HitDefense-Assault",
                 "Name": "Assault Mech Defense Bonus",
                 "Details": "This pilot has a +2 defense against being hit by any attack.",
-                "Icon": "uixSvgIcon_ability_invistarget"
+                "Icon": "uixSvgIcon_ability_EvasionBoost"
             },
             "nature": "Buff",
             "statisticData": {
@@ -135,7 +150,7 @@
 			"effectType": "StatisticEffect",
 			"Description": {
 				"Id": "StatusEffect-EvasionBoost",
-				"Name": "EVASIVE MOVE",
+				"Name": "EVASIVE CAP INCREASE",
 				"Details": "This unit can have up to 2 extra evasive charges from movement.",
 				"Icon": "uixSvgIcon_ability_phantom"
 			},
@@ -165,9 +180,8 @@
 			"effectType": "StatisticEffect",
 			"Description": {
 				"Id": "StatusEffect-EvasionBoostTick",
-				"Name": "EVASIVE MOVE",
-				"Details": "This unit generates 2 extra EVASIVE charges from movement actions.",
-				"Icon": "lv_static"
+				"Name": "EVASIVE MOVE EXTRA",
+				"Details": "This unit generates 2 extra EVASIVE charges from movement actions."
 			},
 			"statisticData": {
 				"statName": "EvasivePipsGainedAdditional",

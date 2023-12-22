@@ -78,8 +78,7 @@
             "Description": {
                 "Id": "StatusEffect-RangeBrackets-Max",
                 "Name": "NETWORKED ATTACK - MAX RANGE INCREASE",
-                "Details": "The max range brackets on this mech's weapons are increased by 30%.",
-                "Icon": "lv_eye-target"
+                "Details": "The max range brackets on this mech's weapons are increased by 30%."
             },
             "nature": "Buff",
             "statisticData": {
@@ -128,8 +127,7 @@
             "Description": {
                 "Id": "StatusEffect-FryElectronics",
                 "Name": "FRY ELECTRONICS",
-                "Details": "+30 Heat Damage.",
-                "Icon": "snowflake"
+                "Details": "+30 Heat Damage."
             },
             "nature": "Debuff",
             "statisticData": {

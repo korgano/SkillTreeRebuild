@@ -26,9 +26,19 @@
      units="px"
      inkscape:zoom="2.8284271"
      inkscape:cx="58.689863"
+<<<<<<< HEAD
      inkscape:cy="15.379573"
+=======
+<<<<<<< Updated upstream
+     inkscape:cy="15.733126"
+>>>>>>> test
      inkscape:window-width="1920"
      inkscape:window-height="991"
+=======
+     inkscape:cy="71.948116"
+     inkscape:window-width="1600"
+     inkscape:window-height="871"
+>>>>>>> Stashed changes
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
@@ -53,10 +63,24 @@
        style="color-interpolation-filters:sRGB;"
        inkscape:label="Invert"
        id="filter1101"
+<<<<<<< HEAD
        x="-0.0055040718"
        y="-0.0026969219"
        width="1.0093188"
        height="1.0065114"><feColorMatrix
+=======
+<<<<<<< Updated upstream
+       x="0"
+       y="0"
+       width="1"
+       height="1"><feColorMatrix
+=======
+       x="-0.0051942098"
+       y="-0.0025450937"
+       width="1.0087942"
+       height="1.0061448"><feColorMatrix
+>>>>>>> Stashed changes
+>>>>>>> test
          values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
          result="fbSourceGraphic"
          id="feColorMatrix1099" /><feColorMatrix
@@ -74,9 +98,25 @@
        id="g1097"
        transform="matrix(0.07468078,0,0,0.07468078,1.4304043,1.163754)"
        style="stroke:#000000;stroke-width:3.54285712;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1101);fill:#ffffff;fill-opacity:1"><g
+<<<<<<< HEAD
          style="fill:#ffffff;fill-opacity:1;stroke-width:0.21597212;stroke-dasharray:none;stroke:#000000;stroke-opacity:1"
+=======
+<<<<<<< Updated upstream
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.228856;stroke-dasharray:none"
+=======
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.21597212;stroke-dasharray:none;stroke:#808080;stroke-opacity:1"
+>>>>>>> Stashed changes
+>>>>>>> test
          id="g1238"
          transform="matrix(16.38004,0,0,16.428463,-12.499857,-5.9269821)"><path
            d="M 3.6523715,0.57241653 14.902371,12.759417 l 10.312,12.187 -12.187,-10.312 L 0.84037149,3.3844165 3.6533715,0.57141653 Z M 27.143371,16.598417 c -2.344,-1.379 -5.267,-1.362 -7.61,0.016 l 2.838,2.838 c 0.627,-0.165 1.288,-0.153 1.913,0.009 l 2.86,-2.86 v -0.003 z m 2.672,2.67 -2.86,2.86 c 0.16,0.625 0.171,1.286 0.006,1.913 l 2.838,2.838 c 1.377,-2.342 1.395,-5.265 0.016,-7.61 v 0 z m -12.934,0 c -1.376,2.343 -1.394,5.266 -0.015,7.61 l 2.86,-2.86 c -0.16,-0.625 -0.172,-1.286 -0.006,-1.913 l -2.838,-2.838 z m 7.428,7.428 c -0.627,0.165 -1.288,0.154 -1.913,-0.009 l -2.86,2.86 c 2.344,1.379 5.267,1.362 7.61,-0.016 l -2.838,-2.838 v 0.003 z"
            id="path1229"
+<<<<<<< HEAD
            style="fill:#ffffff;fill-opacity:1;stroke-width:0.21597212;stroke-dasharray:none;stroke:#000000;stroke-opacity:1" /></g></g></g></svg>
+=======
+<<<<<<< Updated upstream
+           style="fill:#ffffff;fill-opacity:1;stroke-width:0.228856;stroke-dasharray:none" /></g></g></g></svg>
+=======
+           style="fill:#ffffff;fill-opacity:1;stroke-width:0.21597212;stroke-dasharray:none;stroke:#808080;stroke-opacity:1" /></g></g></g></svg>
+>>>>>>> Stashed changes
+>>>>>>> test

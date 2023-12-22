@@ -9,36 +9,50 @@
     "DisplayParams" : "ShowInMWTRay",
     "ReqSkill" : "Tactics",
 	"ReqSkillLevel" : 4,
-	"ActivationTime" : "Passive",
+	"ActivationTime" : "OnDamaged",
 	"EffectData" :
 	[
 		{
-            "Description" : {
-                "Id" : "StatusEffect-MissileDefence",
-                "Name" : "ANTI-MISSILE COUNTERMEASURES",
-                "Details" : "All lance units take [AMT] less damage from missiles.",
-                "Icon" : "uixSvgIcon_ability_AMS"
-            },
-            "durationData" : {
-                "duration" : -1,
-                "stackLimit" : -1
+			"durationData" : {
+                "duration": -1,
+                "stackLimit": 1
             },
             "targetingData" : {
                 "effectTriggerType" : "Passive",
-                "effectTargetType" : "AllLanceMates",
-                "showInTargetPreview" : false,
+                "specialRules" : "Aura",
+				"auraEffectType" : "NotSet",
+                "effectTargetType" : "AlliesWithinRange",
+                "range" : 100.0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : true,
                 "showInStatusPanel" : true,
-                "hideApplicationFloatie" : false
+                "ShowInPilotToolTip": true
             },
-            "effectType" : "StatisticEffect",
-            "nature" : "Buff",
-            "statisticData" : {
-                "statName" : "DamageReductionMultiplierMissile",
-                "operation" : "Float_Multiply",
-                "modValue" : "0.5",
-                "modType" : "System.Single"
-            }
-        }
+			"effectType" : "StatisticEffect",
+			"Description" :
+			{
+				"Id" : "StatusEffect_MissileCounter",
+				"Name" : "ANTI-MISSILE COUNTERMEASURES EFFECT",
+				"Details" : "Friendly units within an ECM field gain +[AMT] Difficulty to missile attacks against them and immunity to Indirect Fire. Being Sensor Locked removes this effect.",
+				"Icon" : "uixSvgIcon_ability_AMS"
+			},
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "DamageReductionMultiplierMissile",
+                "operation": "Float_Multiply",
+                "modValue": "0.5",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "NotSet",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            },
+			"nature" : "Buff"
+		}
 	],
     "IsPrimaryAbility": true
 }
