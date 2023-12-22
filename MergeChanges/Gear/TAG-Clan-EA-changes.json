@@ -1,5 +1,5 @@
 {
-    "TargetID": "Weapon_Narc_Standard_1-Ceres_Arms",
+    "TargetID": "Weapon_Laser_Light_TAG_CLAN",
     "Instructions": [
         {
             "JSONPath": "statusEffects",
@@ -31,8 +31,8 @@
                     },
                     "effectType" : "StatisticEffect",
                     "Description" : {
-                        "Id" : "StatusEffect-NARC-Mult",
-                        "Name" : "NARC ATTACHED",
+                        "Id" : "StatusEffect-TAG-Mult",
+                        "Name" : "TAG MARKED",
                         "Details" : "This unit will take [AMT] more damage from all attacks.",
                         "Icon" : "uixSvgIcon_statusMarked"
                     },
@@ -41,7 +41,7 @@
                         "effectsPersistAfterDestruction" : false,
                         "statName" : "DamageReductionMultiplierAll",
                         "operation" : "Float_Multiply",
-                        "modValue" : "1.75",
+                        "modValue" : "1.10",
                         "modType" : "System.Single",
                         "additionalRules" : "NotSet",
                         "targetCollection" : "Weapon",
@@ -125,14 +125,14 @@
                     },
                     "effectType" : "VFXEffect",
                     "Description" : {
-                        "Id" : "StatusEffect-NARC-IndicatorVFX",
-                        "Name" : "NARC ATTACHED",
-                        "Details" : "Visual indicator of the NARC effect",
-                        "Icon" : "uixSvgIcon_statusMarked"
+                        "Id" : "StatusEffect-TAG-IndicatorVFX",
+                        "Name" : "TAG MARKED",
+                        "Details" : "Visual indicator of the TAG effect",
+                        "Icon" : "uixSvgIcon_status_sensorsImpaired"
                     },
                     "nature" : "Debuff",
                     "vfxData" : {
-                        "vfxName" : "vfxPrfPrtl_narcMarker_loop",
+                        "vfxName" : "vfxPrfPrtl_TAGmarker_loop",
                         "attachToImpactPoint" : true,
                         "location" : -1,
                         "isAttached" : true,
@@ -147,11 +147,8 @@
             "JSONPath": "ComponentTags.items",
             "Action": "Replace",
             "Value": [
-                "component_type_variant",
-                "component_type_variant2",
-                "range_standard",
-                "component_type_lostech",
-                "BLACKLISTED",
+                "component_type_stock",
+                "range_long",
                 "target_designator"
             ]
         }

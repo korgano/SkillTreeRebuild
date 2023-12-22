@@ -9,7 +9,7 @@
     "DisplayParams" : "ShowInMWTRay",
     "ReqSkill" : "Tactics",
 	"ReqSkillLevel" : 4,
-	"ActivationTime" : "Passive",
+	"ActivationTime" : "OnDamaged",
 	"EffectData" :
 	[
 		{

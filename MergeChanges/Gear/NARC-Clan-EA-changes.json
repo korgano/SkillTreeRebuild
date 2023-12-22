@@ -1,5 +1,5 @@
 {
-    "TargetID": "Weapon_Narc_Standard_1-Ceres_Arms",
+    "TargetID": "Weapon_SRM_SRM_NARC_CLAN",
     "Instructions": [
         {
             "JSONPath": "statusEffects",
@@ -41,7 +41,7 @@
                         "effectsPersistAfterDestruction" : false,
                         "statName" : "DamageReductionMultiplierAll",
                         "operation" : "Float_Multiply",
-                        "modValue" : "1.5",
+                        "modValue" : "1.25",
                         "modType" : "System.Single",
                         "additionalRules" : "NotSet",
                         "targetCollection" : "Weapon",
@@ -147,11 +147,8 @@
             "JSONPath": "ComponentTags.items",
             "Action": "Replace",
             "Value": [
-                "component_type_variant",
-                "component_type_variant1",
+                "component_type_stock",
                 "range_standard",
-                "component_type_lostech",
-                "BLACKLISTED",
                 "target_designator"
             ]
         }

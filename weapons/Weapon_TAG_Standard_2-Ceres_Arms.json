@@ -193,7 +193,8 @@
             "component_type_variant2",
             "range_standard",
             "component_type_lostech",
-            "BLACKLISTED"
+            "BLACKLISTED",
+            "target_designator"
         ],
         "tagSetSourceFile" : ""
     }

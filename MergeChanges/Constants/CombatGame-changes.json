@@ -2,7 +2,7 @@
     "TargetID": "CombatGameConstants",
     "Instructions": [
         {
-            "JSONPath": "ToHitStepValues",
+            "JSONPath": "ToHit.ToHitStepValues",
             "Action": "Replace",
             "Value": [
                 0.05,

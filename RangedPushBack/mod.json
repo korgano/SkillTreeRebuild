@@ -1,6 +1,6 @@
 {
     "Name": "Ranged Push Back",
-    "Version": "0.4.0",
+    "Version": "0.5.0",
     "Enabled": true,
     "Author": "Kregano",
     "Website": "https://github.com/korgano/SkillTreeRebuild",
@@ -11,6 +11,8 @@
     "Settings": {
 		"PushBackOneAbilities": ["AbilityDef_Suppression", "AbilityDef_Mortar_Thumper2"],
         "PushBackOneAbilities_Probe": ["AbilityDef_ActiveProbe_Ping"],
+        "PushBackFirstAbilities": [],
+        "PushBackFirstAbilities_Probe": [],
         "PushBackLastAbilities": [],
         "PushBackLastAbilities_Probe": ["AbilityDef_ScoutStomp"],
         "ThumperIDs": ["Weapon_Mortar_Thumper","Weapon_Mortar_Thumper2"]
