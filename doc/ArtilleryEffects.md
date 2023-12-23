@@ -141,9 +141,6 @@ Artillery AbilityDef files from Heavy Metal DLC and other mods **do not** have `
 
 - +50% radius effect
 
-<<<<<<< HEAD
-- +1 ammo (with 1 turn cooldown for reload)
-=======
 - +1 ammo (with 1 turn cooldown for reload)
 
 ## Pre-existing Artillery Abilities
@@ -311,4 +308,3 @@ A real life example would something like this:
 **Note:** `"duration" : -1,` is necessary for damage to be permanent. Any value besides 0 (which disables the effect) or -1 (which applies permanently until the end of combat) will be the number of turns before the effect expires.
 
 Likewise, `"stackLimit" : -1,` allows for unlimited effect stacking. Any value besides 0 (which disables the effect) or -1 (which applies permanently until the end of combat) will be the number of times the target can receive the status effect.
->>>>>>> test

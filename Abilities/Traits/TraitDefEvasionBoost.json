@@ -25,13 +25,8 @@
             "Description": {
                 "Id": "StatusEffect-HitDefense-Light",
                 "Name": "Light Mech Defense Bonus",
-<<<<<<< HEAD
-                "Details": "This pilot has a +2 defense against being hit by any attack.",
-                "Icon": "uixSvgIcon_ability_invistarget"
-=======
                 "Details": "This pilot has a +8 defense against being hit by any attack.",
                 "Icon": "uixSvgIcon_ability_EvasionBoost"
->>>>>>> test
             },
             "nature": "Buff",
             "statisticData": {
@@ -57,13 +52,8 @@
             "Description": {
                 "Id": "StatusEffect-HitDefense-Medium",
                 "Name": "Medium Mech Defense Bonus",
-<<<<<<< HEAD
-                "Details": "This pilot has a +2 defense against being hit by any attack.",
-                "Icon": "uixSvgIcon_ability_invistarget"
-=======
                 "Details": "This pilot has a +6 defense against being hit by any attack.",
                 "Icon": "uixSvgIcon_ability_EvasionBoost"
->>>>>>> test
             },
             "nature": "Buff",
             "statisticData": {
@@ -89,13 +79,8 @@
             "Description": {
                 "Id": "StatusEffect-HitDefense-Heavy",
                 "Name": "Heavy Mech Defense Bonus",
-<<<<<<< HEAD
-                "Details": "This pilot has a +2 defense against being hit by any attack.",
-                "Icon": "uixSvgIcon_ability_invistarget"
-=======
                 "Details": "This pilot has a +4 defense against being hit by any attack.",
                 "Icon": "uixSvgIcon_ability_EvasionBoost"
->>>>>>> test
             },
             "nature": "Buff",
             "statisticData": {

@@ -1,21 +1,14 @@
 {
 	"Description" : {
-<<<<<<<< HEAD:Abilities/AbilityDef_Mortar_MechMortar.json
 		"Id" : "AbilityDef_Mortar_MechMortar",
 		"Name" : "MORTAR",
 		"Details" : "ACTION: Fire an artillery attack at the target area for 10-50 damage per location on units within the blast radius. Has [NumberOfUses] uses per mission.",
-========
-		"Id" : "AbilityDef_Mortar_Thumper2",
-		"Name" : "THUMPER 2 CANNON",
-		"Details" : "ACTION: Fire an artillery attack at the target area for 10-50 damage per location on units within the blast radius. Has [NumberOfUses] uses per mission. Cuts opponent movement speed in half for 2 turns, and disables weapons on targets with 50% armor or less for 2 turns.",
->>>>>>>> test:ArtilleryAddons/Abilities/AbilityDef_Mortar_Thumper2.json
 		"Icon" : "uixSvgIcon_artillery"
 	},
 	"ActivationTime" : "ConsumedByFiring",
 	"Resource" : "ConsumesFiring",
 	"ActivationCooldown" : 2,
 	"ActivationETA" : 0,
-<<<<<<<< HEAD:Abilities/AbilityDef_Mortar_MechMortar.json
 	"NumberOfUses" : 2,
 	"specialRules" : "Artillery",
 	"Targeting" : "CommandTargetSinglePoint",
@@ -23,7 +16,6 @@
 	"FloatParam1" : 60.0,
     "IntParam1" : 0,
 	"IntParam2" : 360,
-========
 	"NumberOfUses" : 4,
 	"specialRules" : "Artillery",
 	"Targeting" : "CommandTargetSinglePoint",
@@ -31,24 +23,16 @@
 	"FloatParam1" : 90.0,
     "IntParam1" : 0,
 	"IntParam2" : 400,
->>>>>>>> test:ArtilleryAddons/Abilities/AbilityDef_Mortar_Thumper2.json
 	"ShowIntParam1" : false,
 	"ShowIntParam2" : false,
     "EffectData" :
 	[
 		{
             "Description" : {
-<<<<<<<< HEAD:Abilities/AbilityDef_Mortar_MechMortar.json
                 "Id" : "StatusEffect-Artillery-GimpWalkSpeed",
                 "Name" : "ACTUATOR WRENCHED",
                 "Details" : "Thumper blasts damage opponent's Actuators, slowing their movement speed.",
                 "Icon" : "uixSvgIcon_ability_gimpthem"
-========
-                "Id" : "StatusEffect-BWCL-WidowsKissWalkSpeed",
-                "Name" : "ACTUATOR WRENCHED",
-                "Details" : "Thumper blasts damage opponent's Actuators, slowing their movement speed.",
-                "Icon" : "UixSvgIcon_specialAbility_BWCL"
->>>>>>>> test:ArtilleryAddons/Abilities/AbilityDef_Mortar_Thumper2.json
             },
             "effectType" : "StatisticEffect",
             "nature" : "Debuff",
@@ -86,11 +70,7 @@
                 "Id" : "StatusEffect-Artillery-GimpRunSpeed",
                 "Name" : "MOVEMENT SLOWED",
                 "Details" : "Thumper blasts damage opponent's Actuators, slowing their movement speed.",
-<<<<<<<< HEAD:Abilities/AbilityDef_Mortar_MechMortar.json
                 "Icon" : "uixSvgIcon_ability_gimpthem"
-========
-                "Icon" : "UixSvgIcon_specialAbility_BWCL"
->>>>>>>> test:ArtilleryAddons/Abilities/AbilityDef_Mortar_Thumper2.json
             },
             "effectType" : "StatisticEffect",
             "nature" : "Debuff",
@@ -125,11 +105,7 @@
         },
         {
             "Description" : {
-<<<<<<<< HEAD:Abilities/AbilityDef_Mortar_MechMortar.json
                 "Id" : "StatusEffect-Artillery-GimpGuns",
-========
-                "Id" : "StatusEffect-BWCL-WidowsKissGuns",
->>>>>>>> test:ArtilleryAddons/Abilities/AbilityDef_Mortar_Thumper2.json
                 "Name" : "WEAPONS DISABLED",
                 "Details" : "Thumper blasts damage opponent's weapons for 2 turns.",
                 "Icon" : "UixSvgIcon_specialAbility_BWCL"
