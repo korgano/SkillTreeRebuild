@@ -2,7 +2,7 @@
 	"Description" : {
 		"Id" : "AbilityDef_RunGun",
 		"Name" : "GUN & RUN",
-		"Details" : "PASSIVE: A 'Mech piloted by this MechWarrior can move after shooting if it has not moved yet. Chance of receiving a Critical Hit is reduced by [AMT]%.",
+		"Details" : "PASSIVE: A 'Mech piloted by this MechWarrior can move after shooting if it has not moved yet. Chance of receiving a Critical Hit is reduced by 50%.",
 		"Icon" : "uixSvgIcon_run_n_gun"
 	},
     "DisplayParams" : "ShowInMWTRay",
@@ -41,7 +41,7 @@
 		{
             "Description" : {
                 "Id" : "StatusEffect-RunGun-Crit",
-                "Name" : "CRIT CHANCE REDUCTION",
+                "Name" : "GUN & RUN - CRIT CHANCE REDUCTION",
                 "Details" : "Critical Hit Chance reduced by 50%."
             },
             "effectType" : "StatisticEffect",

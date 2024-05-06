@@ -2,10 +2,10 @@
 	"Description" : {
 		"Id" : "AbilityDef_JumpMaven",
 		"Name" : "JUMP MAVEN",
-		"Details" : "PASSIVE: Veteran MechWarriors receive a 20% boost to jump distance.",
+		"Details" : "PASSIVE: Veteran MechWarriors receive a 20% boost to jump distance and +10 Death From Above hit chance.",
 		"Icon" : "uixSvgIcon_action_jump"
 	},
-	"ShortDesc" : "+20% jump distance boost.",
+	"ShortDesc" : "+20% jump distance boost, +10 DFA hit chance.",
     "ReqSkill" : "Piloting",
 	"ReqSkillLevel" : 6,
     "DisplayParams" : "ShowInMWTRay",
@@ -27,9 +27,6 @@
                 "extendDurationOnTrigger" : 0,
                 "specialRules" : "NotSet",
                 "effectTargetType" : "Creator",
-                "range" : 0,
-                "forcePathRebuild" : false,
-                "forceVisRebuild" : false,
                 "showInTargetPreview" : false,
                 "showInStatusPanel" : false
             },
@@ -44,6 +41,38 @@
                 "statName" : "JumpDistanceMultiplier",
                 "operation" : "Float_Multiply",
                 "modValue" : "1.2",
+                "modType" : "System.Single"
+            }
+        },
+        {
+            "durationData" : {
+                "duration" : -1,
+                "ticksOnActivations" : false,
+                "useActivationsOfTarget" : false,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "triggerLimit" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-JumpMaven-DFA-HitMod",
+                "Name" : "DFA ACCURACY BOOST",
+                "Details" : "+[AMT] to DFA hit chance."
+            },
+            "nature" : "Buff",
+            "statisticData" : {
+                "statName" : "DFAToHitModifier",
+                "operation" : "Float_Add",
+                "modValue" : "10",
                 "modType" : "System.Single"
             }
         }

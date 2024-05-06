@@ -10,6 +10,8 @@
                 "AbilityDef_HunkerDown",
                 "AbilityDef_MaxArmor",
                 "AbilityDef_CoolantVent",
+                "AbilityDef_SteadyBalance",
+                "AbilityDef_LastStand",
                 "TraitDefBerserkHitDefense",
                 "TraitDefBulwark",
                 "TraitDefHealthAddTwo",

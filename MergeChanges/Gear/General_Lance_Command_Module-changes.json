@@ -1,0 +1,113 @@
+{
+    "TargetID": "Gear_General_Lance_Command_Module",
+    "Instructions": [
+        {
+            "JSONPath": "statusEffects",
+            "Action": "Replace",
+            "Value": [
+                {
+                    "durationData" : {
+                        "duration" : -1,
+                        "stackLimit" : 1
+                    },
+                    "targetingData" : {
+                        "effectTriggerType" : "Passive",
+                        "effectTargetType" : "AllLanceMates",
+                        "showInTargetPreview" : true,
+                        "showInStatusPanel" : true
+                    },
+                    "effectType" : "StatisticEffect",
+                    "Description" : {
+                        "Id" : "StatusEffect-LCM-DamageReduction",
+                        "Name" : "LANCE COMMAND MODULE",
+                        "Details" : "Units in this lance take [AMT] less damage.",
+                        "Icon" : "uixSvgIcon_special_Equipment"
+                    },
+                    "statisticData" : {
+                        "appliesEachTick" : false,
+                        "effectsPersistAfterDestruction" : false,
+                        "statName" : "DamageReductionMultiplierAll",
+                        "operation" : "Float_Multiply",
+                        "modValue" : "0.9",
+                        "modType" : "System.Single",
+                        "additionalRules" : "NotSet",
+                        "targetCollection" : "NotSet",
+                        "targetWeaponCategory" : "NotSet",
+                        "targetWeaponType" : "NotSet",
+                        "targetAmmoCategory" : "NotSet",
+                        "targetWeaponSubType" : "NotSet"
+                    },
+                    "nature" : "Buff"
+                },
+                {
+                    "durationData" :
+                    {
+                        "duration" : -1,
+                        "stackLimit" : 1
+                    },
+                    "targetingData" : {
+                        "effectTriggerType" : "Passive",
+                        "effectTargetType" : "Creator",
+                        "showInTargetPreview" : true,
+                        "showInStatusPanel" : true
+                    },
+                    "effectType" : "StatisticEffect",
+                    "Description" :
+                    {
+                        "Id" : "StatusEffect-LCM-CalledShotBonus",
+                        "Name" : "LANCE COMMAND MODULE",
+                        "Details" : "Called Shots executed by this unit are more reliable.",
+                        "Icon" : "UixSvgIcon_specialEquip_System"
+                    },
+                    "statisticData" : 
+                    {
+                        "appliesEachTick" : false,
+                        "effectsPersistAfterDestruction" : false,
+                        "statName" : "CalledShotBonusMultiplier",
+                        "operation" : "Float_Multiply",
+                        "modValue" : "2.4",
+                        "modType" : "System.Single"
+                    },
+                    "nature" : "Buff"
+                },
+                {
+                    "durationData": {
+                        "duration": -1,
+                        "stackLimit": 1
+                    },
+                    "targetingData": {
+                        "effectTriggerType": "Passive",
+                        "triggerLimit": 1,
+                        "effectTargetType": "AllLanceMates",
+                        "showInTargetPreview": true,
+                        "showInStatusPanel": true
+                    },
+                    "effectType": "StatisticEffect",
+                    "Description": {
+                        "Id": "StatusEffect-Morale-On-Kill-MediumMech-Boost",
+                        "Name": "COMMAND MODULE: MORALE BOOST - MEDIUM MECH KILL",
+                        "Details": "Adds +5 morale when a Medium Mech dies.",
+                        "Icon": "UixSvgIcon_specialEquip_System"
+                    },
+                    "nature": "Buff",
+                    "statisticData": {
+                        "appliesEachTick": false,
+                        "statName": "MoraleConstants.ChangeEnemyDestroyedMedium",
+                        "modType": "System.Int32",
+                        "operation": "Int_Add",
+                        "modValue": "5"
+                    }
+                }
+            ]
+        },
+        {
+            "JSONPath": "ComponentTags.items",
+            "Action": "Replace",
+            "Value": [
+                "component_type_stock",
+                "range_long",
+                "target_designator"
+            ]
+        }
+    ]
+}

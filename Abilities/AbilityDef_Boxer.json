@@ -39,10 +39,8 @@
                 "modType" : "System.Single",
                 "additionalRules" : "NotSet",
                 "targetCollection" : "Weapon",
-                "targetWeaponCategory" : "NotSet",
-                "targetWeaponType" : "NotSet",
-                "targetAmmoCategory" : "NotSet",
-                "targetWeaponSubType" : "Melee"
+                "targetWeaponCategory" : "Melee",
+                "targetWeaponType" : "Melee"
             },
             "nature" : "Buff"
         },
@@ -70,6 +68,36 @@
 				"operation": "Float_Multiply",
 				"modValue": "0.75",
 				"modType": "System.Single"
+			}
+		},
+		{
+			"durationData": {
+				"duration": 1,
+				"stackLimit": 1
+			},
+			"targetingData": {
+				"effectTriggerType": "OnActivation",
+				"triggerLimit": 1,
+				"effectTargetType": "AllLanceMates",
+				"showInStatusPanel": false
+			},
+			"effectType": "StatisticEffect",
+			"Description": {
+				"Id": "StatusEffect-Boxer-Melee-Morale-Boost",
+				"Name": "BOXER: MELEE MORALE BOOST",
+				"Details": "Melee attacks generate an extra 10 morale.",
+				"Icon": "uixSvgIcon_"
+			},
+			"nature": "Buff",
+			"statisticData": {
+				"appliesEachTick": false,
+				"statName": "MoraleConstants.ChangeEnemyDestroyedMeleeAdditional",
+				"modType": "System.Int32",
+				"operation": "Int_Add",
+				"modValue": "10",
+				"targetCollection": "Weapon",
+				"targetWeaponCategory": "Melee",
+				"targetWeaponType": "Melee"
 			}
 		}
 	],

@@ -8,11 +8,12 @@
                "AbilityDef_MultiTarget",
                "AbilityDef_Missileer",
                "AbilityDef_JackAll",
-               
                "AbilityDefT5A",
                "AbilityDef_ColdBlooded",
                "AbilityDef_MaxArmor",
                "AbilityDef_CoolantVent",
+               "AbilityDef_SteadyBalance",
+                "AbilityDef_LastStand",
                "TraitDefWeaponHit5",
                "TraitDefWeaponHit7",
                "TraitDefBulwark",

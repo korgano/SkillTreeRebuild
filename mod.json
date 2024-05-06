@@ -1,6 +1,6 @@
 {
     "Name": "Skill Tree Rebuild",
-    "Version": "0.4.5",
+    "Version": "0.6.0",
     "Enabled": true,
     "Author": "Kregano",
     "Website": "https://github.com/korgano/SkillTreeRebuild",
@@ -10,6 +10,7 @@
 	
     "DLL": "Abilifier.dll",
 	"DependsOn": ["IRBTModUtils"],
+	"OptionallyDependsOn": ["Elite Arsenal","Expanded Arsenal"],
 
     "Settings": {
 		"enableTrace": true,
@@ -19,10 +20,10 @@
 		"enableResolverator": false,
 		"resolveGenBaseMult": 1.0,
 		"resolveCostBaseMult": 1.0,
-		"extraFirstTierAbilities": 2,
-		"extraAbilities": 5,
-		"extraAbilitiesAllowedPerSkill": 1,
-		"nonTreeAbilities": 2,
+		"extraFirstTierAbilities": 4,
+		"extraAbilities": 7,
+		"extraAbilitiesAllowedPerSkill": 2,
+		"nonTreeAbilities": 0,
 		"cleanUpCombatUI": true,
 		"skillLockThreshold": 8,
 		"usingCACabilitySelector": false,
@@ -39,7 +40,7 @@
 		"abilityReqs": {},
 		"ticksOnMovementDistanceIDs": [],
 		"retrainerSettings": {
-			"enableRetrainer": false,
+			"enableRetrainer": true,
 			"cost": 250000,
 			"onceOnly": false,
 			"trainingModuleRequired": false,

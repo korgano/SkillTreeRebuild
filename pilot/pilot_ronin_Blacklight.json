@@ -33,6 +33,8 @@
         "AbilityDef_BlindShot",
         "AbilityDef_GimpThem",
         "AbilityDef_MasterTac",
+        "AbilityDef_SteadyBalance",
+        "AbilityDef_LastStand",
         "TraitDefWeaponHit4",
         "TraitDefUnsteadySet60",
         "TraitDefEvasionBoost",

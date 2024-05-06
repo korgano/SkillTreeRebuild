@@ -13,7 +13,16 @@
 	},
 	"TagAbilities": {
 		"pilot_lucky": [],
-		"pilot_military": []
+		"pilot_military": [],
+		"pilot_davion": ["AbilityDef_IS_Nationalist"],
+		"pilot_steiner": ["AbilityDef_IS_Nationalist"],
+		"pilot_liao": ["AbilityDef_IS_Nationalist"],
+		"pilot_marik": ["AbilityDef_IS_Nationalist"],
+		"pilot_kurita": ["AbilityDef_IS_Nationalist"],
+		"pilot_taurian": [],
+		"pilot_magistracy": [],
+		"pilot_aurigan": [],
+		"commander_player": []
 	},
 	"SwapAIAbilities": {}
 }

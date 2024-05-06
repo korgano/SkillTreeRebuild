@@ -33,6 +33,8 @@
         "AbilityDef_HunkerDown",
         "AbilityDef_MaxArmor",
         "AbilityDef_CoolantVent",
+        "AbilityDef_SteadyBalance",
+        "AbilityDef_LastStand",
         "TraitDefWeaponHit5", "TraitDefWeaponHeatDMG",
         "TraitDefUnsteadySet60", "TraitDefMeleeHit3",
         "TraitDefHealthAddOne",

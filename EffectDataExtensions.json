@@ -223,20 +223,6 @@
 			}
 		}
 	},
-	"StatusEffect_SafeEvasive": {
-		"TargetCollectionsForSearch": {
-			"Pilot": {
-				"MustMatchAll": false,
-				"TargetCollectionTagMatch": [],
-				"TargetCollectionNotMatch": [
-					"pilot_turret_d3",
-					"pilot_turret_d5",
-					"pilot_turret_d7",
-                	"base_skills_only"
-				]
-			}
-		}
-	},
 	"StatusEffect-Elite-ShootAfterSprint": {
 		"TargetCollectionsForSearch": {
 			"Pilot": {
@@ -257,6 +243,24 @@
 				"MustMatchAll": false,
 				"TargetCollectionTagMatch": [],
 				"TargetCollectionNotMatch": [
+					"elite_forces",
+            		"pilot_elite_forces",
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"StatusEffect_SafeEvasive": {
+		"TargetCollectionsForSearch": {
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"elite_forces",
+            		"pilot_elite_forces",
 					"pilot_turret_d3",
 					"pilot_turret_d5",
 					"pilot_turret_d7",
@@ -282,24 +286,16 @@
 	"StatusEffect-HitDefense-Light": {
 		"TargetCollectionsForSearch": {
 			"Unit": {
-<<<<<<< HEAD
-				"MustMatchAll": false,
-=======
 				"MustMatchAll": true,
->>>>>>> test
 				"TargetCollectionTagMatch": [
 					"unit_mech",
 					"unit_light"
 				],
-<<<<<<< HEAD
-				"TargetCollectionNotMatch": []
-=======
 				"TargetCollectionNotMatch": [
 					"unit_medium",
 					"unit_heavy",
 					"unit_assault"
 				]
->>>>>>> test
 			},
 			"Pilot": {
 				"MustMatchAll": false,
@@ -316,24 +312,16 @@
 	"StatusEffect-HitDefense-Medium": {
 		"TargetCollectionsForSearch": {
 			"Unit": {
-<<<<<<< HEAD
-				"MustMatchAll": false,
-=======
 				"MustMatchAll": true,
->>>>>>> test
 				"TargetCollectionTagMatch": [
 					"unit_mech",
 					"unit_medium"
 				],
-<<<<<<< HEAD
-				"TargetCollectionNotMatch": []
-=======
 				"TargetCollectionNotMatch": [
 					"unit_light",
 					"unit_heavy",
 					"unit_assault"
 				]
->>>>>>> test
 			},
 			"Pilot": {
 				"MustMatchAll": false,
@@ -350,24 +338,16 @@
 	"StatusEffect-HitDefense-Heavy": {
 		"TargetCollectionsForSearch": {
 			"Unit": {
-<<<<<<< HEAD
-				"MustMatchAll": false,
-=======
 				"MustMatchAll": true,
->>>>>>> test
 				"TargetCollectionTagMatch": [
 					"unit_mech",
 					"unit_heavy"
 				],
-<<<<<<< HEAD
-				"TargetCollectionNotMatch": []
-=======
 				"TargetCollectionNotMatch": [
 					"unit_light",
 					"unit_medium",
 					"unit_assault"
 				]
->>>>>>> test
 			},
 			"Pilot": {
 				"MustMatchAll": false,
@@ -384,28 +364,196 @@
 	"StatusEffect-HitDefense-Assault": {
 		"TargetCollectionsForSearch": {
 			"Unit": {
-<<<<<<< HEAD
-				"MustMatchAll": false,
-=======
 				"MustMatchAll": true,
->>>>>>> test
 				"TargetCollectionTagMatch": [
 					"unit_mech",
 					"unit_assault"
 				],
-<<<<<<< HEAD
-				"TargetCollectionNotMatch": []
-=======
 				"TargetCollectionNotMatch": [
 					"unit_light",
 					"unit_medium",
 					"unit_heavy"
 				]
->>>>>>> test
 			},
 			"Pilot": {
 				"MustMatchAll": false,
 				"TargetCollectionTagMatch": [],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"Nationalist_Davion": {
+		"TargetCollectionsForSearch": {
+			"Unit": {
+				"MustMatchAll": true,
+				"TargetCollectionTagMatch": [
+					"unit_mech",
+					"Davion"
+				],
+				"TargetCollectionNotMatch": []
+			},
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": ["pilot_davion"],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"Nationalist_Steiner": {
+		"TargetCollectionsForSearch": {
+			"Unit": {
+				"MustMatchAll": true,
+				"TargetCollectionTagMatch": [
+					"unit_mech",
+					"Steiner"
+				],
+				"TargetCollectionNotMatch": []
+			},
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": ["pilot_steiner"],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"Nationalist_Marik": {
+		"TargetCollectionsForSearch": {
+			"Unit": {
+				"MustMatchAll": true,
+				"TargetCollectionTagMatch": [
+					"unit_mech",
+					"Marik"
+				],
+				"TargetCollectionNotMatch": []
+			},
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": ["pilot_marik"],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"Nationalist_Liao": {
+		"TargetCollectionsForSearch": {
+			"Unit": {
+				"MustMatchAll": true,
+				"TargetCollectionTagMatch": [
+					"unit_mech",
+					"Liao"
+				],
+				"TargetCollectionNotMatch": []
+			},
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": ["pilot_liao"],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"Nationalist_Kurita": {
+		"TargetCollectionsForSearch": {
+			"Unit": {
+				"MustMatchAll": true,
+				"TargetCollectionTagMatch": [
+					"unit_mech",
+					"Kurita"
+				],
+				"TargetCollectionNotMatch": []
+			},
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": ["pilot_kurita"],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"Nationalist_Taurian": {
+		"TargetCollectionsForSearch": {
+			"Unit": {
+				"MustMatchAll": true,
+				"TargetCollectionTagMatch": [
+					"unit_mech",
+					"TaurianConcordat"
+				],
+				"TargetCollectionNotMatch": []
+			},
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": ["pilot_taurian"],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"Nationalist_Canopian": {
+		"TargetCollectionsForSearch": {
+			"Unit": {
+				"MustMatchAll": true,
+				"TargetCollectionTagMatch": [
+					"unit_mech",
+					"MagistracyOfCanopus"
+				],
+				"TargetCollectionNotMatch": []
+			},
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": ["pilot_magistracy"],
+				"TargetCollectionNotMatch": [
+					"pilot_turret_d3",
+					"pilot_turret_d5",
+					"pilot_turret_d7",
+                	"base_skills_only"
+				]
+			}
+		}
+	},
+	"Nationalist_Aurigan": {
+		"TargetCollectionsForSearch": {
+			"Unit": {
+				"MustMatchAll": true,
+				"TargetCollectionTagMatch": [
+					"unit_mech",
+					"AuriganRestoration"
+				],
+				"TargetCollectionNotMatch": []
+			},
+			"Pilot": {
+				"MustMatchAll": false,
+				"TargetCollectionTagMatch": ["pilot_aurigan"],
 				"TargetCollectionNotMatch": [
 					"pilot_turret_d3",
 					"pilot_turret_d5",

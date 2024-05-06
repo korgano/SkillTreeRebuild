@@ -6,7 +6,8 @@
             "Action": "Replace",
             "Value": [
                 "AbilityDef_MultiTarget",
-                "AbilityDefT5A"
+                "AbilityDefT5A",
+                "AbilityDef_SteadyBalance"
             ]
         }
     ]

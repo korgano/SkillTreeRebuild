@@ -1,0 +1,182 @@
+{
+    "Description": {
+        "Id": "AbilityDef_CommanderMoraleBoost",
+        "Name": "COMMANDING PRESENCE",
+        "Details": "Deploying the commander boosts Max Resolve by 50% and reduces resolve costs for Precision Shot and Vigilance. ",
+        "Icon": "uixSvgIcon_CommanderMorale"
+    },
+    "ReqSkill": "null",
+    "ReqSkillLevel": 1,
+    "DisplayParams": "ShowInMWTRay",
+    "ActivationTime": "Passive",
+    "EffectData": [
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 1,
+                "effectTargetType": "AllLanceMates"
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-Commander-MaxResolve-Boost",
+                "Name": "COMMANDER MAX RESOLVE BOOST",
+                "Details": "Adds [AMT] to lance maximum resolve."
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "MoraleConstants.MoraleMax",
+                "modType": "System.Int32",
+                "operation": "Int_Add",
+                "modValue": "50"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 1,
+                "effectTargetType": "AllLanceMates"
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-Commander-PrecisionShot-DefaultCost",
+                "Name": "PRECISION SHOT COST REDUCTION - BASE COST",
+                "Details": "Reduces Precision Shot cost by 50%"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "MoraleConstants.OffensivePushCost",
+                "modType": "System.Int32",
+                "operation": "Int_Multiply",
+                "modValue": "0.5"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 1,
+                "effectTargetType": "AllLanceMates"
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-Commander-PrecisionShot-HighCost",
+                "Name": "PRECISION SHOT COST REDUCTION - HIGH MORALE COST",
+                "Details": "Reduces Precision Shot cost by 50%"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "MoraleConstants.OffensivePushHighMoraleCost",
+                "modType": "System.Int32",
+                "operation": "Int_Multiply",
+                "modValue": "0.5"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 1,
+                "effectTargetType": "AllLanceMates"
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-Commander-PrecisionShot-LowCost",
+                "Name": "PRECISION SHOT COST REDUCTION - LOW MORALE COST",
+                "Details": "Reduces Precision Shot cost by 50%"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "MoraleConstants.OffensivePushLowMoraleCost",
+                "modType": "System.Int32",
+                "operation": "Int_Multiply",
+                "modValue": "0.5"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 1,
+                "effectTargetType": "AllLanceMates"
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-Commander-Vigilance-DefaultCost",
+                "Name": "VIGILANCE COST REDUCTION - BASE COST",
+                "Details": "Vigilance Shot cost by 50%"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "MoraleConstants.DefensivePushCost",
+                "modType": "System.Int32",
+                "operation": "Int_Multiply",
+                "modValue": "0.5"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 1,
+                "effectTargetType": "AllLanceMates"
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-Commander-Vigilance-HighCost",
+                "Name": "VIGILANCE COST REDUCTION - HIGH MORALE COST",
+                "Details": "Reduces Vigilance cost by 50%"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "MoraleConstants.OffensivePushHighMoraleCost",
+                "modType": "System.Int32",
+                "operation": "Int_Multiply",
+                "modValue": "0.5"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 1,
+                "effectTargetType": "AllLanceMates"
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-Commander-Vigilance-LowCost",
+                "Name": "VIGILANCE COST REDUCTION - LOW MORALE COST",
+                "Details": "Reduces Vigilance cost by 50%"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "MoraleConstants.OffensivePushLowMoraleCost",
+                "modType": "System.Int32",
+                "operation": "Int_Multiply",
+                "modValue": "0.5"
+            }
+        }
+    ]
+}

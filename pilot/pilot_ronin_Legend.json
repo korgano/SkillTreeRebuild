@@ -33,6 +33,8 @@
         "AbilityDef_JackAll",
         "AbilityDef_TargetFiring",
         "AbilityDefT5A",
+        "AbilityDef_SteadyBalance",
+        "AbilityDef_LastStand",
         "TraitDefWeaponHit5", "TraitDefWeaponHeatDMG",
         "TraitDefWeaponHit8",
         "TraitDefUnsteadySet60",

@@ -12,6 +12,8 @@
                "AbilityDefT5A",
                "AbilityDef_HunkerDown",
                "AbilityDef_MissileCounter",
+               "AbilityDef_SteadyBalance",
+                "AbilityDef_LastStand",
                "TraitDefWeaponHit5",
                "TraitDefWeaponHit8",
                "TraitDefBulwark",

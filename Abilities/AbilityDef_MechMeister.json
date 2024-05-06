@@ -5,7 +5,7 @@
 		"Details" : "PASSIVE: Experienced MechWarriors recieve bonus movement speed and 25% damage reduction.",
 		"Icon" : "uixSvgIcon_ability_mechmeister"
 	},
-	"ShortDesc" : "+ 25% Movement Speed and + 25% Damage Reduction",
+	"ShortDesc" : "+ 25% Move Speed, + 25% Dmg Reduction",
     "DisplayParams" : "ShowInMWTRay",
     "ReqSkill" : "Piloting",
 	"ReqSkillLevel" : 8,

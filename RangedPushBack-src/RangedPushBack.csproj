@@ -80,12 +80,7 @@
     <Publicize Include="Assembly-CSharp:BattleTech.AttackStackSequence.targets" />
     <Publicize Include="Assembly-CSharp:BattleTech.ActiveProbeSequence.Targets" />
     <Publicize Include="Assembly-CSharp:BattleTech.SequenceBase.Combat" />
-<<<<<<< HEAD
-    <Publicize Include="Assembly-Csharp:BattleTech.AttackDirector.OnAttackComplete" />
-    <Publicize Include="Assembly-Csharp:BattleTech.AttackDirector.OnAttackComplete" />
-=======
     <Publicize Include="Assembly-Csharp:BattleTech.AttackDirector.AttackSequence.Init" />
->>>>>>> test
     <Publicize Include="Assembly-Csharp:BattleTech.MechMortarSequence.OnImpact" />
     <Publicize Include="Assembly-Csharp:BattleTech.MechMortarSequence.Targets" />
   </ItemGroup>

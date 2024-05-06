@@ -35,6 +35,8 @@
         "AbilityDefT5A",
         "AbilityDef_MissileCounter",
         "AbilityDef_GimpThem",
+        "AbilityDef_SteadyBalance",
+        "AbilityDef_LastStand",
         "TraitDefWeaponHeatDMG",
         "TraitDefWeaponHit8",
         "TraitDefUnsteadySet60",

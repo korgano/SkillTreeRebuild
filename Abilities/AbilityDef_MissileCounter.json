@@ -2,14 +2,14 @@
 	"Description" : {
 		"Id" : "AbilityDef_MissileCounter",
 		"Name" : "ANTI-MISSILE COUNTERMEASURES",
-		"Details" : "PASSIVE: All units in this MechWarrior's lance take 50% less damage from missiles.",
+		"Details" : "PASSIVE: This MechWarrior's unit takes 50% less damage from missiles.",
 		"Icon" : "uixSvgIcon_ability_AMS"
 	},
 	"ShortDesc" : "50% Missile Damage Reduction.",
     "DisplayParams" : "ShowInMWTRay",
     "ReqSkill" : "Tactics",
 	"ReqSkillLevel" : 4,
-	"ActivationTime" : "OnDamaged",
+	"ActivationTime" : "Passive",
 	"EffectData" :
 	[
 		{
@@ -19,37 +19,24 @@
             },
             "targetingData" : {
                 "effectTriggerType" : "Passive",
-                "specialRules" : "Aura",
-				"auraEffectType" : "NotSet",
-                "effectTargetType" : "AlliesWithinRange",
-                "range" : 100.0,
-                "forcePathRebuild" : false,
-                "forceVisRebuild" : false,
+                "effectTargetType" : "Creator",
                 "showInTargetPreview" : true,
-                "showInStatusPanel" : true,
-                "ShowInPilotToolTip": true
+                "showInStatusPanel" : false,
+                "ShowInPilotToolTip": false
             },
 			"effectType" : "StatisticEffect",
 			"Description" :
 			{
 				"Id" : "StatusEffect_MissileCounter",
 				"Name" : "ANTI-MISSILE COUNTERMEASURES EFFECT",
-				"Details" : "Friendly units within an ECM field gain +[AMT] Difficulty to missile attacks against them and immunity to Indirect Fire. Being Sensor Locked removes this effect.",
+				"Details" : "This MechWarrior's unit takes 50% less damage from missiles.",
 				"Icon" : "uixSvgIcon_ability_AMS"
 			},
             "statisticData": {
-                "appliesEachTick": false,
-                "effectsPersistAfterDestruction": false,
                 "statName": "DamageReductionMultiplierMissile",
                 "operation": "Float_Multiply",
                 "modValue": "0.5",
-                "modType": "System.Single",
-                "additionalRules": "NotSet",
-                "targetCollection": "NotSet",
-                "targetWeaponCategory": "NotSet",
-                "targetWeaponType": "NotSet",
-                "targetAmmoCategory": "NotSet",
-                "targetWeaponSubType": "NotSet"
+                "modType": "System.Single"
             },
 			"nature" : "Buff"
 		}

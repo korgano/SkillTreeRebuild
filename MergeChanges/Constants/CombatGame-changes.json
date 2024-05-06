@@ -8,6 +8,56 @@
                 0.05,
                 0.035
             ]
-        }
+        },
+        {
+            "JSONPath": "MoraleConstants",
+			"Action": "ObjectMerge",
+			"Value": {
+				"MoraleMax": 150,
+				"CanUseInspireLevel": 30,
+				"ChangeEnemyCrit": 5,
+				"ChangeEnemyAmmoExplodes": 5,
+				"ChangeEnemyWeaponDestroyed": 5,
+				"ChangeEnemyLocationDestroyed": 5,
+				"ChangeMajorityAttackingShotsHit": 10,
+				"ChangeEnemyMinorArmorDamage": 1,
+				"ChangeEnemyMajorArmorDamage": 2,
+				"ChangeEnemyKnockedDown": 10,
+				"ChangeDFADealt": 20,
+				"ChangeEnemyDestroyedLight": 10,
+				"ChangeEnemyDestroyedMedium": 15,
+				"ChangeEnemyDestroyedHeavy": 20,
+				"ChangeEnemyDestroyedAssault": 25,
+				"ChangeEnemyDestroyedMeleeAdditional": 10,
+				"ChangeObjectiveCompleted": 10,
+				"ChangeObjectiveFailed": -5
+			}
+        },
+        {
+            "JSONPath": "FuryConstants",
+			"Action": "ObjectMerge",
+			"Value": {
+				"CanUseInspireLevel": 30,
+				"OffensivePushCost": 30,
+				"OffensivePushLowMoraleCost": 40,
+				"OffensivePushHighMoraleCost": 20,
+				"ChangeEnemyCrit": 5,
+				"ChangeEnemyAmmoExplodes": 5,
+				"ChangeEnemyWeaponDestroyed": 5,
+				"ChangeEnemyLocationDestroyed": 5,
+				"ChangeMajorityAttackingShotsHit": 10,
+				"ChangeEnemyMinorArmorDamage": 1,
+				"ChangeEnemyMajorArmorDamage": 2,
+				"ChangeEnemyKnockedDown": 10,
+				"ChangeDFADealt": 20,
+				"ChangeEnemyDestroyedLight": 10,
+				"ChangeEnemyDestroyedMedium": 15,
+				"ChangeEnemyDestroyedHeavy": 20,
+				"ChangeEnemyDestroyedAssault": 25,
+				"ChangeEnemyDestroyedMeleeAdditional": 10,
+				"ChangeObjectiveCompleted": 10,
+				"ChangeObjectiveFailed": -5
+        		}
+		}
     ]
 }

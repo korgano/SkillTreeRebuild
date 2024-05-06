@@ -11,6 +11,8 @@
                 "AbilityDef_RunGun",
                 "AbilityDef_JumpMaven",
                 "AbilityDef_MechMeister",
+                "AbilityDef_SteadyBalance",
+                "AbilityDef_LastStand",
                 "TraitDefBerserkHitDefense",
                 "TraitDefBulwark",
                 "TraitDefEvasiveChargeAddOne",

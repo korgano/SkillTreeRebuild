@@ -78,7 +78,7 @@
                     },
                     "effectType" : "StatisticEffect",
                     "Description" : {
-                        "Id" : "StatusEffect-TAG-ToHit",
+                        "Id" : "StatusEffect-NARC-ToHit",
                         "Name" : "EASIER TO HIT",
                         "Details" : "Provides a [AMT] to hit multiplier to the target.",
                         "Icon" : "uixSvgIcon_statusMarked"
@@ -98,6 +98,75 @@
                         "targetWeaponSubType" : "NotSet"
                     },
                     "nature" : "Debuff"
+                },
+                {
+                    "durationData" : {
+                        "duration" : 2,
+                        "ticksOnActivations" : true,
+                        "useActivationsOfTarget" : false,
+                        "ticksOnEndOfRound" : false,
+                        "ticksOnMovements" : false,
+                        "stackLimit" : 1,
+                        "clearedWhenAttacked" : false,
+                        "activeTrackedEffect" : true
+                    },
+                    "targetingData": {
+                        "effectTriggerType": "OnHit",
+                        "triggerLimit": 0,
+                        "effectTargetType": "SingleTarget",
+                        "showInTargetPreview" : true,
+                        "showInStatusPanel" : false,
+                        "hideApplicationFloatie" : false
+                    },
+                    "effectType": "StatisticEffect",
+                    "Description": {
+                        "Id": "StatusEffect-NARC-Visibility-Boost",
+                        "Name": "NARC VISIBILITY BOOST",
+                        "Details": "Doubles target visibility",
+                        "Icon": "uixSvgIcon_statusMarked"
+                    },
+                    "nature": "Debuff",
+                    "statisticData": {
+                        "statName": "VisibilityMultiplier",
+                        "modType": "System.Single",
+                        "operation": "Float_Multiply",
+                        "modValue": "2"
+                    }
+                },
+                {
+                    "durationData" : {
+                        "duration" : 2,
+                        "ticksOnActivations" : true,
+                        "useActivationsOfTarget" : false,
+                        "ticksOnEndOfRound" : false,
+                        "ticksOnMovements" : false,
+                        "stackLimit" : 1,
+                        "clearedWhenAttacked" : false,
+                        "activeTrackedEffect" : true
+                    },
+                    "targetingData": {
+                        "effectTriggerType": "OnHit",
+                        "triggerLimit": 0,
+                        "effectTargetType": "SingleTarget",
+                        "showInTargetPreview" : true,
+                        "showInStatusPanel" : false,
+                        "hideApplicationFloatie" : false
+                    },
+                    "effectType": "StatisticEffect",
+                    "Description": {
+                        "Id": "StatusEffect-NARC-SensorSig-Multiplier",
+                        "Name": "NARC SENSOR SIGNATURE BOOST",
+                        "Details": "Increases sensor signature of unit with NARC beacon.",
+                        "Icon": "uixSvgIcon_statusMarked"
+                    },
+                    "nature": "Debuff",
+                    "statisticData": {
+                        "appliesEachTick": false,
+                        "statName": "SensorSignatureModifier",
+                        "modType": "System.Single",
+                        "operation": "Float_Add",
+                        "modValue": "1"
+                    }
                 },
                 {
                     "durationData" : {

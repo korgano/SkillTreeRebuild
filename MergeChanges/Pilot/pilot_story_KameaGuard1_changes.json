@@ -11,6 +11,8 @@
                "AbilityDef_TargetFiring",
                "AbilityDefT5A",
                "AbilityDef_RunGun",
+               "AbilityDef_SteadyBalance",
+                "AbilityDef_LastStand",
                "TraitDefWeaponHit5",
                "TraitDefWeaponHit7",
                "TraitDefBulwark",

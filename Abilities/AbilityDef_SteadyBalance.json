@@ -1,0 +1,46 @@
+{
+    "Description": {
+        "Id": "AbilityDef_SteadyBalance",
+        "Name": "Steady Balance",
+        "Details": "Experienced MechWarriors give their 'Mech an additional 20% stability.",
+        "Icon": "uixSvgIcon_ability_SteadyBalance"
+    },
+    "ReqSkill": "Piloting",
+    "ReqSkillLevel": 2,
+    "DisplayParams": "ShowInMWTRay",
+    "ActivationTime": "Passive",
+    "Targeting": "ActorSelf",
+    "EffectData": [
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 1,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": true,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-SteadyBalance",
+                "Name": "STEADY BALANCE",
+                "Details": "+20% Mech stability.",
+                "Icon": "uixSvgIcon_ability_SteadyBalance"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "statName": "SteadyBalance-StabilityBoost",
+                "modType": "System.Single",
+                "operation": "Float_Multiply",
+                "modValue": "1.2",
+                "additionalRules": "NotSet",
+                "targetCollection": "Pilot"
+            }
+        }
+    ]
+}

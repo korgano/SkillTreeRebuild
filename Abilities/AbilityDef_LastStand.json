@@ -1,0 +1,100 @@
+{
+    "Description": {
+        "Id": "AbilityDef_LastStand",
+        "Name": "Last Stand",
+        "Details": "Once the MechWarrior is injured, pilots are given immunity to lethal hits on each turn.",
+        "Icon": "uixSvgIcon_ability_LastStand"
+    },
+    "ReqSkill": "Guts",
+    "ReqSkillLevel": 2,
+    "DisplayParams": "ShowInMWTRay",
+    "ActivationTime": "Passive",
+    "specialRules": "OnInjured",
+    "Targeting": "ActorSelf",
+    "EffectData": [
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "OnDamaged",
+                "triggerLimit": -1,
+                "effectTargetType": "Creator",
+                "showInTargetPreview": true,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-LastStand-LethalityOverride",
+                "Name": "LAST STAND",
+                "Details": "In Last Stand, pilots are given immunity to lethal hits on each turn.",
+                "Icon": "uixSvgIcon_ability_LastStand"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": true,
+                "statName": "LethalInjury",
+                "modType": "System.Boolean",
+                "operation": "Set",
+                "modValue": "False",
+                "additionalRules": "NotSet",
+                "targetCollection": "Pilot"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "OnActivation",
+                "triggerLimit": -1,
+                "effectTargetType": "AllAllies",
+                "showInTargetPreview": true,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-LastStand",
+                "Name": "LAST STAND - MORALE MAX",
+                "Details": "In Last Stand, pilots are given immunity to lethal hits on each turn.",
+                "Icon": "uixSvgIcon_ability_LastStand"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "MoraleMax",
+                "modType": "System.Int32",
+                "operation": "Int_Add",
+                "modValue": "15"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "OnActivation",
+                "triggerLimit": -1,
+                "effectTargetType": "AllAllies",
+                "showInTargetPreview": true,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-LastStand",
+                "Name": "LAST STAND - MELEE KILL MORALE BOOST",
+                "Details": "In Last Stand, pilots are given immunity to lethal hits on each turn.",
+                "Icon": "uixSvgIcon_ability_LastStand"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "ChangeEnemyDestroyedMeleeAdditional",
+                "modType": "System.Int32",
+                "operation": "Int_Add",
+                "modValue": "15"
+            }
+        }
+    ]
+}
