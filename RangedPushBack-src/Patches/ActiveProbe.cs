@@ -36,8 +36,6 @@ namespace RangedPushBack.Patches
                             logger.LogAtLevel(LogLevel.Debug, "Applying -1 initiative to enemies - Active Probe");
                         }
                     }
-<<<<<<< HEAD
-=======
                     else if (((pilot.HasPushBackFirst_Probe() == true) && (pilot.HasActiveProbeAbility() == true)) || (mech.HasActiveProbeGear() == true))
                     {
                         logger.LogAtLevel(LogLevel.Debug, "Attempting to get PushBackFirst enemies from Active Probe Sequence");
@@ -48,7 +46,6 @@ namespace RangedPushBack.Patches
                             logger.LogAtLevel(LogLevel.Debug, "Pushing enemy to First phase - Active Probe");
                         }
                     }
->>>>>>> test
                     else if (((pilot.HasPushBackLast_Probe()==true) && (pilot.HasActiveProbeAbility()==true)) || (mech.HasActiveProbeGear()==true))
                     {
                         logger.LogAtLevel(LogLevel.Debug, "Attempting to get PushBackLast enemies from Active Probe Sequence");
@@ -56,11 +53,7 @@ namespace RangedPushBack.Patches
                         {
                             Target.ForceUnitToLastPhase();
                             __instance.Combat.MessageCenter.PublishMessage(new FloatieMessage(Target.GUID, Target.GUID, "PUSHED TO LAST INITIATIVE PHASE", FloatieMessage.MessageNature.Debuff));
-<<<<<<< HEAD
-                            logger.LogAtLevel(LogLevel.Debug, "Pushing enemy to last phase - Active Probe");
-=======
                             logger.LogAtLevel(LogLevel.Debug, "Pushing enemy to Last phase - Active Probe");
->>>>>>> test
                         }
                     }
                 }

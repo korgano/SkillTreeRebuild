@@ -38,10 +38,6 @@ namespace RangedPushBack.Patches
                         if (abilityDef.specialRules == AbilityDef.SpecialRules.Artillery)
                         {
                             logger.LogAtLevel(LogLevel.Debug, "Found Artillery");
-<<<<<<< HEAD
-                            //List<EffectData> abilityStatusEffectsForTriggerType = mech.GetComponentStatusEffectsForTriggerType(EffectTriggerType.OnHit);
-=======
->>>>>>> test
                             List<EffectData> abilityStatusEffectsForTriggerType = mech.GetAbilityStatusEffectsForTriggerType(EffectTriggerType.OnHit);
                             logger.LogAtLevel(LogLevel.Debug, $"Detect Artillery on {mech.DisplayName} with status Effect Trigger: OnHit = {abilityDef.Description.Id}");
                             logger.LogAtLevel(LogLevel.Debug, $"Detect GetComponentStatusEffectsForTriggerType: {mech.GetAbilityStatusEffectsForTriggerType(EffectTriggerType.OnHit)}");
@@ -91,74 +87,6 @@ namespace RangedPushBack.Patches
                     logger.LogAtLevel(LogLevel.Debug, $"__instance: {__instance}");
                     logger.LogAtLevel(LogLevel.Debug, $"__instance.owningMech: {__instance.OwningMech.DisplayName}");
                     logger.LogAtLevel(LogLevel.Debug, $"__instance.owningActor.Pilot: {__instance.OwningMech.GetPilot().Description.DisplayName}");
-<<<<<<< HEAD
-
-                    // Get the list of ability status effects from the pilot
-                    List<EffectData> abilityStatusEffects = GetArtilleryAbilityStatusEffects(mech);
-                    logger.LogAtLevel(LogLevel.Debug, $"Got Artillery Status Effects for {mech.DisplayName}: Count = {abilityStatusEffects.Count}");
-
-                    // Loop through enemies hit during the impact
-                    foreach (ICombatant combatant in __instance.Targets)
-                    {
-                        logger.LogAtLevel(LogLevel.Debug, $"Processing combatant: {combatant.DisplayName}");
-                        foreach (EffectData effectData in abilityStatusEffects)
-                        {
-                            logger.LogAtLevel(LogLevel.Debug, $"Applying effect to {combatant.DisplayName}: {effectData.Description.Id}");
-
-                            Weapon __referenceWeapon = __instance.referenceWeapon;
-                            int firstHitLocationForTarget = default(WeaponHitInfo).GetFirstHitLocationForTarget(combatant.GUID);
-
-                            // Construct a unique effect name based on attacker and target
-                            string effectName = $"{effectData.targetingData.effectTriggerType}_{__instance.owningActor.GUID}_{combatant.GUID}";
-
-                            // Create the effect using the EffectManager
-                            __instance.Combat.EffectManager.CreateEffect(effectData, effectName, __instance.SequenceGUID, __instance.owningActor, combatant, default(WeaponHitInfo), firstHitLocationForTarget, false);
-                            logger.LogAtLevel(LogLevel.Debug, $"Created StatusEffect from {AbilityDef.SpecialRules.Artillery}");
-                            if (!effectData.targetingData.hideApplicationFloatie)
-                            {
-                                __instance.Combat.MessageCenter.PublishMessage(new FloatieMessage(__instance.owningActor.GUID, combatant.GUID, effectData.Description.Name, FloatieMessage.MessageNature.Debuff));
-                            }
-                        }
-                    }
-                
-                    // Pushback Handling
-                    foreach (ICombatant combatant in __instance.Targets)
-                    {
-                        if (combatant is AbstractActor Target)
-                        {
-//                            Mech mech = __instance.OwningMech;
-                            Weapon __referenceWeapon = __instance.referenceWeapon;
-                           
-                            if (mech.HasPushBackOne())
-                            {
-                                logger.LogAtLevel(LogLevel.Debug, "Attempting to get PushBackOne enemies from Mech Mortar Sequence: On Impact");
-                                if (Target != null)
-                                {
-                                    Target.ForceUnitOnePhaseDown(__instance.owningActor.GUID, __instance.SequenceGUID, false);
-                                    logger.LogAtLevel(LogLevel.Debug, "Applying -1 initiative to enemies - Mortar");
-                                }
-                            }
-                            else if (mech.HasPushBackLast())
-                            {
-                                logger.LogAtLevel(LogLevel.Debug, "Attempting to get PushBackLast enemies from Mech Mortar Sequence: On Impact");
-                                if (Target != null)
-                                {
-                                    Target.ForceUnitToLastPhase();
-                                    __instance.Combat.MessageCenter.PublishMessage(new FloatieMessage(Target.GUID, Target.GUID, "PUSHED TO LAST INITIATIVE PHASE", FloatieMessage.MessageNature.Debuff));
-                                    logger.LogAtLevel(LogLevel.Debug, "Pushing enemy to last phase - Mortar");
-                                }
-                            }
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    logger.LogAtLevel(LogLevel.Error, $"An exception occurred in MechMortarSequence_OnImpact_Patch: {ex}");
-                }
-            }
-        }
-
-=======
 
                     // Get the list of ability status effects from the pilot
                     List<EffectData> abilityStatusEffects = GetArtilleryAbilityStatusEffects(mech);
@@ -236,6 +164,5 @@ namespace RangedPushBack.Patches
         }
 
         //end of code
->>>>>>> test
     }
 }
