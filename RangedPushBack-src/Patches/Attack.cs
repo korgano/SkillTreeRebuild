@@ -21,6 +21,14 @@ namespace RangedPushBack.Patches
                 try
                 {
                     var logger = HBS.Logging.Logger.GetLogger("RangedPushBack");
+                    var attackSequenceGroupEndMessage = message as AttackSequenceGroupEndMessage;
+
+                    // Ensure the message is of the correct type and has the matching sequence ID
+                    if (attackSequenceGroupEndMessage == null || attackSequenceGroupEndMessage.sequenceId != __instance.id)
+                    {
+                        return;
+                    }
+
                     logger.LogAtLevel(LogLevel.Debug, $"__instance: {__instance}");
                     logger.LogAtLevel(LogLevel.Debug, $"__instance.CurrentRound: {__instance.Director.Combat.TurnDirector.CurrentRound} - Phase: {__instance.Director.Combat.TurnDirector.CurrentPhase}");
                     logger.LogAtLevel(LogLevel.Debug, $"OnAttackSequenceGroupEnd method called. Attacker: {__instance.attacker.DisplayName}, Target: {__instance.chosenTarget.DisplayName}");
@@ -69,10 +77,11 @@ namespace RangedPushBack.Patches
                 catch (Exception ex)
                 {
                     var logger = HBS.Logging.Logger.GetLogger("RangedPushBack");
-                    logger.LogError($"Exception in AttackSequence_OnAttackSequenceResolveDamage_Patch: {ex.GetType().Name} - {ex.Message}");
+                    logger.LogError($"Exception in AttackSequence_OnAttackSequenceGroupEnd_Patch: {ex.GetType().Name} - {ex.Message}");
                 }
             }
         }
+
 
         [HarmonyPatch(typeof(TurnDirector), "OnRoundEndComplete")]
         public static class TurnDirector_OnRoundEndComplete_Patch
